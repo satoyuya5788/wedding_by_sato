@@ -25,20 +25,14 @@ class WeddingController extends Controller
      */
     public function showList(Request $request)
     {
-        $weddings = $this->wedding->getAllWedding($request);
-        $friendCount = count($weddings);
-        if ($friendCount > 0) {
-            $humanFlg = $weddings->first()->human;
-            $attendCount = $this->wedding->AttendCount($humanFlg);
-        } else {
-            $humanFlg = 0;
-            $attendCount = 0;
-        }
+        list($weddings, $friendCount, $humanFlg, $attendCount, $partnerCount) = $this->wedding->getAllWeddingData($request);
+        
         return view('wedding.admin.list', [
             'weddings' => $weddings,
             'friendCount' => $friendCount,
             'humanFlg' => $humanFlg,
             'attendCount' => $attendCount,
+            'partnerCount' => $partnerCount,
         ]);
 }
 
@@ -66,21 +60,15 @@ class WeddingController extends Controller
     {
         $registerdWeddingData = $this->wedding->adminStoreWedding($request);
         if ($registerdWeddingData) {
-            $weddings = $this->wedding->getAllWedding($request);
-            $friendCount = count($weddings);
-            if ($friendCount > 0) {
-                $humanFlg = $weddings->first()->human;
-                $attendCount = $this->wedding->AttendCount($humanFlg);
-            } else {
-                $humanFlg = 0;
-                $attendCount = 0;
-            }
+            list($weddings, $friendCount, $humanFlg, $attendCount, $partnerCount) = $this->wedding->getAllWeddingData($request);
+            
             \Session::flash('flash_message', '登録に成功しました。');
             return Redirect::route('list', compact(
                 'weddings',
                 'friendCount',
                 'attendCount',
                 'humanFlg',
+                'partnerCount',
             ));
         }
         return abort(404);
@@ -163,21 +151,16 @@ class WeddingController extends Controller
     public function executeUpdate(Request $request)
     {
         $this->wedding->updateWedding($request);
-        $weddings = $this->wedding->getAllWedding($request);
-        $friendCount = count($weddings);
-        if ($friendCount > 0) {
-            $humanFlg = $weddings->first()->human;
-            $attendCount = $this->wedding->AttendCount($humanFlg);
-        } else {
-            $humanFlg = 0;
-            $attendCount = 0;
-        }
+
+        list($weddings, $friendCount, $humanFlg, $attendCount, $partnerCount) = $this->wedding->getAllWeddingData($request);
+
         \Session::flash('flash_message', '更新に成功しました。');
         return view('wedding.admin.list', [
             'weddings' => $weddings,
             'friendCount' => $friendCount,
             'humanFlg' => $humanFlg,
             'attendCount' => $attendCount,
+            'partnerCount' => $partnerCount,
         ]);
     }
 }

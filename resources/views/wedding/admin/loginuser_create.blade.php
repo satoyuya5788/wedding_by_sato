@@ -73,8 +73,6 @@
             @endforeach
         </table>
           
-          
-          
     </div>
 </div>
 <script>

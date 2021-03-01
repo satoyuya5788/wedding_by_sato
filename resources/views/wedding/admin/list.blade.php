@@ -11,29 +11,25 @@
         @csrf 
         <input type="submit" value="ログアウト" />
         </form>
-
-
-
-
         
         <div class="h4" style="text-align: center;">
             <div>
-                    計：<span class="text-danger">{{ $friendCount }}</span>人
+                出席<span class="text-danger">{{ $attendCount + $partnerCount }}</span>人:
+                欠席<span class="text-danger">{{ $friendCount - $attendCount }}</span>人
             </div>
             <div>
-                    (出席<span class="text-danger">{{ $attendCount }}</span>:
-                    欠席<span class="text-danger">{{ $friendCount-$attendCount }}</span>)
+                    (世帯数：<span class="text-danger">{{ $friendCount }}</span>)
             </div>
         </div>
         @elseif($humanFlg == 2)
         <h4 class="text-info" style="text-align:center;">参加者一覧(<span class="text-danger">さとこ</span> )</h4>
         <div class="h4" style="text-align: center;">
             <div>
-                    計：<span class="text-danger">{{ $friendCount }}</span>人
+                出席<span class="text-danger">{{ $attendCount + $partnerCount }}</span>人:
+                欠席<span class="text-danger">{{ $friendCount - $attendCount }}</span>人
             </div>
             <div>
-                    (出席<span class="text-danger">{{ $attendCount }}</span>:
-                    欠席<span class="text-danger">{{ $friendCount-$attendCount }}</span>)
+                    (世帯数：<span class="text-danger">{{ $friendCount }}</span>)
             </div>
         </div>
         @elseif($friendCount == 0)

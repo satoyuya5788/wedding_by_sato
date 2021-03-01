@@ -89,6 +89,40 @@ class Wedding extends Model
         return $partnerCount;
     }
 
+
+    public function getAllWeddingData($request){
+        $weddings = $this->getAllWedding($request);
+
+        $partner_one = [];
+        $partner_two = [];
+        $partner_three = [];
+        foreach($weddings as $key => $wedding){
+            if (!empty($wedding->partner_name_one)) {
+                array_push($partner_one, $wedding->partner_name_one);
+            }
+            if (!empty($wedding->partner_name_two)) {
+                array_push($partner_two, $wedding->partner_name_two);
+            }
+            if (!empty($wedding->partner_name_three)) {
+                array_push($partner_three, $wedding->partner_name_three);
+            }
+        }
+        
+        $partnerCount = count($partner_one) + count($partner_two) + count($partner_three);
+        
+        $friendCount = count($weddings);
+        if ($friendCount > 0) {
+            $humanFlg = $weddings->first()->human;
+            $attendCount = $this->AttendCount($humanFlg);
+        } else {
+            $humanFlg = 0;
+            $attendCount = 0;
+        }
+
+        return [$weddings, $friendCount, $humanFlg, $attendCount, $partnerCount];
+    }
+    
+    
     public function getFriendsByRouteName($request){
         $routeName = \Route::currentRouteName();
         switch ($routeName) {
