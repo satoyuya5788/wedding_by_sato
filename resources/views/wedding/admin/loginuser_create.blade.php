@@ -48,7 +48,7 @@
                 <li>欠席　（写真のページ）<span class="h3 text-primary">{{ $notAttendance }}</span></li>
             </ul>
             <hr>
-          <table class="table table-hover table-condensed col-lg-12 col-xs-12 col-sm-12">
+          <table class="table table-condensed col-lg-12 col-xs-12 col-sm-12">
             <tr>
                 <th style="white-space: nowrap;">友達ID</th>
                 <th style="white-space: nowrap;">名前(かな)</th>
@@ -89,7 +89,6 @@ if(window.confirm('登録してよろしいですか？')){
     $('.page:contains("欠席")').parent("tr").css("background-color", "#EEEEEE");
 </script>
 <style>
-
 table.table tr:first-child{
   background-color:	#C0C0C0;
 }

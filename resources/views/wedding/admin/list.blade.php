@@ -49,7 +49,7 @@
         <button type="button" style="float:right;" class="btn btn-warning mb-3 m-3" onclick="location.href='/admin/wedding/loginuser/create'">
         サイト側：ユーザー登録/一覧
         </button>
-        <table class="table table-striped table-hover table-condensed col-lg-12 col-xs-12 col-sm-12">
+        <table class="table table-condensed col-lg-12 col-xs-12 col-sm-12">
             <tr>
                 <th style="white-space: nowrap;">ID</th>
                 <th style="white-space: nowrap;">名前(かな)</th>
@@ -74,7 +74,11 @@
                 @endif
                 <td style="word-break: break-all;">{{ $wedding->phone_num }}</td>
                 <td style="word-break: break-all;">{{ $wedding->mail }}</td>
-                <td>{{ $wedding->partner }}</td>
+                @if($wedding->partner === 0)
+                <td></td>
+                @else
+                <td class="partner">{{ $wedding->partner }}</td>
+                @endif
                 <td>{{ $wedding->allergies }}</td>
                 <td><button type="button" class="btn btn-success" onclick="location.href='/admin/wedding/{{ $wedding->id }}'">詳細</button></td>
                 <td>
@@ -97,4 +101,15 @@
         </table>
     </div>
 </div>
+<script>
+    $('.partner:contains(1)').parent("tr").css("background-color", "#FFEEFF");
+    $('.partner:contains(2)').parent("tr").css("background-color", "#FFEEFF");
+    $('.partner:contains(3)').parent("tr").css("background-color", "#FFEEFF");
+    $('td:contains("×")').parent("tr").css("background-color", "#EEEEEE");
+</script>
+<style>
+table.table tr:first-child{
+  background-color:	#C0C0C0;
+}
+</style>
 @endsection('content')
