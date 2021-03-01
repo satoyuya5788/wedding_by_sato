@@ -296,11 +296,11 @@ canvas{
 
 
 .bg-dairiseki {
-  /* background-image: url("{{ asset('img/2507.jpg') }}"); */
-  background-image: url("../img/pexels-scott-webb-2824173.jpg");
+  /* background-image: url("../img/pexels-scott-webb-2824173.jpg"); */
+  background-image: url("../img/line_1189422905858979.jpg");
   background-position: center center;
-  /* background-repeat: no-repeat;
-  background-size: cover;*/
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed; 
   box-shadow: 20px 20px 20px #ddd8d8;
 }
@@ -312,7 +312,8 @@ canvas{
 }
 .bg-dairiseki2 {
   /* background-image: url("{{ asset('img/grungy-pink-marble-textured.jpg') }}"); */
-  background-image: url("../img/grungy-pink-marble-textured.jpg");
+  /* background-image: url("../img/grungy-pink-marble-textured.jpg"); */
+  background-image: url("../img/20200813_135953.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
