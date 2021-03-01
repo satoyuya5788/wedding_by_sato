@@ -33,6 +33,10 @@ Route::post('/logout', [SimpleLogoutController::class, 'logout']);
 Route::group(['middleware' => ['simple_auth']], function () {
     Route::prefix('site/wedding')->group(function () {
         Route::get('/', [SiteWeddingController::class, 'showCreate'])->name('site');
+        // 招待状を登録する
+        Route::post('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
+        // 招待状を登録する
+        // Route::get('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
         
         Route::get('/guidehappouen', function () {
             return view('wedding.site.guide');
@@ -41,10 +45,6 @@ Route::group(['middleware' => ['simple_auth']], function () {
         Route::get('/imagehappouen', function () {
             return view('wedding.site.non_participation');
         });
-        // 招待状を登録する
-        Route::post('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
-        // 招待状を登録する
-        Route::get('/guide', [SiteWeddingController::class, 'executeStore']);
     });
 });
 

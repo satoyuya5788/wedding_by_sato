@@ -18,7 +18,7 @@
 
             <hr>
             
-          <form method="POST" action="{{ route('store') }}" onSubmit="return checkSubmit()">
+          <form method="POST" action="{{ route('store') }}">
             @csrf
             <div class="form-group mt-5 clearfix">
                 <div class="row ">
