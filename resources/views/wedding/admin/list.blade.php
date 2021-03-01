@@ -18,7 +18,7 @@
                 欠席<span class="text-danger">{{ $friendCount - $attendCount }}</span>人
             </div>
             <div>
-                    (世帯数：<span class="text-danger">{{ $friendCount }}</span>)
+                    世帯数(サイトを送った数)：<span class="text-danger">{{ $friendCount }}</span>
             </div>
         </div>
         @elseif($humanFlg == 2)
@@ -29,7 +29,7 @@
                 欠席<span class="text-danger">{{ $friendCount - $attendCount }}</span>人
             </div>
             <div>
-                    (世帯数：<span class="text-danger">{{ $friendCount }}</span>)
+                    世帯数(サイトを送った数)：<span class="text-danger">{{ $friendCount }}</span>
             </div>
         </div>
         @elseif($friendCount == 0)
