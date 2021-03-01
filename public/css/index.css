@@ -299,11 +299,10 @@ canvas{
   /* background-image: url("{{ asset('img/2507.jpg') }}"); */
   background-image: url("../img/pexels-scott-webb-2824173.jpg");
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-repeat: no-repeat;
+  background-size: cover;*/
+  background-attachment: fixed; 
   box-shadow: 20px 20px 20px #ddd8d8;
-  /* border-radius: 10px; */
 }
 .bg-dairiseki-text {
     /* border:  solid 1px; */
@@ -311,6 +310,23 @@ canvas{
     /* padding: 10px 20px; */
     /* background-color: black; */
 }
+.bg-dairiseki2 {
+  /* background-image: url("{{ asset('img/grungy-pink-marble-textured.jpg') }}"); */
+  background-image: url("../img/grungy-pink-marble-textured.jpg");
+  background-position: center center;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-attachment: fixed;
+  box-shadow: 20px 20px 20px hsl(300, 63%, 89%);
+  /* border-radius: 10px; */
+}
+.bg-dairiseki2-text {
+    /* border:  solid 1px; */
+    display:  inline-block;
+    /* padding: 10px 20px; */
+    /* background-color: black; */
+}
+
 .bg-countdown {
   /* background-image: url("{{ asset('img/2507.jpg') }}"); */
   background-image: url("../img/nature-forest-trees-path.jpg");
@@ -327,22 +343,6 @@ canvas{
     padding:10%;
         color: white;
 
-}
-.bg-dairiseki2 {
-  /* background-image: url("{{ asset('img/grungy-pink-marble-textured.jpg') }}"); */
-  background-image: url("../img/grungy-pink-marble-textured.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: 20px 20px 20px hsl(300, 63%, 89%);
-  /* border-radius: 10px; */
-}
-.bg-dairiseki2-text {
-    /* border:  solid 1px; */
-    display:  inline-block;
-    /* padding: 10px 20px; */
-    /* background-color: black; */
 }
 
 .bg-map {
