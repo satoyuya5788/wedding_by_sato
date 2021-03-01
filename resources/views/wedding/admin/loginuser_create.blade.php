@@ -43,16 +43,16 @@
           <hr>
           <span style="font-size: 1.5rem;">※ページの種類</span>
             <ul>
-                <li>0:未回答（招待状ページ）<span class="h3 text-danger">{{ $notAnswered }}</span></li>
-                <li>1:出席　（案内状ページ）<span class="h3 text-primary">{{ $attendance }}</span></li>
-                <li>2:欠席　（写真のページ）<span class="h3 text-primary">{{ $notAttendance }}</span></li>
+                <li>未回答（招待状ページ）<span class="h3 text-danger">{{ $notAnswered }}</span></li>
+                <li>出席　（案内状ページ）<span class="h3 text-primary">{{ $attendance }}</span></li>
+                <li>欠席　（写真のページ）<span class="h3 text-primary">{{ $notAttendance }}</span></li>
             </ul>
             <hr>
-          <table class="table table-striped table-hover table-condensed col-lg-12 col-xs-12 col-sm-12">
+          <table class="table table-hover table-condensed col-lg-12 col-xs-12 col-sm-12">
             <tr>
                 <th style="white-space: nowrap;">友達ID</th>
                 <th style="white-space: nowrap;">名前(かな)</th>
-                <th style="white-space: nowrap;">ページ</th>
+                <th style="white-space: nowrap;">回答状況</th>
                 <th style="white-space: nowrap;">登録日</th>
                 <th style="white-space: nowrap;">更新日</th>
             </tr>
@@ -60,7 +60,13 @@
             <tr>
                 <td>{{ $user->id }}</td>
                 <td>{{ $user->name }}</td>
-                <td>{{ $user->page_flg }}</td>
+                @if($user->page_flg === 0)
+                <td class="page" style="font-size:1.1rem; color:red;">未回答</td>
+                @elseif($user->page_flg === 1)
+                <td class="page" style="font-size:1.2rem; color:blue;">出席</td>
+                @elseif($user->page_flg === 2)
+                <td class="page">欠席</td>
+                @endif
                 <td>{{ $user->created_at }}</td>
                 <td>{{ $user->updated_at }}</td>
             </tr>
@@ -80,4 +86,14 @@ if(window.confirm('登録してよろしいですか？')){
 }
 }
 </script>
+<script>
+    $('.page:contains("未回答")').parent("tr").css("background-color", "#FFDDFF");
+    $('.page:contains("欠席")').parent("tr").css("background-color", "#EEEEEE");
+</script>
+<style>
+
+table.table tr:first-child{
+  background-color:	#C0C0C0;
+}
+</style>
 @endsection
