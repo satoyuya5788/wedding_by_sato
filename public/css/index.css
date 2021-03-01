@@ -312,13 +312,22 @@ canvas{
 }
 .bg-dairiseki2 {
   /* background-image: url("{{ asset('img/grungy-pink-marble-textured.jpg') }}"); */
-  /* background-image: url("../img/grungy-pink-marble-textured.jpg"); */
   background-image: url("../img/20200813_135953.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 20px 20px 20px hsl(300, 63%, 89%);
+  /* border-radius: 10px; */
+}
+.bg-dairiseki_top {
+  background-image: url("../img/51QbjxlaFiL._AC_SX466_.jpg");
+  /* background-image: url("../img/20200813_135953.jpg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 20px 20px 20px white;
   /* border-radius: 10px; */
 }
 .bg-dairiseki2-text {
