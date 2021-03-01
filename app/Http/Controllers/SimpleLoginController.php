@@ -56,7 +56,7 @@ class SimpleLoginController extends Controller
 
             switch ($pageFlg) {
                 case '0':
-                    return view("wedding.site.index");
+                    return redirect(route('site'));
                     break;
                 case '1':
                     return view("wedding.site.guide");

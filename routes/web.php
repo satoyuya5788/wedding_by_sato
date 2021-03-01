@@ -36,7 +36,7 @@ Route::group(['middleware' => ['simple_auth']], function () {
         // 招待状を登録する
         Route::post('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
         // 招待状を登録する
-        // Route::get('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
+        Route::get('/guide', [SiteWeddingController::class, 'executeStore']);
         
         Route::get('/guidehappouen', function () {
             return view('wedding.site.guide');
