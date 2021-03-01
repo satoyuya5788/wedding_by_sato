@@ -129,7 +129,7 @@
           </div>
         </div>
         <div class="col-xs-6 order-lg-1 col-lg-6">
-          <div class="text-center text-white">
+          <div class="text-center text-white p-3">
             <h5 class="display-8" style="font-family: serif,'arial black';">　さとう　　　　　ゆうや</h5>
             <h2 class="display-4" style="font-family: serif,'arial black';">佐藤　佑也</h2>
             <p style="font-family: serif,'arial black';">1990年6月25日生まれ30歳。エンジニアとしてWEBアプリの開発の仕事をしています。この度は智子さんと結婚することになりました。不束者ですが、これからは二人で幸せ家庭を気付いていきたいと思います。</p>
@@ -148,8 +148,8 @@
           </div>
         </div>
         <div class="col-xs-6 col-lg-6">
-          <div class="text-center text-white">
-          <h5 class="display-8" style="font-family: serif,'arial black';">　ゆかわ　　　　　さとこ</h5>
+          <div class="text-center text-white p-3">
+            <h5 class="display-8" style="font-family: serif,'arial black';">　ゆかわ　　　　　さとこ</h5>
             <h2 class="display-4" style="font-family: serif,'arial black';">湯川　智子</h2>
             <p style="font-family: serif,'arial black';">
             1990年10月27日生まれ30歳。化粧品の営業をしています。和歌山で育ち、15歳の時に上京してずっと東京で暮らしています。私が一番感謝を伝えたいのはお母さん、お父さんです。今日は来てくれてありがとう。
