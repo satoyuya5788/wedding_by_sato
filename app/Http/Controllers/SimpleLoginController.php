@@ -37,9 +37,7 @@ class SimpleLoginController extends Controller
     public function login(StoreRequest $request){
 		//入力内容をチェックする
 		$name = $request->input("loginusername");
-		// $password = $request->input("password");
-// dd($name->exists());
-
+        
         // 登録時にユニークバリデーションを設定してるため、入力値の存在チェックだけで認証
         $userData = User::all();
         $nameData = [];

@@ -58,19 +58,19 @@
                 <th style="white-space: nowrap;">メール</th>
                 <th style="white-space: nowrap;">お連れ様</th>
                 <th style="white-space: nowrap;">アレルギー</th>
-                <th style="white-space: nowrap;">{{ __('messages.button.detail') }}</th>
+                <th style="white-space: nowrap;">{{ __('messages.button.edit') }}</th>
                 <th style="white-space: nowrap;">席次表</th>
                 <th style="white-space: nowrap;">お渡し代</th>
-                <th style="white-space: nowrap;">{{ __('messages.button.edit') }}</th>
+                <th style="white-space: nowrap;">{{ __('messages.button.detail') }}</th>
             </tr>
             @foreach ($weddings as $wedding)
             <tr>
                 <td>{{ $wedding->id }}</td>
                 <td>{{ $wedding->full_name }}</td>
                 @if($wedding->attend)
-                <td style="color: blue;">〇</td>
+                <td style="font-size:1.5rem;">〇</td>
                 @else
-                <td style="color: red;">×</td>
+                <td style="color: red; font-size:1.5rem">×</td>
                 @endif
                 <td style="word-break: break-all;">{{ $wedding->phone_num }}</td>
                 <td style="word-break: break-all;">{{ $wedding->mail }}</td>
@@ -79,8 +79,12 @@
                 @else
                 <td class="partner">{{ $wedding->partner }}</td>
                 @endif
+                @if($wedding->allergies)
+                <td class="allergies" style="color: red; font-size:1.4rem; white-space: nowrap;">{{ $wedding->allergies }}</td>
+                @else
                 <td>{{ $wedding->allergies }}</td>
-                <td><button type="button" class="btn btn-success" onclick="location.href='/admin/wedding/{{ $wedding->id }}'">詳細</button></td>
+                @endif
+                <td><button type="button" class="btn btn-info" onclick="location.href='/admin/wedding/edit/{{ $wedding->id }}'">編集</button></td>
                 <td>
                     @if($wedding->listchart)
                     <strong style="color: blue;"> 〇</strong>
@@ -95,7 +99,7 @@
                     <strong></strong>
                     @endif
                 </td>
-                <td><button type="button" class="btn btn-info" onclick="location.href='/admin/wedding/edit/{{ $wedding->id }}'">編集</button></td>
+                <td><button type="button" class="btn btn-success" onclick="location.href='/admin/wedding/{{ $wedding->id }}'">詳細</button></td>
             </tr>
             @endforeach
         </table>
@@ -106,6 +110,7 @@
     $('.partner:contains(2)').parent("tr").css("background-color", "#FFEEFF");
     $('.partner:contains(3)').parent("tr").css("background-color", "#FFEEFF");
     $('td:contains("×")').parent("tr").css("background-color", "#EEEEEE");
+    $('.allergies').parent("tr").css("background-color", "#FFFF77");
 </script>
 <style>
 table.table tr:first-child{

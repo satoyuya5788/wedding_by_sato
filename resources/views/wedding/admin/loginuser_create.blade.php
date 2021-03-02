@@ -54,7 +54,6 @@
                 <th style="white-space: nowrap;">名前(かな)</th>
                 <th style="white-space: nowrap;">回答状況</th>
                 <th style="white-space: nowrap;">登録日</th>
-                <th style="white-space: nowrap;">更新日</th>
             </tr>
             @foreach ($userData as $user)
             <tr>
@@ -68,7 +67,6 @@
                 <td class="page">欠席</td>
                 @endif
                 <td>{{ $user->created_at }}</td>
-                <td>{{ $user->updated_at }}</td>
             </tr>
             @endforeach
         </table>
@@ -85,7 +83,7 @@ if(window.confirm('登録してよろしいですか？')){
 }
 </script>
 <script>
-    $('.page:contains("未回答")').parent("tr").css("background-color", "#FFDDFF");
+    $('.page:contains("未回答")').parent("tr").css("background-color", "#FFFF00");
     $('.page:contains("欠席")').parent("tr").css("background-color", "#EEEEEE");
 </script>
 <style>
