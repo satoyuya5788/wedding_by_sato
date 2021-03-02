@@ -53,6 +53,12 @@ class Wedding extends Model
         }
         return abort(404);
     }
+    
+    public function getCreatedAtAttribute ($value) {
+        $time = substr($value, 0, 10);
+        $answerd_at = str_replace("-","/",$time);
+        return $answerd_at;
+    }
 
     public function AttendCount($humanFlg) {
         return self::where('human', $humanFlg)->where('attend', 1)->count();
@@ -195,7 +201,7 @@ class Wedding extends Model
             $registerWeddingData['user_id'] = $userId;
             
             $registerWeddingData['created_at'] = date('Y/m/d');
-            $registerWeddingData['updated_at'] = date('Y/m/d');
+            $registerWeddingData['updated_at'] = null;
                         
             $wedding = self::create($registerWeddingData); 
 
@@ -238,7 +244,7 @@ class Wedding extends Model
             }
             
             $registerWeddingData['created_at'] = date('Y/m/d');
-            $registerWeddingData['updated_at'] = date('Y/m/d');
+            $registerWeddingData['updated_at'] = null;
             $wedding = self::create($registerWeddingData); 
 
             DB::commit();
@@ -265,7 +271,6 @@ class Wedding extends Model
             $updateWeddingData = $request->all();
             unset($updateWeddingData['_token']);
             
-            $updateWeddingData['created_at'] = date('Y/m/d');
             $updateWeddingData['updated_at'] = date('Y/m/d');
             
             if (!$request->has('listchart')) {

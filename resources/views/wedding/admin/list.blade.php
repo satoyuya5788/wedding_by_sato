@@ -58,6 +58,7 @@
                 <th style="white-space: nowrap;">メール</th>
                 <th style="white-space: nowrap;">お連れ様</th>
                 <th style="white-space: nowrap;">アレルギー</th>
+                <th style="white-space: nowrap;">回答日</th>
                 <th style="white-space: nowrap;">{{ __('messages.button.edit') }}</th>
                 <th style="white-space: nowrap;">席次表</th>
                 <th style="white-space: nowrap;">お渡し代</th>
@@ -84,6 +85,7 @@
                 @else
                 <td>{{ $wedding->allergies }}</td>
                 @endif
+                <td>{{ $wedding->created_at }}</td>
                 <td><button type="button" class="btn btn-info" onclick="location.href='/admin/wedding/edit/{{ $wedding->id }}'">編集</button></td>
                 <td>
                     @if($wedding->listchart)
