@@ -43,11 +43,11 @@
             {{ session('flash_message') }}
             </p>
         @endif
+        <button type="button" class="btn btn-warning mb-3 m-3" onclick="location.href='/admin/wedding/loginuser/create'">
+        サイト側：ユーザー登録/一覧
+        </button>
         <button type="button" class="btn btn-primary mb-3 m-3" onclick="location.href='/admin/wedding/create'">
         出席情報追加登録
-        </button>
-        <button type="button" style="float:right;" class="btn btn-warning mb-3 m-3" onclick="location.href='/admin/wedding/loginuser/create'">
-        サイト側：ユーザー登録/一覧
         </button>
         <table class="table table-condensed col-lg-12 col-xs-12 col-sm-12">
             <tr>
