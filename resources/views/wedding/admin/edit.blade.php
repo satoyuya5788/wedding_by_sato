@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-sm-6 text-center mt-3" style="float:left;">
                     <span>￥</span>
-                        <input class="col-xs-6 input-lg" style="color:red; text-align:center; " type="text" name="present" value="{{ $wedding->present }}">
+                        <input class="col-xs-6 input-lg" style="color:red; text-align:center; " type="number" name="present" value="{{ $wedding->present }}">
                     <div>
                     <strong class="col-6">お渡し代金</strong>
                     </div>
