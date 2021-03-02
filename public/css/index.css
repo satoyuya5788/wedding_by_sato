@@ -303,6 +303,7 @@ canvas{
   background-size: cover;
   background-attachment: fixed; 
   box-shadow: 20px 20px 20px #ddd8d8;
+  /* -webkit-appearance: none; */
 }
 .bg-dairiseki-text {
     /* border:  solid 1px; */
@@ -318,6 +319,7 @@ canvas{
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 20px 20px 20px hsl(300, 63%, 89%);
+  /* -webkit-appearance: none; */
   /* border-radius: 10px; */
 }
 .bg-dairiseki_top {
