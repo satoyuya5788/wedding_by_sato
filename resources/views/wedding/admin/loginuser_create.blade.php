@@ -53,7 +53,7 @@
                 <th style="white-space: nowrap;">友達ID</th>
                 <th style="white-space: nowrap;">名前(かな)</th>
                 <th style="white-space: nowrap;">回答状況</th>
-                <th style="white-space: nowrap;">登録日</th>
+                <th style="white-space: nowrap;">ユーザー登録日</th>
             </tr>
             @foreach ($userData as $user)
             <tr>
