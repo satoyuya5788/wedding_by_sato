@@ -66,7 +66,7 @@
             @foreach ($weddings as $wedding)
             <tr>
                 <td>{{ $wedding->id }}</td>
-                <td>{{ $wedding->full_name }}</td>
+                <td style="font-weight:bold;">{{ $wedding->full_name }}</td>
                 @if($wedding->attend)
                 <td style="font-size:1.5rem;">〇</td>
                 @else
@@ -80,7 +80,7 @@
                 <td class="partner">{{ $wedding->partner }}</td>
                 @endif
                 @if($wedding->allergies)
-                <td class="allergies" style="color: red; font-size:1.4rem; white-space: nowrap;">{{ $wedding->allergies }}</td>
+                <td class="allergies" style="font-weight:bold; color: red; font-size:1.4rem; white-space: nowrap;">{{ $wedding->allergies }}</td>
                 @else
                 <td>{{ $wedding->allergies }}</td>
                 @endif

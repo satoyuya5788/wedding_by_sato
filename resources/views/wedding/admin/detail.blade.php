@@ -234,4 +234,14 @@
         </form>
     </div>
 </div>
+<style>
+input[disabled] {
+    color:black;
+    font-weight:bold;
+}
+textarea[disabled] {
+    color:black;
+    font-weight:bold;
+}
+</style>
 @endsection('content')

@@ -243,4 +243,14 @@ if(window.confirm('更新してよろしいですか？')){
 }
 }
 </script>
+<style>
+input[disabled] {
+    color:black;
+    font-weight:bold;
+}
+textarea[disabled] {
+    color:black;
+    font-weight:bold;
+}
+</style>
 @endsection
