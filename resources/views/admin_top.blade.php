@@ -19,7 +19,7 @@
                     
                     <form method="post" action="{{ route('admin_login') }}">
                     @csrf 
-
+trait_exists
                     <div class="form-group mt-5" >
                         <h2 class="mb-3"><span class="pink_gold" style="font-style: italic;">出席情報管理ログイン画面</span></h2>
                         <label for="name" class="mt-3" style="font-size:2.5rem;">
