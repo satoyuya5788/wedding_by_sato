@@ -17,7 +17,7 @@
                     </ul>
                     </div>
                     @endif
-hello
+                    
                     <form method="post" action="{{ route('admin_login') }}">
                     @csrf 
 
