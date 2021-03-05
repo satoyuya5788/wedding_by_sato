@@ -73,7 +73,7 @@
     </form>
     
     <div class="m-1 sticky-top p-1" style="text-align: right;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] === 2 || $page === 2)
     <form method="post" action="{{ url('logout') }}">
