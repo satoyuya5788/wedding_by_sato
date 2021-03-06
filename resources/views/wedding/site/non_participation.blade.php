@@ -93,7 +93,7 @@
     @endif
   
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-right" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
             <div class="row align-items-center text-center" >
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_87933838578839.jpg') }}" alt="">
@@ -102,7 +102,7 @@
         </div>
     </section>
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-left" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
             <div class="row align-items-center text-center" >
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_1078987987022302.jpg') }}" alt="">
@@ -120,7 +120,7 @@
         </div>
     </section>
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
             <div class="row align-items-center text-center" >
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_1189422905858979.jpg') }}" alt="">
