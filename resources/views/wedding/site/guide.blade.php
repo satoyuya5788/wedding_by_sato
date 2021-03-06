@@ -194,7 +194,7 @@
 
       var nowDate = new Date();
         var dnumNow = nowDate.getTime();
-        var targetDate = new Date('2022-5-29');
+        var targetDate = new Date('2022/5/29');
         var dnumTarget = targetDate.getTime();
         var diff2Dates = dnumTarget - dnumNow;
         if( dnumTarget < dnumNow ) {
