@@ -89,9 +89,9 @@
   
 
     <section  class="mt-5 p-3 pt-5 mb-5" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800" data-aos-offset="400" >
-        <div class="container" id="msg" >
+        <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
-                <div class="col-xs-12 order-lg-1 col-lg-12 box_msg bg-light p-4 mb-5" >
+                <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-5" >
                         <span class="main-msg gold mb-5" style="font-family: serif,'arial black';">~message~</span>
                         <br>
                         <br>

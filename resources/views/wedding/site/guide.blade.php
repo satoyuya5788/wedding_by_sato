@@ -150,7 +150,7 @@
                 <br>
                 <p class="fontstyle" style="color: white;">東京都港区白金台1-1-1</p>
                 <br>
-                <p class="fontstyle" style="white-space: nowrap; color: white;">03-3443-3111</p>
+                <p class="fontstyle" style="color: white;">03-3443-3111</p>
                 <br>
                 <a href="https://www.google.co.jp/maps/place/%E5%85%AB%E8%8A%B3%E5%9C%92/@35.6381947,139.7257702,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b0131752fdb:0x1329e959bd91ac40!8m2!3d35.6381947!4d139.7279589" target="_blank" class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
                 <p style="text-align:center;">GoogleMapで見る</p></a>
