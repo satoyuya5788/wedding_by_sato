@@ -28,6 +28,9 @@
   <!-- ↓AOS -->
   <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
 
+  <!-- フォントSP版対応 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">  
   
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
@@ -57,7 +60,7 @@
   
     <section class="mt-3 p-4 pt-2">
         <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200" >
-            <div class="col-xs-12 order-lg-1 col-lg-12 text-center" style="font-size:0.8rem; display:inline-block;" >
+            <div class="col-xs-12 order-lg-1 col-lg-12 text-center webfont" style="font-size:0.8rem; display:inline-block;" >
                     <p class="thanks-msg">
                     ご入力ありがとうございました。
                     </p>
@@ -88,10 +91,19 @@
         <input type="submit" value="ログアウト" />
         </form>
 
-        <div class="m-1 mt-5 sticky-top p-1" style="text-align: right;">
+        <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
             <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
         </div>
     @endif
+  
+
+        <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
+        <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">写真を長押しして下さい</p>
+        <br>
+        <div class="arrow" style="margin:0 auto">
+            <div class="down"> </div>
+        </div>
+
   
     <section class="p-2 pt-5">
         <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
