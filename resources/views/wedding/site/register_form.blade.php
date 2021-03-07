@@ -50,7 +50,7 @@
             <div class="form-group mt-5 clearfix">
                 <span class="badge badge-danger">必須</span>
                 <label for="name" class="ml-3">
-                    名前
+                    名前(漢字)
                 </label>
                 <div class="clearfix row">
                     <input id="name" name="name" class="form-control shadow-lg col-xs-6 bg-white rounded harf-input" value="{{ old('name') }}" type="text" placeholder="(姓)">
@@ -71,7 +71,7 @@
             <div class="form-group mt-5 clearfix">
                 <span class="badge badge-danger">必須</span>
                 <label for="name_kana" class=" ml-3">
-                    かな
+                    名前(かな)
                 </label>
                 <div class="clearfix row">
                 <input id="name_kana" name="name_kana" class="form-control shadow-lg col-xs-6 bg-white rounded harf-input" value="{{ old('name_kana') }}" type="text" placeholder="(せい)">
@@ -162,7 +162,7 @@
 
             <div class="form-group mt-5 clearfix">
                 <label for="name" class="">
-                    お連れ様のお名前 
+                    お連れ様のお名前(漢字)
                 </label>
                 <div class="clearfix row">
                 <input id="partner_name_one" name="partner_name_one" class="form-control shadow-lg col-xs-3 bg-white rounded one-third-input" value="{{ old('partner_name_one') }}" type="text" placeholder="佐藤太郎">
