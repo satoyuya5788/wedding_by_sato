@@ -24,7 +24,7 @@
                 <div class="row ">
                     <div class="col-xs-6 col-lg-6 text-center attendance" style="float:left; text-align: center; ">
                         <input class="responsive_label p-3 form-control" type="radio" name="attend" value="1" id="attendance" checked="">
-                        <label class="label col-xs-6 col-lg-6" for="attendance">出席<span class="en_attend_decline">attend</span></label>
+                        <label class="label col-xs-6 col-lg-6" for="attendance" style="font-size: 1.7rem;">出席<span class="en_attend_decline">attend</span></label>
                     </div>       
                     <div class="col-xs-6 col-lg-6 text-center absence" style="float:left; text-align: center;">
                         <input class="responsive_label p-3 form-control" type="radio" name="attend" value="0" id="absence">
@@ -37,11 +37,11 @@
                 <div class="row ">
                     <div class="col-xs-6 col-lg-6 text-center man" style="float:left; text-align: center;">
                         <input class="responsive_label_human p-3 form-control" type="radio" name="human" value="1" id="man" checked="">
-                        <label class="label col-xs-6 col-lg-6" for="man">新郎のご友人様<span class="en_attend_decline">佐藤 佑也</span></label>
+                        <label class="label col-xs-6 col-lg-6" for="man">新郎のご友人様<span class="en_attend_decline" style="font-size: 1.5rem;">佐藤 佑也</span></label>
                     </div>       
                     <div class="col-xs-6 col-lg-6 text-center woman" style="float:left; text-align: center;">
                         <input class="responsive_label_human p-3 form-control" type="radio" name="human" value="2" id="woman">
-                        <label class="label col-xs-6 col-lg-6" for="woman">新婦のご友人様<span class="en_attend_decline">湯川智子</span></label>
+                        <label class="label col-xs-6 col-lg-6" for="woman">新婦のご友人様<span class="en_attend_decline" style="font-size: 1.5rem;">湯川智子</span></label>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
             <div class="form-group mt-5 clearfix">
                 <span class="badge badge-danger">必須</span>
-                <label for="name" class=" ml-3">
+                <label for="name" class="ml-3">
                     名前
                 </label>
                 <div class="clearfix row">
