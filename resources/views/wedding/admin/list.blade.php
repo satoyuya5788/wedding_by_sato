@@ -80,11 +80,7 @@
                 @else
                 <td class="partner">{{ $wedding->partner }}</td>
                 @endif
-                @if($wedding->allergies)
                 <td class="allergies" style="font-weight:bold; color: red; font-size:1.4rem; white-space: nowrap;">{{ $wedding->allergies }}</td>
-                @else
-                <td>{{ $wedding->allergies }}</td>
-                @endif
                 <td>{{ $wedding->created_at }}</td>
                 <td><button type="button" class="btn btn-info" onclick="location.href='/admin/wedding/edit/{{ $wedding->id }}'">編集</button></td>
                 <td>
@@ -112,7 +108,7 @@
     $('.partner:contains(2)').parent("tr").css("background-color", "#FFEEFF");
     $('.partner:contains(3)').parent("tr").css("background-color", "#FFEEFF");
     $('td:contains("×")').parent("tr").css("background-color", "#EEEEEE");
-    $('.allergies').parent("tr").css("background-color", "#FFFF77");
+    // $('.allergies').parent("tr").css("background-color", "#FFFF77");
 </script>
 <style>
 table.table tr:first-child{
