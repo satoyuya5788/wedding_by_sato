@@ -126,6 +126,7 @@
     <div class="container bg-countdown p-5" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center" >
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
+                @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00'))
                 <span style="background-color: black; opacity:0.7; font-size: 3rem; white-space: nowrap;">count down</span>
                 <br>
                 <br>
@@ -140,6 +141,17 @@
                     <div style=" font-size:1rem"><span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_minutes"></span>minutes
                     <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_seconds"></span>seconds</div>
                 </div>
+                @else
+                <span style="background-color: black; opacity:0.7; font-size: 3rem; white-space: nowrap;">count down</span>
+                <br>
+                <br>
+                <span style="background-color: black; opacity:0.7; font-size: 2rem;">to 2020.5.29</span>
+                <br>
+                <br>
+                <br>
+                <span style="background-color: black; opacity:0.7; font-size: 2rem;">~結婚式当日~</span>
+                <br>
+                @endif
             </div>
         </div>
     </div>
@@ -203,7 +215,7 @@
         if( dnumTarget < dnumNow ) {
         // 期限が過ぎた場合は -1 を掛けて正の値に変換
         diff2Dates *= -1;
-        }      
+        }
         var dDays  = diff2Dates / ( 1000 * 60 * 60 * 24 );
         diff2Dates = diff2Dates % ( 1000 * 60 * 60 * 24 );
         var dHour  = diff2Dates / ( 1000 * 60 * 60 );   // 時間
