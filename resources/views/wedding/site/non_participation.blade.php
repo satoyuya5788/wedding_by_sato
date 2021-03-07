@@ -56,7 +56,7 @@
 <video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.7;"></video>
   
     <section class="mt-3 p-4 pt-2">
-        <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-offset="200" >
+        <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200" >
             <div class="col-xs-12 order-lg-1 col-lg-12 text-center" style="font-size:0.8rem; display:inline-block;" >
                     <p class="thanks-msg">
                     ご入力ありがとうございました。
