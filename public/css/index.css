@@ -1,12 +1,20 @@
+@font-face {
+    font-family: 'webfont';
+    src: url("../css/ShipporiMinchoB1-Regular.ttf") format('ttf');
+}
+.webfont{
+    font-family: 'Shippori Mincho B1', serif;
+}
+
 body {
     background:#000033;
     width:  0 auto;
     margin: 0;
-        font-family: serif,'arial black';
-        max-width: 100%;
-        max-height: 100%;
-        overflow-x: hidden;
-    }
+    font-family: 'Shippori Mincho B1', serif;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
 
 section{
     width: auto;
@@ -42,13 +50,13 @@ input::placeholder {
 .main-msg {
     font-size:2.5rem;
     color:#e2d06e; 
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
     font-style: italic;
 }
 .event-msg {
     font-size:3rem;
     color:#CC3366; 
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
 }
 .form-control::placeholder{
   color: #cccccc;
@@ -56,19 +64,19 @@ input::placeholder {
 .event-msg-1 {
     font-size:2rem;
     color:#CC3399; 
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
 }
 .content-msg {
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
 }
 .register-msg {
     color:#9999FF; 
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
 }
 .thanks-msg {
     color:#000000; 
     font-style: italic;
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
     font-size: 1.2rem;
 }
 .strong-msg {
@@ -162,7 +170,7 @@ input::placeholder {
   p {
   width:100%;
   margin: 0 auto;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: 'Shippori Mincho B1', serif;
   font-style: oblique;
   font-weight: 100;
   font-variant-ligatures: normal;
@@ -172,7 +180,7 @@ input::placeholder {
   .common_font {
   width:100%;
   margin: 0 auto;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: 'Shippori Mincho B1', serif;
   font-style: oblique;
   font-weight: 100;
   font-variant-ligatures: normal;
@@ -435,7 +443,7 @@ canvas{
     /* background-color: black; */
 }
 .fontstyle {
-    font-family: serif,'arial black';
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 .bg-form {
@@ -532,15 +540,15 @@ canvas{
     font-style:italic;
     font-weight: 1000;
     font-size: 3.2rem;
-    /* font-family: "Helvetica Neue", "Arial", sans-serif; */
-  }
+    font-family: 'Shippori Mincho B1', serif
+}
 .ml4 {
     color: white;
     font-style:italic;
     font-weight: 1000;
     font-size: 3.2rem;
-    /* font-family: "Helvetica Neue", "Arial", sans-serif; */
-  }
+    font-family: 'Shippori Mincho B1', serif
+}
   /* .ml3 .letter {
     display: inline-block;
     opacity: 0;
@@ -550,8 +558,8 @@ canvas{
     font-style:italic;
     font-weight: 1000;
     font-size: 2.8rem;
-    /* font-family: "Helvetica Neue", "Arial", sans-serif; */
-  }
+    font-family: 'Shippori Mincho B1', serif
+}
   
   .yycountdown-box{
     text-align:center;

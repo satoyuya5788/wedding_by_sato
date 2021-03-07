@@ -28,6 +28,9 @@
   <!-- ↓AOS -->
   <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
 
+  <!-- フォントSP版対応 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">  
   
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
@@ -92,10 +95,10 @@
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1" >
-                        <span class="main-msg gold mb-2" style="font-family: serif,'arial black">~message~</span>
+                        <span class="main-msg gold mb-2" style="font-family: 'Shippori Mincho B1', serif">~message~</span>
                         <br>
                         <br>
-                        <p class="h4 content-msg mb-1" style="color:black; font-size:1.2rem">
+                        <p class="h4 content-msg mb-1" style="color:black; font-size:1.3rem">
                         皆様いかがお過ごしでしょうか
                         <br>
                         <br>
@@ -130,9 +133,9 @@
         </div>
         <div class="col-xs-6 order-lg-1 col-lg-6">
           <div class="text-center text-white p-4">
-          <h5 class="display-7" style="font-family: serif,'arial black'; font-size: 1.0rem;">さとう　　ゆうや</h5>
-            <h2 class="display-4" style="font-family: serif,'arial black'; font-size: 2.5rem;">佐藤　佑也</h2>
-            <p style="font-family: serif,'arial black'; font-size: 1.5rem;">1990年6月25日生まれ30歳。エンジニアとしてWEBアプリの開発の仕事をしています。この度は智子さんと結婚することになりました。不束者ですが、これからは二人で幸せ家庭を気付いていきたいと思います。</p>
+          <h5 class="display-7" style="font-family: 'shippori mincho b1', serif; font-size: 1.0rem;">さとう　　ゆうや</h5>
+            <h2 class="display-4" style="font-family: 'shippori mincho b1', serif; font-size: 2.5rem;">佐藤　佑也</h2>
+            <p style="font-family: 'shippori mincho b1', serif; font-size: 1.5rem;">1990年6月25日生まれ30歳。エンジニアとしてWEBアプリの開発の仕事をしています。この度は智子さんと結婚することになりました。不束者ですが、これからは二人で幸せ家庭を気付いていきたいと思います。</p>
           </div>
         </div>
       </div>
@@ -149,9 +152,9 @@
         </div>
         <div class="col-xs-6 col-lg-6">
           <div class="text-center text-white p-4">
-            <h5 class="display-7" style="font-family: serif,'arial black'; font-size: 1.0rem;">ゆかわ　　さとこ</h5>
-            <h2 class="display-4" style="font-family: serif,'arial black'; font-size: 2.5rem;">湯川　智子</h2>
-            <p style="font-family: serif,'arial black'; font-size: 1.5rem;">
+            <h5 class="display-7" style="font-family: 'shippori mincho b1', serif; font-size: 1.0rem;">ゆかわ　　さとこ</h5>
+            <h2 class="display-4" style="font-family: 'shippori mincho b1', serif; font-size: 2.5rem;">湯川　智子</h2>
+            <p style="font-family: 'shippori mincho b1', serif; font-size: 1.5rem;">
             1990年10月27日生まれ30歳。化粧品の営業をしています。和歌山で育ち、15歳の時に上京してずっと東京で暮らしています。私が一番感謝を伝えたいのはお母さん、お父さんです。今日は来てくれてありがとう。
             </p>
           </div>
@@ -299,7 +302,7 @@ starMaker(60);
 
 <script>
 var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
@@ -317,7 +320,7 @@ anime.timeline({loop: true})
   });
 
 var textWrapper = document.querySelector('.ml4');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
