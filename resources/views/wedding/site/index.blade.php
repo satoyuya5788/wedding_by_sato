@@ -88,7 +88,7 @@
     @endif
   
 
-    <section  class="mt-5 p-3 pt-5 mb-5" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800" data-aos-offset="400" >
+    <section  class="mt-5 p-3 pt-5 mb-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="1200" data-aos-offset="600" >
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-5" >
@@ -124,12 +124,12 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xs-6 order-lg-2 col-lg-6">
-          <div class="">
+          <div class="m-4">
             <img class="img-fluid rounded-circle" src="{{ asset('img/line_5061427426418137.jpg') }}" alt="">
           </div>
         </div>
         <div class="col-xs-6 order-lg-1 col-lg-6">
-          <div class="text-center text-white p-3">
+          <div class="text-center text-white p-4">
             <h5 class="display-8" style="font-family: serif,'arial black';">　さとう　　　　　ゆうや</h5>
             <h2 class="display-4" style="font-family: serif,'arial black';">佐藤　佑也</h2>
             <p style="font-family: serif,'arial black';">1990年6月25日生まれ30歳。エンジニアとしてWEBアプリの開発の仕事をしています。この度は智子さんと結婚することになりました。不束者ですが、これからは二人で幸せ家庭を気付いていきたいと思います。</p>
@@ -143,12 +143,12 @@
     <div class="container ">
       <div class="row align-items-center">
         <div class="col-xs-6 col-lg-6">
-          <div class="">
+          <div class="m-4">
             <img class="img-fluid rounded-circle" src="{{ asset('img/line_2333475898087329.jpg') }}" alt="">
           </div>
         </div>
         <div class="col-xs-6 col-lg-6">
-          <div class="text-center text-white p-3">
+          <div class="text-center text-white p-4">
             <h5 class="display-8" style="font-family: serif,'arial black';">　ゆかわ　　　　　さとこ</h5>
             <h2 class="display-4" style="font-family: serif,'arial black';">湯川　智子</h2>
             <p style="font-family: serif,'arial black';">
