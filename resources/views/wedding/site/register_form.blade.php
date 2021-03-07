@@ -223,8 +223,8 @@
             </div>
           </form>
             <hr>
-            <p class="common_font" style="font-family: serif,'arial black';">※一度送信してしまうとご登録内容を修正できなくなります</p>
-            <p class="common_font" style="font-family: serif,'arial black';">※ご不明点、またはご登録内容の訂正がしたい場合はラインや電話にてご連絡ください</p>
+            <p class="common_font" style="font-family: 'shippori mincho b1', serif;">※一度送信してしまうとご登録内容を修正できなくなります</p>
+            <p class="common_font" style="font-family: 'shippori mincho b1', serif;">※ご不明点、またはご登録内容の訂正がしたい場合はラインや電話にてご連絡ください</p>
       </div>
     </div>
   </section>

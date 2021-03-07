@@ -52,7 +52,7 @@ input::placeholder {
 .main-msg {
     font-size:6em;
     color:#FF66FF; 
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 .form-control::placeholder{
   color: #cccccc;
@@ -61,19 +61,19 @@ input::placeholder {
 .event-msg {
     font-size:3em;
     color:#CC3366; 
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 .event-msg-1 {
     font-size:2em;
     color:#CC3399; 
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 .content-msg {
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 .register-msg {
     color:#9999FF; 
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 .strong-msg {
     font-size:1.5em;
@@ -109,7 +109,7 @@ input::placeholder {
   p {
   width:100%;
   margin: 0 auto;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: 'Shippori Mincho B1', serif;
   font-style: oblique;
   font-weight: 100;
   font-variant-ligatures: normal;
@@ -141,7 +141,7 @@ ul {
 
 body {
     width: 0 auto;
-    font-family: serif,'arial black';
+    font-family: 'shippori mincho b1', serif;
 }
 
   </style>
