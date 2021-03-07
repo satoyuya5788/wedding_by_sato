@@ -88,7 +88,7 @@
     @endif
   
 
-    <section  class="mt-5 p-3 pt-2 mb-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200" >
+    <section  class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="10" data-aos-duration="3000" data-aos-offset="200">
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1" >
