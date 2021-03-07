@@ -62,7 +62,7 @@
         </div>
   </section>    -->
 
-    <section class="mt-5 p-2 pb-5">
+    <section class="p-4 pb-5">
         <div class="container mt-5 bg-dairiseki_top" data-aos="fade-in" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
             <div class="row align-items-center text-center pt-5">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">
@@ -70,7 +70,7 @@
                 <!-- <a href="{{ url('/sub') }}">sub</a> -->
 
                     @if ($errors->any())
-                    <div style="color:red; font-size:1.5rem;">
+                    <div style="color:red; font-size:1.3rem;">
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -83,14 +83,15 @@
                     @csrf 
 
                     <div class="form-group mt-5" >
-                    <h2 class="mb-5"><span class="event-msg pink_gold" style="font-style: italic;">~   招待状   ~</span></h2>
-                        <label for="name" class="" style="font-size:2.5rem;">
+                    <h2 class="mb-3"><span class="event-msg pink_gold" style="font-style: italic; font-size: 2.0rem;">~   招待状   ~</span></h2>
+                        <label for="name" class="" style="font-size:1.8rem;">
                             お名前(かな)
                         </label>
-                        <div class="row">
-                            <p class="mt-2" style="font-size:1.3rem; font-family: serif,'arial black';">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
-                            <input id="loginusername" style="text-align:center;" name="loginusername" class="form-control shadow-lg col-xs-12 bg-white rounded center-block" value="{{ old('loginusername') }}" type="text" placeholder="例)さとうゆうや">
+                        <div class="row text-center">
+                            <p class="mt-2" style="font-size:1.1rem; font-family: serif,'arial black';">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
                         </div>
+
+                        <input id="loginusername" name="loginusername" class="form-control shadow-lg bg-white rounded" value="{{ old('loginusername') }}" style="text-align: center;" type="text" placeholder="例)さとうゆうや">
                     </div>
 
                     <div class="form-group m-5 text-center pb-1">
