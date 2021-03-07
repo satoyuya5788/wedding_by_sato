@@ -55,8 +55,8 @@
 
 <video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.7;"></video>
   
-    <section class="mt-3 p-2 pt-5">
-        <div class="container bg-white p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="200" >
+    <section class="mt-3 p-4 pt-2">
+        <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-offset="200" >
             <div class="col-xs-12 order-lg-1 col-lg-12 text-center" style="font-size:0.8rem; display:inline-block;" >
                     <p class="thanks-msg">
                     ご入力ありがとうございました。
@@ -67,9 +67,10 @@
                     <p class="thanks-msg">
                     私たちのこれからを温かく見守ってくださるよう
                     </p>
-                    <p class="thanks-msg">
+                    <p class="thanks-msg" style="white-space: nowrap;">
                     お願い申し上げます。
                     </p>
+                    <br>
                     <br>
                     <p class="thanks-msg">
                         心ばかりではございますが、
@@ -87,12 +88,12 @@
         <input type="submit" value="ログアウト" />
         </form>
 
-        <div class="m-1 sticky-top p-1" style="text-align: right;">
+        <div class="m-1 mt-5 sticky-top p-1" style="text-align: right;">
             <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
         </div>
     @endif
   
-    <section class="mt-3 p-2 pt-5">
+    <section class="p-2 pt-5">
         <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
             <div class="row align-items-center text-center" >
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
