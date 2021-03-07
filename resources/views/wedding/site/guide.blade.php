@@ -59,10 +59,10 @@
   
     <section class="">
     <div class="row bg-top2 image-fuild">
-        <div class="text-center text-white p-5 mt-2" style="font-size: 1.3rem; ">
+        <div class="text-center text-white p-5 mt-2" style="font-size: 1.2rem; ">
             <div id="guide_msg">
                 <span class="text-wrapper">
-                    <p class="mb-5"><span class="letters fontstyle">Thank For You</span></p>
+                    <p class="mb-5"><span class="letters fontstyle">Thank You</span></p>
                         <p class="mt-5"><span class="letters fontstyle">会える日を楽しみにしています</span></p>
             </div>
         </div>
@@ -240,7 +240,7 @@
 
 <script>
 $('#guide_msg .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter' data-letter='$&'>$&</span>"));
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter webfont' data-letter='$&'>$&</span>"));
 });
 
 anime.timeline(
