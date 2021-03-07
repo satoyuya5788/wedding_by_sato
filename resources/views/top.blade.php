@@ -29,6 +29,9 @@
   <!-- ↓AOS -->
   <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
 
+  <!-- フォントSP版対応 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
@@ -88,7 +91,7 @@
                             お名前(かな)
                         </label>
                         <div class="row text-center">
-                            <p class="mt-2" style="font-size:1.1rem; font-family: serif,'arial black';">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
+                            <p class="mt-2 webfont" style="font-size:1.1rem;">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
                         </div>
 
                         <input id="loginusername" name="loginusername" class="form-control shadow-lg bg-white rounded" value="{{ old('loginusername') }}" style="text-align: center;" type="text" placeholder="例)さとうゆうや">

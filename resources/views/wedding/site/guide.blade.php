@@ -27,6 +27,9 @@
   <!-- ↓AOS -->
   <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
 
+  <!-- フォントSP版対応 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
