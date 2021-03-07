@@ -61,8 +61,8 @@
   <section class="example bg-top" style="max-width: 1000px;
     margin: auto;">
         <div class="row">
-            <h1 class="ml3">Welcome</h1>
-            <h1 class="ml4" style="margin-top: 100px; padding-top:100px;  white-space: nowrap;">to our Wedding</h1>
+            <h1 class="ml3" style="font-size: 2.7rem;">Welcome</h1>
+            <h1 class="ml4" style="font-size: 2.7rem; margin-top: 100px; padding-top:100px;  white-space: nowrap;">to our Wedding</h1>
         </div>
   </section>   
   
@@ -92,7 +92,7 @@
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-5" >
-                        <span class="main-msg gold mb-5" style="font-family: serif,'arial black';">~message~</span>
+                        <span class="main-msg gold mb-5" style="font-family: serif,'arial black">~message~</span>
                         <br>
                         <br>
                         <p class="h4 content-msg mb-5" style="color:black">
