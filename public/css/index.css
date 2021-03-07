@@ -22,8 +22,13 @@ section{
     width: 48%;
     float:left;
 }
+.harf-logininput {
+    width: 50%;
+}
+
+
 .one-third-input {
-    width: 30%;
+    width: 32%;
     float:left;
 }
 .harf-post-input {
@@ -35,7 +40,7 @@ input::placeholder {
    color: red;
 }
 .main-msg {
-    font-size:3.2rem;
+    font-size:2.5rem;
     color:#e2d06e; 
     font-family: serif,'arial black';
     font-style: italic;
@@ -130,9 +135,9 @@ input::placeholder {
 	-webkit-background-clip: text;
   }
   .dark_gold{
-    /* font-size:5em; */
+    font-size:1.3rem;
 	text-align:center;
-	line-height:0.95em;
+	line-height:1.2em;
 	font-weight:bold;
 	color: transparent;
 	/* background: linear-gradient(0deg, #210b9e 0%, #5f75da 45%, #c2c3ec 70%, #7480e9 85%, #2815db 90% 100%);  */

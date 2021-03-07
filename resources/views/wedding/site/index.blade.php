@@ -88,14 +88,14 @@
     @endif
   
 
-    <section  class="mt-5 p-3 pt-5 mb-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="1200" data-aos-offset="600" >
+    <section  class="mt-5 p-3 pt-2 mb-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200" >
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
-                <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-5" >
-                        <span class="main-msg gold mb-5" style="font-family: serif,'arial black">~message~</span>
+                <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1" >
+                        <span class="main-msg gold mb-2" style="font-family: serif,'arial black">~message~</span>
                         <br>
                         <br>
-                        <p class="h4 content-msg mb-5" style="color:black">
+                        <p class="h4 content-msg mb-1" style="color:black; font-size:1.2rem">
                         皆様いかがお過ごしでしょうか
                         <br>
                         <br>
@@ -210,14 +210,14 @@
         <div class="container mt-5 bg-gradient p-5">
             <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
-                <p class="fontstyle" style="color: white;">八芳園</p>
+                <p class="fontstyle" style="color: white; font-size: 1.6rem;">八芳園</p>
                 <br>
-                <p class="fontstyle" style="color: white;">東京都港区白金台1-1-1</p>
+                <p class="fontstyle" style="color: white; font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
                 <br>
                 <p class="fontstyle" style="white-space: nowrap; color: white;">03-3443-3111</p>
                 <br>
                 <a href="https://www.google.co.jp/maps/place/%E5%85%AB%E8%8A%B3%E5%9C%92/@35.6381947,139.7257702,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b0131752fdb:0x1329e959bd91ac40!8m2!3d35.6381947!4d139.7279589" target="_blank" class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
-                <p style="text-align:center;">GoogleMapで見る</p></a>
+                <p style="text-align:center; font-size: 1.5rem;">GoogleMapで見る</p></a>
                     <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:500px"></iframe></div>
                 <br>
                 <br>
