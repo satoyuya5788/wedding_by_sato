@@ -95,7 +95,7 @@
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1" >
-                        <span class="main-msg gold mb-2" style="font-family: 'Shippori Mincho B1', serif">~message~</span>
+                        <span class="main-msg gold mb-2" style="font-family: 'Shippori Mincho B1', serif">hello~message~</span>
                         <br>
                         <br>
                         <p class="h4 content-msg mb-1" style="color:black; font-size:1.3rem">
