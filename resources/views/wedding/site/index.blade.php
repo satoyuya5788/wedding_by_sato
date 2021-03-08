@@ -167,7 +167,7 @@
   
   
     <section class="mt-5 p-4 pt-5 pb-5">
-        <div class="container bg-dairiseki p-5" data-aos="fade-right" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container bg-dairiseki p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center ">
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
                 <h2><span class="event-msg gold">Events</span></h2>
@@ -188,7 +188,7 @@
     </section>
 
     <section class="mt-5 p-4 pt-5 pb-5">
-        <div class="container mt-5 bg-dairiseki2 p-5" data-aos="fade-left" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 bg-dairiseki2 p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center pt-5">
             <div class="col-xs-12 order-lg-1 col-lg-12 ">
                 <h2><span class="event-msg pink_gold">Events</span></h2>
