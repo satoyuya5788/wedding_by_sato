@@ -42,7 +42,6 @@
             <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
         </div>
     @endif
-  
 
         <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
         <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">写真を長押しして下さい</p>
@@ -51,7 +50,6 @@
             <div class="down"> </div>
         </div>
 
-  
     <section class="p-2 pt-5">
         <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
             <div class="row align-items-center text-center" >
@@ -90,14 +88,10 @@
     </section>
   
   <!-- Footer -->
-  <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; sato yuya 2021</p>
-    </div>
-  </footer>
+  @include('footer')
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>

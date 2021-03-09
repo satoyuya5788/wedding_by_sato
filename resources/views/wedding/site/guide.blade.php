@@ -134,91 +134,16 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; sato yuya 2022</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+  @include('footer')
 
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
-<script>
-    function showCountdown(){
-      var now = new Date();
-      var point = new Date("2022/05/29");
-      var id_day = document.getElementById('countDown_date');
-      var id_hours = document.getElementById('countDown_date_hours');
-      var id_minutes = document.getElementById('countDown_date_minutes');
-      var id_seconds = document.getElementById('countDown_date_seconds');
+<!--countdownを読み込み -->
+<script type="text/javascript" src="{{ asset('js/countdown.js') }}"></script>
 
-      var nowDate = new Date();
-        var dnumNow = nowDate.getTime();
-        var targetDate = new Date('2022/5/29');
-        var dnumTarget = targetDate.getTime();
-        var diff2Dates = dnumTarget - dnumNow;
-        if( dnumTarget < dnumNow ) {
-        // 期限が過ぎた場合は -1 を掛けて正の値に変換
-        diff2Dates *= -1;
-        }
-        var dDays  = diff2Dates / ( 1000 * 60 * 60 * 24 );
-        diff2Dates = diff2Dates % ( 1000 * 60 * 60 * 24 );
-        var dHour  = diff2Dates / ( 1000 * 60 * 60 );   // 時間
-        diff2Dates = diff2Dates % ( 1000 * 60 * 60 );
-        var dMin   = diff2Dates / ( 1000 * 60 );    // 分
-        diff2Dates = diff2Dates % ( 1000 * 60 );
-        var dSec   = diff2Dates / 1000; // 秒
-        var day = Math.floor(dDays);
-        var hour = Math.floor(dHour);
-        var minute = Math.floor(dMin) ;
-        var second = Math.floor(dSec) ;
-      var countdown = Math.ceil((point.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-      if (countdown > 0) {
-          id_day.textContent = day;
-          id_hours.textContent = hour;
-          id_minutes.textContent = minute;
-          id_seconds.textContent = second;
-        }
-    }
-        setInterval('showCountdown()',1000);
-</script>
-
-<script>
-$('#guide_msg .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter webfont' data-letter='$&'>$&</span>"));
-});
-
-anime.timeline(
-     {loop: false}
-   )
-    .add({
-        targets: '#guide_msg .letter',
-        scale: {
-         value: [0, 1],
-         duration: 950
-       },
-        translateY : [function() { return anime.random(-360, 360); }, 0],
-        translateX : [function() { return anime.random(-360, 0); }, 0],
-        opacity: [0, 1],
-        filter: {
-        value: ["blur(15px)", "blur(0px)"],
-        duration: 2000
-        },
-        duration: 10000,
-        elasticity: 300,
-        delay: function(el, i) {
-          return 35 * (i+1)
-        },
-        update: function(anim) {
-          // console.log(anim.currentTime + 'ms'); // Get current animation time with `myAnimation.currentTime`, return value in ms.
-          // console.log(anim.progress + '%'); // Get current animation progress with `myAnimation.progress`, return value in %
-        },
-        begin: function(anim, target) {
-          console.log(anim.began); // true after 1000ms
-        }
-    });
-    </script>
+<!--ヘッダー画像のテキストアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/animation_for_guide.js') }}"></script>
 
 <!-- ブラウザバッグ禁止コード 本番反映時-->
 <!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->

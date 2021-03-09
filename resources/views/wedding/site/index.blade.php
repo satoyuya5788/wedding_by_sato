@@ -202,11 +202,7 @@
     @endif
 
   <!-- Footer -->
-  <footer class="py-3 bg-black">
-    <div class="container-fluid">
-      <p class="m-0 text-center text-white small">Copyright &copy; sato yuya 2022</p>
-    </div>
-  </footer>
+  @include('footer')
 
 <!-- 背景に星を降らせるアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/star.js') }}"></script>
@@ -214,47 +210,11 @@
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
-<script>
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2000,
-    delay: (el, i) => 300 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 9000
-  });
-
-var textWrapper = document.querySelector('.ml4');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml4 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 1500,
-    delay: (el, i) => 300 * (i+1)
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 9000
-  });
-</script>
+<!--ヘッダー画像のテキストアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/animation_for_index.js') }}"></script>
 
 <!-- ブラウザバッグ禁止コード 本番反映時-->
 <!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->
-
 
 </body>
 </html>

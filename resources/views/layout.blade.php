@@ -141,7 +141,7 @@ ul {
 
 body {
     width: 0 auto;
-    font-family: 'shippori mincho b1', serif;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
   </style>
@@ -164,8 +164,6 @@ body {
     <div class="container">
     @yield('content')
     </div>
-    <footer class="footer bg-dark  fixed-bottom">
     @include('footer')
-    </footer>
 </body>
 </html>
