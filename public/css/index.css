@@ -362,7 +362,7 @@ canvas{
 }
 .bg-dairiseki2 {
   /* box-shadow: 20px 20px 20px hsl(300, 63%, 89%); */
-  box-shadow: 20px 20px 20px #ddd8d8;
+  box-shadow: 20px 20px 20px #f3cdcd;
 }
 .bg-dairiseki2::before {
     content:"";
@@ -399,7 +399,7 @@ canvas{
   
 
 .bg-countdown {
-  box-shadow: 20px 20px 20px #0a7914;
+  box-shadow: 20px 20px 20px #d3f5d6;
 }
 .bg-countdown::before {
     content:"";
