@@ -111,30 +111,30 @@
 
   
   
-    <section class="mt-5 p-4 pt-5 pb-5">
-        <div class="container bg-dairiseki p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
-            <div class="row align-items-center text-center ">
-            <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
-                <h2><span class="event-msg gold">Events</span></h2>
-                <p>
-                    <h3 class="event-msg-1 gold">WEDDING CEREMONY
-                        <br>
-                        <br>
-                        <br>
-                        <strogn style="font-size: 3rem;"class="mt-5">挙式</strogn>
-                    </h3>
-                </p>
-                <p style="font-size:1.8rem" class="mt-5">2022.5.29 sun</p>
-                <p style="font-size:1.8rem">13:15</p>
-                <p style="font-size:1.2rem">受付時間 13:00</p>
+    <section class="mt-4 p-4">
+        <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+            <div class="row align-items-center text-center pt-1 pb-1">
+                <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
+                    <h2><span class="event-msg gold">Events</span></h2>
+                    <p>
+                        <h3 class="event-msg-1 gold">WEDDING CEREMONY
+                            <br>
+                            <br>
+                            <br>
+                            <strogn style="font-size: 2.3rem;"class="mt-5">挙式</strogn>
+                        </h3>
+                    </p>
+                    <p style="font-size:1.8rem" class="mt-5">2022.5.29 sun</p>
+                    <p style="font-size:1.8rem">13:15</p>
+                    <p style="font-size:1.2rem">受付時間 13:00</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mt-5 p-4 pt-5 pb-5">
-        <div class="container mt-5 bg-dairiseki2 p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
-        <div class="row align-items-center text-center pt-5">
+    <section class="mt-4 p-4">
+        <div class="container mt-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="row align-items-center text-center pt-1 pb-1">
             <div class="col-xs-12 order-lg-1 col-lg-12 ">
                 <h2><span class="event-msg pink_gold">Events</span></h2>
                 <p>
@@ -142,7 +142,7 @@
                         <br>
                         <br>
                         <br>
-                        <strong style="font-size: 3rem;">披露宴</strong>
+                        <strong style="font-size: 2.3rem;">披露宴</strong>
                     </h3>
                 </p>
                 <p style="font-size:1.8rem" class="mt-5">2022.5.29 sun</p>
