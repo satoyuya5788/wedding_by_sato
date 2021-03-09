@@ -733,7 +733,6 @@ canvas{
 }
 
 .bg-silver{
-    /* background-color: #eaeaea; */
+    background: linear-gradient(#c0bebb 0%, #e6e5e2 45%, #f8f8f4 70%, #c5c4c1 85%, #b8b7b4 90% 100%); 
     box-shadow: 8px 8px 8px #ddd8d8;
-	background: linear-gradient(0deg, #bdbbb9 0%, #cccbc8 45%, #faf9f4 70%, #c5c4c1 85%, #a5a4a1 90% 100%); 
 }

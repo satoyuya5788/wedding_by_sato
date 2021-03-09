@@ -128,7 +128,7 @@
                     <div class="down"> </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem">
+                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic;">
                     アクセスの詳細
                     </a>
                 </div>
