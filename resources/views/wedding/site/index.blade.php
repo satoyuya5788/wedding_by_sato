@@ -18,31 +18,29 @@
   
     @if(session("simple_auth")[1] === 1 || $page === 1)
     <form method="post" action="{{ url('logout') }}">
-    @csrf 
-    <input class="bg-white" type="submit" value="ログアウト" />
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    
-    <div class="m-1 sticky-top p-1" style="text-align: right;">
+    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
+    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
+    <div class="m-1 p-1" style="text-align: center;">
         <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] === 2 || $page === 2)
     <form method="post" action="{{ url('logout') }}">
-    @csrf 
-    <input class="bg-white" type="submit" value="ログアウト" />
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    
-    
     <div class="m-1 sticky-top p-1" style="text-align: right;">
         <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
     </div>
     @endif
-  
 
     <section  class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="10" data-aos-duration="3000" data-aos-offset="200">
         <div class="container box_msg" id="msg" >
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1" >
-                        <span class="main-msg gold mb-2" style="font-family: 'Shippori Mincho B1', serif">hello~message~</span>
+                        <span class="main-msg gold mb-2 webfont">~message~</span>
                         <br>
                         <br>
                         <p class="h4 content-msg mb-1" style="color:black; font-size:1.3rem">
@@ -156,10 +154,10 @@
     </section>
 
     <section class="mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
-    <!-- <div class="container mt-5 bg-map2 p-5"> -->
-        <div class="container mt-5 bg-gradient p-5">
+        <div class="container mt-5 p-5">
             <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
+                <p class="fontstyle mb-4" style="color: white; font-size: 1.8rem; text-align:center;">～式場案内～</p>
                 <p class="fontstyle" style="color: white; font-size: 1.6rem;">八芳園</p>
                 <br>
                 <p class="fontstyle" style="color: white; font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
@@ -175,30 +173,55 @@
                 <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
                 <p class="h6 mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
                 <br>
-                <div class="arrow" style="margin:0 auto">
+                <div class="arrow mb-4" style="margin:0 auto">
                     <div class="down"> </div>
                 </div>
-                <a href="https://www.happo-en.com/access/" target="_blank" class="p-5 h3" style="white-space: nowrap; ">
-                <p style="text-align:center; color:aqua;" class="text_link_under fontstyle">アクセスの詳細</p></a>
+                <div class="text-center">
+                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem">
+                    アクセスの詳細
+                    </a>
+                </div>
           </div>
       </div>
     </div>
   </section>
 
+
+    <!-- 本来はココは使いたくないが、スティッキー問題が解決できないため -->
+    <!-- もし解決できたら、トップのスティッキーを活かして、ここを丸々削除 -->
+    @if(session("simple_auth")[1] === 1 || $page === 1)
+    <form method="post" action="{{ url('logout') }}">
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
+    </form>
+    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
+    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
+    <div class="mb-5 p-1" style="text-align: center;">
+        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
+    </div>
+    @elseif(session("simple_auth")[1] === 2 || $page === 2)
+    <form method="post" action="{{ url('logout') }}">
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
+    </form>
+    <div class="mb-5 p-1" style="text-align: center;">
+        <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
+    </div>
+    @endif
+    
+  
     @if(session("simple_auth")[1] === 0 && $page === 0)
     <!-- 登録フォーム↓長いのでinclude -->
     @include('wedding.site.register_form')
-
-
+    
     @else
-    <section style="border: 2px solid white;" class="m-3 p-2">
+    <section style="border: 5px double white;" class="m-3 p-2">
         <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="margin:0 auto;">
             <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.3rem;">出席情報は登録済みです。</p>
             <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.3rem;">内容を変更したい場合は、</p>
             <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.3rem;">直接ご連絡ください。</p>
         </div>
     </section>
-
     @endif
 
   <!-- Footer -->
