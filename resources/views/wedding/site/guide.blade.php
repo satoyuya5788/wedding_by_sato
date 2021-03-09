@@ -1,60 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">  
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>八芳園～招待状～</title>
-
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- テキストアニメーション↓ -->
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>  
-  
-
-  <!-- Custom styles for this template -->
-  <link href="{{ asset('css/one-page-wonder.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/index.css') }}" rel="stylesheet">
-
-  <!-- ↓AOS -->
-  <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
-
-  <!-- フォントSP版対応 -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-  
-  <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.textillate.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.fittext.js') }}"></script>
-  
-  
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  
-  <script type="text/javascript" src="{{ asset('js/index_jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.raty.js') }}"></script>
-
-    <!-- テキストアニメーション↓ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
-  
-  <!-- スクロールアニメーション↓ -->
-  <script type="text/javascript" src="{{ asset('js/aos.js') }}"></script>
-</head>
-
+@include('site_header')
 <body>
-
-
 <video src="{{ asset('img/Pexels Videos 2098988.mp4') }}" autoplay playsinline muted loop></video>
   
     <section class="">
@@ -187,92 +134,16 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; sato yuya 2022</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+  @include('footer')
 
-<script>
-    AOS.init();
-</script>
+<!--スクロールアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
-<script>
-    function showCountdown(){
-      var now = new Date();
-      var point = new Date("2022/05/29");
-      var id_day = document.getElementById('countDown_date');
-      var id_hours = document.getElementById('countDown_date_hours');
-      var id_minutes = document.getElementById('countDown_date_minutes');
-      var id_seconds = document.getElementById('countDown_date_seconds');
+<!--countdownを読み込み -->
+<script type="text/javascript" src="{{ asset('js/countdown.js') }}"></script>
 
-      var nowDate = new Date();
-        var dnumNow = nowDate.getTime();
-        var targetDate = new Date('2022/5/29');
-        var dnumTarget = targetDate.getTime();
-        var diff2Dates = dnumTarget - dnumNow;
-        if( dnumTarget < dnumNow ) {
-        // 期限が過ぎた場合は -1 を掛けて正の値に変換
-        diff2Dates *= -1;
-        }
-        var dDays  = diff2Dates / ( 1000 * 60 * 60 * 24 );
-        diff2Dates = diff2Dates % ( 1000 * 60 * 60 * 24 );
-        var dHour  = diff2Dates / ( 1000 * 60 * 60 );   // 時間
-        diff2Dates = diff2Dates % ( 1000 * 60 * 60 );
-        var dMin   = diff2Dates / ( 1000 * 60 );    // 分
-        diff2Dates = diff2Dates % ( 1000 * 60 );
-        var dSec   = diff2Dates / 1000; // 秒
-        var day = Math.floor(dDays);
-        var hour = Math.floor(dHour);
-        var minute = Math.floor(dMin) ;
-        var second = Math.floor(dSec) ;
-      var countdown = Math.ceil((point.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-      if (countdown > 0) {
-          id_day.textContent = day;
-          id_hours.textContent = hour;
-          id_minutes.textContent = minute;
-          id_seconds.textContent = second;
-        }
-    }
-        setInterval('showCountdown()',1000);
-</script>
-
-<script>
-$('#guide_msg .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter webfont' data-letter='$&'>$&</span>"));
-});
-
-anime.timeline(
-     {loop: false}
-   )
-    .add({
-        targets: '#guide_msg .letter',
-        scale: {
-         value: [0, 1],
-         duration: 950
-       },
-        translateY : [function() { return anime.random(-360, 360); }, 0],
-        translateX : [function() { return anime.random(-360, 0); }, 0],
-        opacity: [0, 1],
-        filter: {
-        value: ["blur(15px)", "blur(0px)"],
-        duration: 2000
-        },
-        duration: 10000,
-        elasticity: 300,
-        delay: function(el, i) {
-          return 35 * (i+1)
-        },
-        update: function(anim) {
-          // console.log(anim.currentTime + 'ms'); // Get current animation time with `myAnimation.currentTime`, return value in ms.
-          // console.log(anim.progress + '%'); // Get current animation progress with `myAnimation.progress`, return value in %
-        },
-        begin: function(anim, target) {
-          console.log(anim.began); // true after 1000ms
-        }
-    });
-    </script>
+<!--ヘッダー画像のテキストアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/animation_for_guide.js') }}"></script>
 
 <!-- ブラウザバッグ禁止コード 本番反映時-->
 <!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->

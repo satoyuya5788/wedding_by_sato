@@ -1,59 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">  
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>八芳園～招待状～</title>
-
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- テキストアニメーション↓ -->
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>  
-  
-
-  <!-- Custom styles for this template -->
-  <link href="{{ asset('css/one-page-wonder.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/index.css') }}" rel="stylesheet">
-
-  <!-- ↓AOS -->
-  <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
-
-  <!-- フォントSP版対応 -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">  
-  
-  <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.textAnimation.min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.textillate.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.fittext.js') }}"></script>
-  
-  
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  
-  <script type="text/javascript" src="{{ asset('js/index_jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery.raty.js') }}"></script>
-
-    <!-- テキストアニメーション↓ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
-
-  
-  <!-- スクロールアニメーション↓ -->
-  <script type="text/javascript" src="{{ asset('js/aos.js') }}"></script>
-</head>
-
+@include('site_header')
 <body>
 
 
@@ -255,92 +202,19 @@
     @endif
 
   <!-- Footer -->
-  <footer class="py-3 bg-black">
-    <div class="container-fluid">
-      <p class="m-0 text-center text-white small">Copyright &copy; sato yuya 2022</p>
-    </div>
-  </footer>
+  @include('footer')
 
-<script>
-    function starMaker(n) {
-    var star = document.createElement("div");
-    console.log(star);
-    
-    star.className = "star";
-    star.textContent = "★";
-    for(var i = 0; i < n; i++) {
-        starSet(star);
-    }
-}
-//星のセッティングをする関数。
-function starSet(clone) {
-    var starClone = clone.cloneNode(true);
-    var starStyle = starClone.style;
+<!-- 背景に星を降らせるアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/star.js') }}"></script>
 
-    //星の位置（left）、アニメーションの遅延時間（animation-delay）、サイズ（font-size）をランダムで指定
-    starStyle.left = 100 * Math.random() + "%";
-    starStyle.animationDelay = 15 * Math.random() + "s";
-    starStyle.fontSize = ~~(8 * Math.random() + 2) + "px";
-    document.body.appendChild(starClone);
+<!--スクロールアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
-    //星一つのアニメーションが終わったら新しい星を生成
-    starClone.addEventListener("animationend", function() {
-        this.parentNode.removeChild(this);
-        var star = document.createElement("div");
-        star.className = "star";
-        star.textContent = "★";
-        starSet(star);
-    }, false)
-}
-//使用例。星を50個ふらせます。
-starMaker(60);
-</script>
-
-<script>
-    AOS.init();
-</script>
-
-<script>
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2000,
-    delay: (el, i) => 300 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 9000
-  });
-
-var textWrapper = document.querySelector('.ml4');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter webfont'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml4 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 1500,
-    delay: (el, i) => 300 * (i+1)
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 9000
-  });
-</script>
+<!--ヘッダー画像のテキストアニメーションを読み込み -->
+<script type="text/javascript" src="{{ asset('js/animation_for_index.js') }}"></script>
 
 <!-- ブラウザバッグ禁止コード 本番反映時-->
 <!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->
-
 
 </body>
 </html>
