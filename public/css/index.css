@@ -307,6 +307,28 @@ canvas{
     margin: 0; 
     padding: 0;
 }
+.box_msg_footer {
+    /* box-shadow: 20px 20px 20px #8B4513;
+    border: double 10px #e2d06e; */
+    /* font-size: 2rem; */
+}
+.box_msg_footer::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image: url("../img/pexels-henry-&-co-2341290.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_msg_footer p {
+    margin: 0; 
+    padding: 0;
+}
 
 
 /* .bg-dairiseki { 
@@ -708,4 +730,10 @@ canvas{
     transform: translateZ(0); /*for older browsers*/
     will-change: transform;
 
+}
+
+.bg-silver{
+    /* background-color: #eaeaea; */
+    box-shadow: 8px 8px 8px #ddd8d8;
+	background: linear-gradient(0deg, #bdbbb9 0%, #cccbc8 45%, #faf9f4 70%, #c5c4c1 85%, #a5a4a1 90% 100%); 
 }

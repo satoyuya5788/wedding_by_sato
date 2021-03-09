@@ -108,7 +108,8 @@
         <div class="container mt-5 bg-gradient p-5">
             <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
-            <p class="fontstyle" style="color: white; font-size: 1.6rem;">八芳園</p>
+                <p class="fontstyle mb-4" style="color: white; font-size: 1.8rem; text-align:center;">～式場案内～</p>
+                <p class="fontstyle" style="color: white; font-size: 1.6rem;">八芳園</p>
                 <br>
                 <p class="fontstyle" style="color: white; font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
                 <br>
@@ -123,11 +124,14 @@
                 <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
                 <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
                 <br>
-                <div class="arrow" style="margin:0 auto">
+                <div class="arrow mb-4" style="margin:0 auto">
                     <div class="down"> </div>
                 </div>
-                <a href="https://www.happo-en.com/access/" target="_blank" class="p-5 h3" style="white-space: nowrap; ">
-                <p style="text-align:center; color:aqua;" class="text_link_under fontstyle">アクセスの詳細</p></a>
+                <div class="text-center">
+                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem">
+                    アクセスの詳細
+                    </a>
+                </div>
           </div>
       </div>
     </div>
