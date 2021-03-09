@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'webfont';
+    src: url("../css/ShipporiMinchoB1-Regular.ttf") format('ttf');
+}
+.webfont{
+    font-family: 'Shippori Mincho B1', serif;
+}
+body {
+    width: 0 auto;
+    font-family: 'Shippori Mincho B1', serif;
+}
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+.harf-input {
+    width: 48%;
+    float:left;
+}
+.one-third-input {
+    width: 30%;
+    float:left;
+}
+.harf-post-input {
+    width: 42%;
+    float:left;
+}
+input::placeholder {
+   font-size: 1em;
+   color: red;
+}
+
+.form-control::placeholder{
+  color: #cccccc;
+}
+
+th,td {
+    text-align:center;
+}
+
+ul {
+  list-style: none;
+}

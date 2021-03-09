@@ -3,7 +3,7 @@
 @section('title', '招待状')
 @section('content')
 
-    <section class="mt-5 p-2 pb-5">
+    <section class="mt-1 p-2 pb-5">
         <div class="container mt-5 bg-dairiseki2 " data-aos="fade-in" data-aos-delay="70" data-aos-duration="800" data-aos-offset="100">
             <div class="row align-items-center text-center pt-5">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">

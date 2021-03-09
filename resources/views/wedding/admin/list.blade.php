@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 col-xs-12" >
         @if($humanFlg == 1)
-        <h4 class="text-info" style="text-align:center;">参加者一覧(<span class="text-danger">ゆうや</span> )</h4>
+        <h4 class="text-info " style="text-align:center;">参加者一覧(<span class="text-danger">ゆうや</span> )</h4>
 
 
         <form method="post" action="{{ url('admin/logout') }}">
