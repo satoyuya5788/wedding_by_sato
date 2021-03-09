@@ -1,4 +1,4 @@
-<section class="mt-5 p-2 mb-5" data-aos="fade-down" data-aos-delay="50" data-aos-duration="800" data-aos-offset="400">
+<section class="p-2 mb-5" data-aos="fade-down" data-aos-delay="50" data-aos-duration="800" data-aos-offset="400">
         <div class="container mt-5 w-100 h-100">
       
           <div class="col-xs-12 order-lg-1 col-lg-12 bg-white" style="box-shadow: 20px 10px 20px #cccccc; font-size:1.5rem">

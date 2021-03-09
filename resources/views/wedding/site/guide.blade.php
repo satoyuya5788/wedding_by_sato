@@ -29,18 +29,18 @@
   
     <section class="mt-4 p-4">
         <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
-            <div class="row align-items-center text-center pt-1 pb-1">
-                <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text" >
+            <div class="row align-items-center text-center">
+                <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-1 pb-1">
                     <h2><span class="event-msg gold">Events</span></h2>
                     <p>
-                        <h3 class="event-msg-1 gold">WEDDING CEREMONY
+                        <div class="event-msg-1 gold">WEDDING CEREMONY
                             <br>
                             <br>
                             <br>
-                            <strogn style="font-size: 2.3rem;"class="mt-5">挙式</strogn>
-                        </h3>
+                            <strogn style="font-size: 2.3rem;">挙式</strogn>
+                        </div>
                     </p>
-                    <p style="font-size:1.8rem" class="mt-5">2022.5.29 sun</p>
+                    <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                     <p style="font-size:1.8rem">13:15</p>
                     <p style="font-size:1.2rem">受付時間 13:00</p>
                 </div>
@@ -50,18 +50,18 @@
 
     <section class="mt-4 p-4 mb-5">
         <div class="container mt-5 mb-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
-        <div class="row align-items-center text-center pt-1 pb-1">
-            <div class="col-xs-12 order-lg-1 col-lg-12 ">
+        <div class="row align-items-center text-center">
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-1 pb-1">
                 <h2><span class="event-msg pink_gold">Events</span></h2>
                 <p>
-                    <h3 class="event-msg-1 pink_gold">WEDDING CEREMONY
+                    <div class="event-msg-1 pink_gold">WEDDING CEREMONY
                         <br>
                         <br>
                         <br>
                         <strong style="font-size: 2.3rem;">披露宴</strong>
-                    </h3>
+                    </div>
                 </p>
-                <p style="font-size:1.8rem" class="mt-5">2022.5.29 sun</p>
+                <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                 <p style="font-size:1.8rem">13:15</p>
                 <p style="font-size:1.2rem">受付時間 13:00</p>
             </div>
@@ -69,15 +69,15 @@
         </div>
     </section>
 
-<section class="mt-5 p-2">
-    <div class="container bg-countdown p-4" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+<section class="mt-5 p-4">
+    <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center" >
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
                 @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00'))
-                <span style="background-color: black; opacity:0.7; font-size: 3rem; white-space: nowrap;">count down</span>
+                <span style="background-color: black; opacity:0.7; font-size: 2.5rem; white-space: nowrap;">count down</span>
                 <br>
                 <br>
-                <span style="background-color: black; opacity:0.7; font-size: 2rem;">to 2020.5.29</span>
+                <span style="background-color: black; opacity:0.7; font-size: 1.8rem;">to 2020.5.29</span>
                 <br>
                 <br>
                 <div class="mt-5 p-2" style="background-color: black; opacity:0.7; text-align: center; white-space: nowrap; width: 100%">
