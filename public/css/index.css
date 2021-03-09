@@ -54,7 +54,7 @@ input::placeholder {
     font-style: italic;
 }
 .event-msg {
-    font-size:3rem;
+    font-size:2rem;
     color:#CC3366; 
     font-family: 'Shippori Mincho B1', serif;
 }
@@ -62,7 +62,7 @@ input::placeholder {
   color: #cccccc;
 }
 .event-msg-1 {
-    font-size:2rem;
+    font-size:1.4rem;
     color:#CC3399; 
     font-family: 'Shippori Mincho B1', serif;
 }
@@ -341,9 +341,6 @@ canvas{
   box-shadow: 20px 20px 20px #ddd8d8; 
  } */
 
-.bg-dairiseki{
-    box-shadow: 20px 20px 20px #ddd8d8;
-}
 .bg-dairiseki::before {
     content:"";
     position:fixed;
@@ -355,7 +352,8 @@ canvas{
     background-image:url("../img/bg_dairiseki_1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    /* box-shadow: 20px 20px 20px #ddd8d8; */
 }
 .bg-dairiseki-text {
     display:  inline-block;
