@@ -18,25 +18,23 @@
   
     @if(session("simple_auth")[1] === 1 || $page === 1)
     <form method="post" action="{{ url('logout') }}">
-    @csrf 
-    <input class="bg-white" type="submit" value="ログアウト" />
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    
-    <div class="m-1 sticky-top p-1" style="text-align: right;">
+    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
+    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
+    <div class="m-1 p-1" style="text-align: center;">
         <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] === 2 || $page === 2)
     <form method="post" action="{{ url('logout') }}">
-    @csrf 
-    <input class="bg-white" type="submit" value="ログアウト" />
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    
-    
     <div class="m-1 sticky-top p-1" style="text-align: right;">
         <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
     </div>
     @endif
-  
 
     <section  class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="10" data-aos-duration="3000" data-aos-offset="200">
         <div class="container box_msg" id="msg" >
@@ -188,11 +186,34 @@
     </div>
   </section>
 
+
+    <!-- 本来はココは使いたくないが、スティッキー問題が解決できないため -->
+    <!-- もし解決できたら、トップのスティッキーを活かして、ここを丸々削除 -->
+    @if(session("simple_auth")[1] === 1 || $page === 1)
+    <form method="post" action="{{ url('logout') }}">
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
+    </form>
+    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
+    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
+    <div class="mb-5 p-1" style="text-align: center;">
+        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
+    </div>
+    @elseif(session("simple_auth")[1] === 2 || $page === 2)
+    <form method="post" action="{{ url('logout') }}">
+        @csrf 
+        <input class="bg-white" type="submit" value="ログアウト" />
+    </form>
+    <div class="mb-5 p-1" style="text-align: center;">
+        <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
+    </div>
+    @endif
+    
+  
     @if(session("simple_auth")[1] === 0 && $page === 0)
     <!-- 登録フォーム↓長いのでinclude -->
     @include('wedding.site.register_form')
-
-
+    
     @else
     <section style="border: 5px double white;" class="m-3 p-2">
         <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="margin:0 auto;">
@@ -201,7 +222,6 @@
             <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.3rem;">直接ご連絡ください。</p>
         </div>
     </section>
-
     @endif
 
   <!-- Footer -->
