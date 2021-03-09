@@ -58,7 +58,7 @@
             @foreach ($userData as $user)
             <tr>
                 <td>{{ $user->id }}</td>
-                <td>{{ $user->name }}</td>
+                <td style="font-weight:bold;">{{ $user->name }}</td>
                 @if($user->page_flg === 0)
                 <td class="page" style="font-size:1.1rem; color:red;">未回答</td>
                 @elseif($user->page_flg === 1)

@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 col-xs-12" >
         @if($humanFlg == 1)
-        <h4 class="text-info " style="text-align:center;">参加者一覧(<span class="text-danger">ゆうや</span> )</h4>
+        <p class="text-info h2" style="text-align:center;">参加者一覧(ゆうや)</p>
 
 
         <form method="post" action="{{ url('admin/logout') }}">
@@ -22,7 +22,7 @@
             </div>
         </div>
         @elseif($humanFlg == 2)
-        <h4 class="text-info" style="text-align:center;">参加者一覧(<span class="text-danger">さとこ</span> )</h4>
+        <p class="text-info h2" style="text-align:center;">参加者一覧(さとこ)</p>
         <div class="h4" style="text-align: center;">
             <div>
                 出席<span class="text-danger" style="font-size:2rem;">{{ $attendCount + $partnerCount }}</span>人:

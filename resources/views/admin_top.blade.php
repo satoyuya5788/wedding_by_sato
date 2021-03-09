@@ -3,12 +3,12 @@
 @section('title', '招待状')
 @section('content')
 
-    <section class="mt-1 p-2 pb-5">
+    <section class="">
         <div class="container mt-5 bg-dairiseki2 " data-aos="fade-in" data-aos-delay="70" data-aos-duration="800" data-aos-offset="100">
-            <div class="row align-items-center text-center pt-5">
+            <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">
                     @if ($errors->any())
-                    <div style="color:red; font-size:1.5rem;">
+                    <div style="color:red; font-size:1.3rem;">
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -20,16 +20,17 @@
                     <form method="post" action="{{ route('admin_login') }}">
                     @csrf 
 
-                    <div class="form-group mt-5" >
-                        <h2 class="mb-3"><span class="pink_gold" style="font-style: italic;">出席情報管理ログイン画面</span></h2>
-                        <label for="name" class="mt-3" style="font-size:2.5rem;">
+                    <div class="form-group" >
+                        <p style="font-size:1.8rem; font-weight:bold;">出席情報管理</p>
+                        <p class="mb-3" style="font-size:1.8rem; font-weight:bold;">ログイン画面</p>
+                        <label for="name" class="mt-3" style="font-size:1.6rem;">
                             ユーザーID
                         </label>
                         <div class="row">
 
                             <input id="admin_user" style="text-align:center;" name="admin_user" class="form-control shadow-lg col-xs-12 bg-white rounded center-block" value="{{ old('admin_user') }}" type="text" >
                         </div>
-                        <label for="name" class="" style="font-size:2.5rem;">
+                        <label for="name" class="" style="font-size:1.6rem;">
                             パスワード
                         </label>
                         <div class="row">
