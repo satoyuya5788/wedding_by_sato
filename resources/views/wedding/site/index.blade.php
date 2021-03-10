@@ -19,10 +19,8 @@
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
-    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
     <div class="m-1 p-1" style="text-align: center;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-primary text-nowrap">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] === 2 || $page === 2)
     <form method="post" action="{{ url('logout') }}">
@@ -30,7 +28,7 @@
         <input class="bg-white" type="submit" value="ログアウト" />
     </form>
     <div class="m-1 sticky-top p-1" style="text-align: right;">
-        <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
+        <a href="/site/wedding/imagehappouen" class="btn btn-primary text-nowrap">前撮りの写真へ</a>
     </div>
     @endif
 
@@ -192,10 +190,8 @@
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    <!-- 要素が浮く問題から、いったんスティッキーを使わない回避策に -->
-    <!-- <div class="m-1 sticky-top p-1" style="text-align: right;"> -->
     <div class="mb-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-primary text-nowrap">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] === 2 || $page === 2)
     <form method="post" action="{{ url('logout') }}">
@@ -203,7 +199,7 @@
         <input class="bg-white" type="submit" value="ログアウト" />
     </form>
     <div class="mb-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/imagehappouen" class="btn btn-primary">前撮りの写真へ</a>
+        <a href="/site/wedding/imagehappouen" class="btn btn-primary text-nowrap">前撮りの写真へ</a>
     </div>
     @endif
     

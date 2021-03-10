@@ -23,8 +23,8 @@
         <input type="submit" value="ログアウト" />
         </form>
 
-        <div class="m-1 sticky-top p-1" style="text-align: right;">
-            <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
+        <div class="m-5 p-1" style="text-align: center;">
+            <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
         </div>
     @endif
   
@@ -34,7 +34,7 @@
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-1 pb-1">
                     <h2><span class="event-msg gold">Events</span></h2>
                     <p>
-                        <div class="event-msg-1 gold">WEDDING CEREMONY
+                        <div class="event-msg-1 gold text-nowrap">WEDDING CEREMONY
                             <br>
                             <br>
                             <br>
@@ -78,7 +78,7 @@
                 <span style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
                 <br>
                 <br>
-                <span style="font-size: 1.8rem;">to 2020.5.29</span>
+                <span style="font-size: 1.9rem;">to 2020.5.29</span>
                 <br>
                 <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="mt-5">
                 <br>
@@ -113,7 +113,7 @@
                 <p class="fontstyle mb-4" style="font-size: 1.8rem; text-align:center;">～式場案内～</p>
                 <p class="fontstyle" style="font-size: 1.6rem;">八芳園</p>
                 <br>
-                <p class="fontstyle" style="font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
+                <p class="fontstyle" style="font-size: 1.2rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
                 <br>
                 <p class="fontstyle" style="white-space: nowrap; ">03-3443-3111</p>
                 <br>
@@ -130,10 +130,21 @@
                     <div class="down"> </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic;">
+                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic; border:solid 1px black;">
                     アクセスの詳細
                     </a>
                 </div>
+
+                @if(session("simple_auth"))
+                    <form method="post" action="{{ url('logout') }}">
+                    @csrf 
+                    <input type="submit" value="ログアウト" />
+                    </form>
+
+                    <div class="m-5 p-1" style="text-align: center;">
+                        <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
+                    </div>
+                @endif
           </div>
       </div>
     </div>
