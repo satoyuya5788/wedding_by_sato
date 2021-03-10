@@ -80,6 +80,7 @@
                 <br>
                 <span style="font-size: 1.8rem;">to 2020.5.29</span>
                 <br>
+                <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="mt-5">
                 <br>
                 <div class="mt-5 p-2" style="text-align: center; white-space: nowrap; width: 100%">
                     <div style="font-size:1.5rem"><span style=" font-size: 2.5rem;" class="countDownText" id="countDown_date"></span>days
