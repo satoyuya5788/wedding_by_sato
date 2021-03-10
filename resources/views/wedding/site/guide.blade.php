@@ -126,11 +126,8 @@
                 <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
                 <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
                 <br>
-                <div class="arrow mb-4" style="margin:0 auto">
-                    <div class="down"> </div>
-                </div>
                 <div class="text-center">
-                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic; border:solid 1px black;">
+                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic;">
                     アクセスの詳細
                     </a>
                 </div>

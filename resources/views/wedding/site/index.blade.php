@@ -163,20 +163,6 @@
                 <a href="https://www.google.co.jp/maps/place/%E5%85%AB%E8%8A%B3%E5%9C%92/@35.6381947,139.7257702,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b0131752fdb:0x1329e959bd91ac40!8m2!3d35.6381947!4d139.7279589" target="_blank" class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
                 <p style="text-align:center; font-size: 1.5rem;">GoogleMapで見る</p></a>
                     <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:300px"></iframe></div>
-                <br>
-                <br>
-                <br>
-                <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
-                <p class="h6 mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
-                <br>
-                <div class="arrow mb-4" style="margin:0 auto">
-                    <div class="down"> </div>
-                </div>
-                <div class="text-center">
-                    <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic;">
-                    アクセスの詳細
-                    </a>
-                </div>
           </div>
       </div>
     </div>
