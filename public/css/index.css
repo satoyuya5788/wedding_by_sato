@@ -165,7 +165,7 @@ input::placeholder {
 	font-weight:bold;
 	color: transparent;
 	/* background: linear-gradient(0deg, #210b9e 0%, #5f75da 45%, #c2c3ec 70%, #7480e9 85%, #2815db 90% 100%);  */
-	background: linear-gradient(0deg, #212121 0%, #706666 60%, #c7c2c2 70%, #858383 80%, #212121 90% 100%);  
+	background: linear-gradient(0deg, #212121 0%, #a8a1a1 60%, #807d7d 70%, #adaaaa 80%, #212121 90% 100%);  
 	-webkit-background-clip: text;
   }
   .pink_gold{
@@ -380,7 +380,7 @@ canvas{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 20px 20px 20px #e4dfdf;
+    box-shadow: 20px 20px 20px #f8f4e0;
 }
 /* .bg_guide_3::before {
     content:"";
@@ -457,7 +457,7 @@ canvas{
   
 
 .bg-countdown {
-  box-shadow: 20px 20px 20px #d3f5d6;
+  box-shadow: 20px 20px 20px #f4f775;
 }
 .bg-countdown::before {
     content:"";
@@ -467,17 +467,19 @@ canvas{
     z-index:-1;
     width:100%;
     height:100%;
-    background-image: url("../img/nature-forest-trees-path.jpg");
+    background-image: url("../img/3848706_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
 }
 .bg-countdown-text {
     /* border:  solid 1px; */
     display:  inline-block;
     padding:10%;
-        color: white;
 
+        /* color: white; */
 }
 
 .bg-map {

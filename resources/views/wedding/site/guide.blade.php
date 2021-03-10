@@ -73,31 +73,31 @@
 <section class="mt-5 p-4">
     <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center" >
-            <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
+            <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text dark_gold" style="font-style: italic;">
                 @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00'))
-                <span style="background-color: black; opacity:0.7; font-size: 2.5rem; white-space: nowrap;">count down</span>
+                <span style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
                 <br>
                 <br>
-                <span style="background-color: black; opacity:0.7; font-size: 1.8rem;">to 2020.5.29</span>
+                <span style="font-size: 1.8rem;">to 2020.5.29</span>
                 <br>
                 <br>
-                <div class="mt-5 p-2" style="background-color: black; opacity:0.7; text-align: center; white-space: nowrap; width: 100%">
+                <div class="mt-5 p-2" style="text-align: center; white-space: nowrap; width: 100%">
                     <div style="font-size:1.5rem"><span style=" font-size: 2.5rem;" class="countDownText" id="countDown_date"></span>days
                     <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_hours"></span>hours</div>
                 </div>
-                <div class="mt-5 -2" style="background-color: black; opacity:0.7; text-align: center; white-space: nowrap;">
+                <div class="mt-5 -2" style="text-align: center; white-space: nowrap;">
                     <div style=" font-size:1rem"><span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_minutes"></span>minutes
                     <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_seconds"></span>seconds</div>
                 </div>
                 @else
-                <span style="background-color: black; opacity:0.7; font-size: 3rem; white-space: nowrap;">count down</span>
+                <span style="font-size: 3rem; white-space: nowrap;">count down</span>
                 <br>
                 <br>
-                <span style="background-color: black; opacity:0.7; font-size: 2rem;">to 2020.5.29</span>
+                <span style="font-size: 2rem;">to 2020.5.29</span>
                 <br>
                 <br>
                 <br>
-                <span style="background-color: black; opacity:0.7; font-size: 2rem;">~結婚式当日~</span>
+                <span style="font-size: 2rem;">~結婚式当日~</span>
                 <br>
                 @endif
             </div>
