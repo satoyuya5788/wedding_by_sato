@@ -27,7 +27,6 @@ body {
     z-index:-1;
     width:100%; 
     height:100%;
-    /* background-image:url("../img/4270904_m.jpg"); */
     background-image:url("../img/4263534_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -166,7 +165,7 @@ input::placeholder {
 	font-weight:bold;
 	color: transparent;
 	/* background: linear-gradient(0deg, #210b9e 0%, #5f75da 45%, #c2c3ec 70%, #7480e9 85%, #2815db 90% 100%);  */
-	background: linear-gradient(0deg, #212121 0%, #424242 60%, #FAFAFA 70%, #424242 80%, #212121 90% 100%);  
+	background: linear-gradient(0deg, #212121 0%, #706666 60%, #c7c2c2 70%, #858383 80%, #212121 90% 100%);  
 	-webkit-background-clip: text;
   }
   .pink_gold{
@@ -376,7 +375,14 @@ canvas{
     background-size: cover;
     box-shadow: 20px 20px 20px #f79f9f;
 }
-.bg_guide_3::before {
+.bg_guide_3 {
+    background-image:url("../img/4270904_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 20px #e4dfdf;
+}
+/* .bg_guide_3::before {
     content:"";
     position:fixed;
     top:0;
@@ -387,9 +393,9 @@ canvas{
     background-image:url("../img/4270904_m.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:80% auto;
+    background-size: cover;
     box-shadow: 20px 20px 20px #f79f9f;
-}
+} */
 
 
 

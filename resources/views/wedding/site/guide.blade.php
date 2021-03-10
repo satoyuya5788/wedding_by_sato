@@ -105,25 +105,25 @@
     </div>
 </section>
 
-<section class="mt-2 p-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
+<section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
         <div class="container mt-5 bg_guide_3 p-5">
             <div class="row align-items-center text-center">
-            <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
-                <p class="fontstyle mb-4" style="color: white; font-size: 1.8rem; text-align:center;">～式場案内～</p>
-                <p class="fontstyle" style="color: white; font-size: 1.6rem;">八芳園</p>
+            <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text dark_gold" style="text-align: left; margin:0 auto;">
+                <p class="fontstyle mb-4" style="font-size: 1.8rem; text-align:center;">～式場案内～</p>
+                <p class="fontstyle" style="font-size: 1.6rem;">八芳園</p>
                 <br>
-                <p class="fontstyle" style="color: white; font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
+                <p class="fontstyle" style="font-size: 1.6rem; white-space: nowrap;">東京都港区白金台1-1-1</p>
                 <br>
-                <p class="fontstyle" style="white-space: nowrap; color: white;">03-3443-3111</p>
+                <p class="fontstyle" style="white-space: nowrap; ">03-3443-3111</p>
                 <br>
                 <a href="https://www.google.co.jp/maps/place/%E5%85%AB%E8%8A%B3%E5%9C%92/@35.6381947,139.7257702,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b0131752fdb:0x1329e959bd91ac40!8m2!3d35.6381947!4d139.7279589" target="_blank" class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
                 <p style="text-align:center; font-size: 1.5rem;">GoogleMapで見る</p></a>
-                <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:500px"></iframe></div>
+                <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:300px"></iframe></div>
                 <br>
                 <br>
                 <br>
-                <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
-                <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
+                <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
+                <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
                 <br>
                 <div class="arrow mb-4" style="margin:0 auto">
                     <div class="down"> </div>
