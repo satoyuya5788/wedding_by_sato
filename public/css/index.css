@@ -16,6 +16,23 @@ body {
     overflow-x: hidden;
 }
 
+/* .bg-bg_body{
+    box-shadow: 20px 20px 20px #ddd8d8;
+} */
+.guide_body::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    /* background-image:url("../img/4270904_m.jpg"); */
+    background-image:url("../img/4263534_s.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 section{
     width: auto;
     height: auto;
@@ -330,16 +347,51 @@ canvas{
     padding: 0;
 }
 
+.bg_guide_1::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image:url("../img/4053190_s.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 20px #ddd8d8;
+}
 
-/* .bg-dairiseki { 
-  background-image: url("../img/pexels-scott-webb-2824173.jpg");
-  background-image: url("../img/line_1189422905858979.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
-  box-shadow: 20px 20px 20px #ddd8d8; 
- } */
+.bg_guide_2::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image:url("../img/4053185_l.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 20px #f79f9f;
+}
+.bg_guide_3::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image:url("../img/4270904_m.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:80% auto;
+    box-shadow: 20px 20px 20px #f79f9f;
+}
+
+
 
 .bg-dairiseki{
     box-shadow: 20px 20px 20px #ddd8d8;
@@ -352,7 +404,7 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/bg_dairiseki_1.jpg");
+    background-image:url("../img/4270904_m.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,7 +443,7 @@ canvas{
     z-index:-1;
     width:100%;
     height:100%;
-    background-image: url("../img/51QbjxlaFiL._AC_SX466_.jpg");
+    background-image: url("../img/bg_dairiseki_1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

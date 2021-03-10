@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 @include('site_header')
-<body>
-<video src="{{ asset('img/Pexels Videos 2098988.mp4') }}" autoplay playsinline muted loop></video>
+<body class="guide_body">
+<!-- <body> -->
+<!-- <video src="{{ asset('img/Pexels Videos 2098988.mp4') }}" autoplay playsinline muted loop></video> -->
   
     <section class="">
     <div class="row bg-top2 image-fuild">
@@ -28,7 +29,7 @@
     @endif
   
     <section class="mt-4 p-4">
-        <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container bg_guide_1 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-1 pb-1">
                     <h2><span class="event-msg gold">Events</span></h2>
@@ -49,7 +50,7 @@
     </section>
 
     <section class="mt-4 p-4 mb-5">
-        <div class="container mt-5 mb-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 pt-1 pb-1">
                 <h2><span class="event-msg pink_gold">Events</span></h2>
@@ -104,8 +105,8 @@
     </div>
 </section>
 
-<section class="mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
-        <div class="container mt-5 bg-gradient p-5">
+<section class="mt-2 p-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
+        <div class="container mt-5 bg_guide_3 p-5">
             <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
                 <p class="fontstyle mb-4" style="color: white; font-size: 1.8rem; text-align:center;">～式場案内～</p>
