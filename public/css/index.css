@@ -400,21 +400,6 @@ canvas{
     background-size: cover;
     box-shadow: 20px 20px 20px #f8f4e0;
 }
-/* .bg_guide_3::before {
-    content:"";
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
-    width:100%; 
-    height:100%;
-    background-image:url("../img/4270904_m.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 20px 20px 20px #f79f9f;
-} */
-
 
 
 .bg-dairiseki{
@@ -467,7 +452,7 @@ canvas{
     z-index:-1;
     width:100%;
     height:100%;
-    background-image: url("../img/bg_dairiseki_1.jpg");
+    background-image: url("../img/4493032_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

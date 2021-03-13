@@ -4,7 +4,7 @@
 @section('content')
 
     <section class="">
-        <div class="container mt-5 bg-dairiseki2 " data-aos="fade-in" data-aos-delay="70" data-aos-duration="800" data-aos-offset="100">
+        <div class="container mt-5" data-aos="fade-in" data-aos-delay="70" data-aos-duration="800" data-aos-offset="100">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">
                     @if ($errors->any())

@@ -149,6 +149,31 @@
     </div>
   </section>
 
+@if(session("simple_auth")[0] === "さとうみえこ" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
+  <section class="mt-4 p-4 mb-5">
+        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="row align-items-center text-center">
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
+                <h2><span class="event-msg pink_gold">Events</span></h2>
+                <p>
+                    <div class="event-msg-1 pink_gold">WEDDING CEREMONY
+                        <br>
+                        <br>
+                        <br>
+                        <strong style="font-size: 2.3rem;">披露宴</strong>
+                    </div>
+                </p>
+                <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
+                <p style="font-size:1.8rem">13:15</p>
+                <p style="font-size:1.2rem">受付時間 13:00</p>
+            </div>
+        </div>
+        </div>
+    </section>
+@endif
+
+  
+
   <!-- Footer -->
   @include('footer')
 
