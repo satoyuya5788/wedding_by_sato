@@ -19,7 +19,6 @@ class SiteWeddingController extends Controller
      */
     public function showCreate()
     {
-        return abort(404, 'hello');
         return view('wedding.site.index');
     }
     
