@@ -5,7 +5,7 @@
 
 <video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.8;"></video>
   
-    @if(session("simple_auth")[0] === "さとうみえこ" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
+    @if(session("simple_auth")[0] === "さとうとしお" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ" || session("simple_auth")[0] === "ゆかわじゅんじ" || session("simple_auth")[0] === "うえぶせさとし")
         <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
             <a href="/site/wedding/guidehappouen" class="btn btn-primary mr-1">案内状へ戻る</a>
         </div>
@@ -37,19 +37,19 @@
         </div>
     </section>
 
-        @if(session("simple_auth"))
-            <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-                <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
-            </div>
-        @endif
+    @if(session("simple_auth"))
+        <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
+            <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
+        </div>
+    @endif
     @endif
 
-        <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
-        <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">写真を長押しして下さい</p>
-        <br>
-        <div class="arrow" style="margin:0 auto">
-            <div class="down"> </div>
-        </div>
+    <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
+    <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">写真を長押しして下さい</p>
+    <br>
+    <div class="arrow" style="margin:0 auto">
+        <div class="down"> </div>
+    </div>
 
     <section class="p-2 pt-5">
         <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">

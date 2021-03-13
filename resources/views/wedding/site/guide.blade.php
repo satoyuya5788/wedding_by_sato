@@ -72,7 +72,7 @@
         </div>
     </section>
 
-<section class="mt-5 p-4">
+<section class="mt-5 p-4 mb-4">
     <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center" >
             <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text dark_gold" style="font-style: italic;">
@@ -138,22 +138,82 @@
     </div>
   </section>
 
-@if(session("simple_auth")[0] === "さとうみえこ" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
+@if(session("simple_auth")[0] === "さとうとしお" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
 <section class="mt-4 p-4 mb-3">
     <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center">
             <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
-                <p>Dear</p>
-                <p style="font-size:1.5rem;">
-                    お父さん、お母さん
+            <p class="mb-3">Dear</p>
+                <p style="font-size:1.6rem;">
+                    お父さん
                 </p>
-                <p style="font-size:1.3rem;">
-                    圭介兄ちゃん、涼太兄ちゃん
+                <p style="font-size:1.6rem;">
+                    お母さん
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　圭介兄ちゃん
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　涼太兄ちゃん
                 </p>
                 <br>
+                <p style="font-size:1.3rem;" class="text-nowrap">
+                    前撮りの写真を送ります。
+                </p>
+                <p style="font-size:1.3rem;" class="text-nowrap">
+                    下からダウンロードしてね。
+                </p>
+                <div class="m-5 p-1" style="text-align: center;">
+                    <a href="/site/wedding/imagehappouen" class="btn btn-info text-nowrap">前撮りの写真へ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@elseif(session("simple_auth")[0] === "ゆかわじゅんじ")
+<section class="mt-4 p-4 mb-3">
+    <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="row align-items-center text-center">
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
+                <p class="mb-3">Dear</p>
+                <p style="font-size:1.6rem;">
+                    湯川純司 様
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　幸代 様
+                </p>
                 <br>
-                <p style="font-size:1.7rem;">
-                    家族だけに前撮りの写真を別で送るね～('ω')
+                <p style="font-size:1.4rem;">
+                    前撮りの写真を送ります。
+                </p>
+                <div class="m-5 p-1" style="text-align: center;">
+                    <a href="/site/wedding/imagehappouen" class="btn btn-info text-nowrap">前撮りの写真へ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@elseif(session("simple_auth")[0] === "うえぶせさとし")
+<section class="mt-4 p-4 mb-3">
+    <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="row align-items-center text-center">
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
+                <p class="mb-3">Dear</p>
+                <p style="font-size:1.6rem;">
+                    上伏智志 様
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　綾子 様
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　智遥 様
+                </p>
+                <p style="font-size:1.6rem;">
+                    　　智葉 様
+                </p>
+                <br>
+                <p style="font-size:1.4rem;">
+                    前撮りの写真を送ります。
                 </p>
                 <div class="m-5 p-1" style="text-align: center;">
                     <a href="/site/wedding/imagehappouen" class="btn btn-info text-nowrap">前撮りの写真へ</a>
