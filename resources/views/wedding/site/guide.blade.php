@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 @include('site_header')
-<body class="guide_body">
+<body class="body_guide">
 <!-- <body> -->
 <!-- <video src="{{ asset('img/Pexels Videos 2098988.mp4') }}" autoplay playsinline muted loop></video> -->
   

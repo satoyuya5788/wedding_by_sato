@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 @include('site_header')
-<body>
+<body class="body_index">
     <?php 
         $page = \App\Models\User::where('name', session('simple_auth')[0])->value('page_flg');
     ?>
