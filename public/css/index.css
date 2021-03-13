@@ -31,12 +31,7 @@
     z-index:-1;
     width:100%; 
     height:100%;
-    /* background-image:url("../img/4250520_l.jpg"); */
-    /* background-image:url("../img/4250521_m.jpg"); */
-
-    /* ↓濃いやつ */
-    background-image:url("../img/4263534_s.jpg");
-
+    background-image:url("../img/4263534_l.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -476,7 +471,7 @@ canvas{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.3);
+    background-color:rgba(255,255,255,0.2);
     background-blend-mode:lighten;
 }
 

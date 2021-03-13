@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 @include('site_header')
-<body body_nonparticipation>
+<body class="body_nonparticipation">
 
 <video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.8;"></video>
   
