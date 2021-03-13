@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 @include('site_header')
+
+<!-- 案内状専用のCSS読み込み！桜降らせるアニメーション！ -->
+<link href="{{ asset('css/bloom_guide.css') }}" rel="stylesheet">
+
 <body class="body_guide cherry-blossom-container">
 
     <section class="">
@@ -148,82 +152,9 @@
   <!-- Footer -->
   @include('footer')
 
-  <style>
-      .cherry-blossom-container {
-  position: relative;
-  overflow: scroll; /* ここのscrollが効かない */
-  height: 100%; /* コンテナの高さ */
-  width: 100%; /* コンテナの横幅 */
-}
+<!--桜降らせるJSを読み込み -->
+<script type="text/javascript" src="{{ asset('js/bloom_guide.js') }}"></script>
 
-/* 桜の花びらのスタイル */
-.petal {
-  position: absolute;
-  background-color: #ffc0cb; /* 花びらの色 */
-  border-radius: 150% 0 150% 0;
-  animation: animate-petal 30s linear;
-}
-
-.petal::after {
-  content: "";
-  position: absolute;
-  top: -14%;
-  left: -10%;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffc0cb;
-  border-radius: 150% 0 150% 0;
-  transform: rotate(15deg);
-}
-
-/* 花びらが降るアニメーション */
-@keyframes animate-petal {
-  0% {
-    top: 0;
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    top: 100%;
-    transform: rotate(3000deg);
-  }
-}
-  </style>
-  
-  <script>
-      window.addEventListener('DOMContentLoaded', () => {
-  // コンテナを指定
-  const section = document.querySelector('.cherry-blossom-container');
-
-  // 花びらを生成する関数
-  const createPetal = () => {
-    const petalEl = document.createElement('span');
-    petalEl.className = 'petal';
-    const minSize = 5;
-    const maxSize = 13;
-    const size = Math.random() * (maxSize + 1 - minSize) + minSize;
-    petalEl.style.width = `${size}px`;
-    petalEl.style.height = `${size}px`;
-    petalEl.style.left = Math.random() * innerWidth + 'px';
-    section.appendChild(petalEl);
-
-    // 一定時間が経てば花びらを消す
-  }
-
-  // 花びらを生成する間隔をミリ秒で指定
-  setInterval(createPetal, 300);
-});
-  </script>
-  
-  
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
