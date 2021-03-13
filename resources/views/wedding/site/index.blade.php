@@ -12,7 +12,7 @@
             <h1 class="ml3" style="font-size: 2.7rem;">Welcome</h1>
             <h1 class="ml4" style="font-size: 2.7rem; margin-top: 100px; padding-top:100px;  white-space: nowrap;">to our Wedding</h1>
         </div>
-  </section>   
+  </section>
   
     @if(session("simple_auth")[1] === 1 || $page === 1)
     <form method="post" action="{{ url('logout') }}">
@@ -27,7 +27,7 @@
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
     </form>
-    <div class="m-1 sticky-top p-1" style="text-align: right;">
+    <div class="m-1 p-1" style="text-align: center;">
         <a href="/site/wedding/imagehappouen" class="btn btn-primary text-nowrap">前撮りの写真へ</a>
     </div>
     @endif

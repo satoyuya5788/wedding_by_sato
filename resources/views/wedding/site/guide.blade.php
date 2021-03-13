@@ -133,46 +133,43 @@
                     アクセスの詳細
                     </a>
                 </div>
-
-                @if(session("simple_auth"))
-                    <form method="post" action="{{ url('logout') }}">
-                    @csrf 
-                    <input type="submit" value="ログアウト" />
-                    </form>
-
-                    <div class="m-5 p-1" style="text-align: center;">
-                        <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
-                    </div>
-                @endif
           </div>
       </div>
     </div>
   </section>
 
 @if(session("simple_auth")[0] === "さとうみえこ" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
-  <section class="mt-4 p-4 mb-5">
-        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+<section class="mt-4 p-4 mb-3">
+    <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center">
-            <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
-                <h2><span class="event-msg pink_gold">Events</span></h2>
-                <p>
-                    <div class="event-msg-1 pink_gold">WEDDING CEREMONY
-                        <br>
-                        <br>
-                        <br>
-                        <strong style="font-size: 2.3rem;">披露宴</strong>
-                    </div>
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
+                <p>Dear</p>
+                <p style="font-size:1.5rem;">
+                    お父さん、お母さん
                 </p>
-                <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
-                <p style="font-size:1.8rem">13:15</p>
-                <p style="font-size:1.2rem">受付時間 13:00</p>
+                <p style="font-size:1.3rem;">
+                    圭介兄ちゃん、涼太兄ちゃん
+                </p>
+                <br>
+                <br>
+                <p style="font-size:1.7rem;">
+                    家族だけに前撮りの写真を別で送るね～('ω')
+                </p>
+                <div class="m-5 p-1" style="text-align: center;">
+                    <a href="/site/wedding/imagehappouen" class="btn btn-info text-nowrap">前撮りの写真へ</a>
+                </div>
             </div>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 @endif
 
-  
+
+        @if(session("simple_auth"))
+            <div class="m-5 p-1" style="text-align: center;">
+                <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
+            </div>
+        @endif
 
   <!-- Footer -->
   @include('footer')

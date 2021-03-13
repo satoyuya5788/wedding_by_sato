@@ -3,44 +3,45 @@
 @include('site_header')
 <body body_nonparticipation>
 
-<video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.7;"></video>
+<video src="{{ asset('img/countDown_video.mp4') }}" autoplay playsinline muted loop style="opacity:0.8;"></video>
   
+    @if(session("simple_auth")[0] === "さとうみえこ" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
+        <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
+            <a href="/site/wedding/guidehappouen" class="btn btn-primary mr-1">案内状へ戻る</a>
+        </div>
+    @else
     <section class="mt-3 p-4 pt-2">
         <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200" >
             <div class="col-xs-12 order-lg-1 col-lg-12 text-center webfont" style="font-size:0.8rem; display:inline-block;" >
-                    <p class="thanks-msg">
-                    ご入力ありがとうございました。
-                    </p>
-                    <p class="thanks-msg">
-                    結婚式ではお会いできませんが、
-                    </p>
-                    <p class="thanks-msg">
-                    私たちのこれからを温かく見守ってくださるよう
-                    </p>
-                    <p class="thanks-msg" style="white-space: nowrap;">
-                    お願い申し上げます。
-                    </p>
-                    <br>
-                    <br>
-                    <p class="thanks-msg">
-                        心ばかりではございますが、
-                    </p>
-                    <p class="thanks-msg">
-                        前撮りの写真をお送りいたします。
-                    </p>
+                <p class="thanks-msg">
+                ご入力ありがとうございました。
+                </p>
+                <p class="thanks-msg">
+                結婚式ではお会いできませんが、
+                </p>
+                <p class="thanks-msg">
+                私たちのこれからを温かく見守ってくださるよう
+                </p>
+                <p class="thanks-msg" style="white-space: nowrap;">
+                お願い申し上げます。
+                </p>
+                <br>
+                <br>
+                <p class="thanks-msg">
+                    心ばかりではございますが、
+                </p>
+                <p class="thanks-msg">
+                    前撮りの写真をお送りいたします。
+                </p>
             </div>
         </div>
     </section>
 
-    @if(session("simple_auth"))
-        <form method="post" action="{{ url('logout') }}">
-        @csrf 
-        <input type="submit" value="ログアウト" />
-        </form>
-
-        <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-            <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
-        </div>
+        @if(session("simple_auth"))
+            <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
+                <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
+            </div>
+        @endif
     @endif
 
         <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
