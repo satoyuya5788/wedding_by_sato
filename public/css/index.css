@@ -592,7 +592,7 @@ canvas{
 
 
 .star {
-    animation: kirakira 8s linear;
+    animation: kirakira 12s linear;
     color:#CAA846;
     display: inline-block;
     height: 1em;

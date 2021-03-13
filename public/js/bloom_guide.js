@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
       // 一定時間が経てば花びらを消す
       setTimeout(() => {
         petalEl.remove();
-      }, 90000);
+      }, 60000);
     }
   
     // 花びらを生成する間隔をミリ秒で指定
