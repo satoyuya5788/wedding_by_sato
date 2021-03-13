@@ -7,7 +7,7 @@
   
     @if(session("simple_auth")[0] === "さとうとしお" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                 <p class="mb-3">Dear</p>
@@ -25,10 +25,10 @@
                     </p>
                     <br>
                     <p style="font-size:1.3rem;" class="text-nowrap">
-                        前撮りの写真を送ります。
+                        ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
-                        下からダウンロードしてね。
+                        写真を長押しして下さい。
                     </p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     </div>
     @elseif(session("simple_auth")[0] === "ゆかわじゅんじ")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                 <p class="mb-3">Dear</p>
@@ -54,7 +54,7 @@
                         ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
-                        写真を長押ししてください。
+                        写真を長押しして下さい。
                     </p>
                 </div>
             </div>
@@ -65,7 +65,7 @@
     </div>
     @elseif(session("simple_auth")[0] === "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                 <p class="mb-3">Dear</p>
@@ -86,7 +86,7 @@
                         ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
-                        写真を長押ししてください。
+                        写真を長押しして下さい。
                     </p>
                 </div>
             </div>
