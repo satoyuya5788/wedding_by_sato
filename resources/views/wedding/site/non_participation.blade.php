@@ -25,6 +25,15 @@
                     </p>
                     <br>
                     <p style="font-size:1.3rem;" class="text-nowrap">
+                        このページは
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        佐藤佑也様のご家族しか
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        閲覧できません。
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap mt-1">
                         ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
