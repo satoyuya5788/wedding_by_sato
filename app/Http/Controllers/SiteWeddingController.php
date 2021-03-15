@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRequest;
 use App\Models\Wedding;
+use App\Models\User;
 
 class SiteWeddingController extends Controller
 {
@@ -27,8 +28,8 @@ class SiteWeddingController extends Controller
      */
     public function executeStore(StoreRequest $request)
     {
-        $existJudge = $this->wedding->where('mail', $request->mail)->count();
-        if ($existJudge === 0) {
+    $judgeNewRegister = User::where('name', session('simple_auth')[0])->value('page_flg');
+        if ($judgeNewRegister === 0) {
             $registerdWeddingData = $this->wedding->storeWedding($request);
             if ($registerdWeddingData) {
                 if ($registerdWeddingData->attend == 1) {
@@ -38,12 +39,17 @@ class SiteWeddingController extends Controller
                 }
             }
             } else {
-                if ($request->attend == 1) {
-                    return view('wedding.site.guide');
-                } elseif ($request->attend == 0) {
-                    return view('wedding.site.non_participation');
-                }
-        }
+                dd('次は更新処理から！');
+                return redirect(route("error"));
+            }
         return abort(404);
+    }
+
+    /**
+     * 招待状を登録する
+     */
+    public function error()
+    {
+        return view('error');
     }
 }

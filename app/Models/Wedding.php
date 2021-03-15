@@ -202,7 +202,7 @@ class Wedding extends Model
             
             $registerWeddingData['created_at'] = date('Y/m/d');
             $registerWeddingData['updated_at'] = null;
-                        
+            
             $wedding = self::create($registerWeddingData); 
 
             if ($wedding->attend) {
