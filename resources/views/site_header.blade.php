@@ -1,5 +1,4 @@
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">  
     <meta name="description" content="">
@@ -15,7 +14,6 @@
 
     <!-- テキストアニメーション↓ -->
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>  
-
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/one-page-wonder.min.css') }}" rel="stylesheet">
@@ -34,10 +32,8 @@
     <script type="text/javascript" src="{{ asset('js/jquery.textillate.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.fittext.js') }}"></script>
 
-
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 
     <script type="text/javascript" src="{{ asset('js/index_jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
@@ -46,8 +42,6 @@
     <!-- テキストアニメーション↓ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
 
-
     <!-- スクロールアニメーション↓ -->
     <script type="text/javascript" src="{{ asset('js/aos.js') }}"></script>
-    
 </head>
