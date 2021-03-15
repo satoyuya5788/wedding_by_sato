@@ -192,8 +192,12 @@
  
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
-
+<?php
+    $page = \App\Models\User::where('name', session('simple_auth')[0])->value('page_flg');
+?>
+@if(session("simple_auth")[1] === 0 && $page === 2)
 <!-- ブラウザバッグ禁止コード 本番反映時-->
-<!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->
+<script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script>
+@endif
 </body>
 </html>
