@@ -205,18 +205,12 @@ class Wedding extends Model
                         
             $wedding = self::create($registerWeddingData); 
 
-
             if ($wedding->attend) {
                 User::where('id', $userId)->update(['page_flg' => 1]);
-                // $request->session()->flush();
-                // session()->put("simple_auth", [$username, 1]);
             }
             if (!$wedding->attend) {
                 User::where('id', $userId)->update(['page_flg' => 2]);
-                // $request->session()->flush();
-                // session()->put("simple_auth", [$username, 2]);
             }
-            // dd(session('simple_auth'),$username);
             DB::commit();
         } catch (\Exception $e) {
             DB::rollBack();
