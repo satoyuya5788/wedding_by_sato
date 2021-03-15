@@ -231,6 +231,5 @@
 
 <!-- ブラウザバッグ禁止コード 本番反映時-->
 <!-- <script type="text/javascript" src="{{ asset('js/not_windows_back.js') }}"></script> -->
-
 </body>
 </html>
