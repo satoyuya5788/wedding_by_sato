@@ -28,28 +28,15 @@ class SiteWeddingController extends Controller
      */
     public function executeStore(StoreRequest $request)
     {
-    $judgeNewRegister = User::where('name', session('simple_auth')[0])->value('page_flg');
-        if ($judgeNewRegister === 0) {
-            $registerdWeddingData = $this->wedding->storeWedding($request);
-            if ($registerdWeddingData) {
-                if ($registerdWeddingData->attend == 1) {
-                    return view('wedding.site.guide');
-                } elseif ($registerdWeddingData->attend == 0) {
-                    return view('wedding.site.non_participation');
-                }
+        $registerdWeddingData = $this->wedding->storeWedding($request);
+        if ($registerdWeddingData) {
+            if ($registerdWeddingData->attend == 1) {
+                return view('wedding.site.guide');
+            } elseif ($registerdWeddingData->attend == 0) {
+                return view('wedding.site.non_participation');
             }
-            } else {
-                dd('次は更新処理から！');
-                return redirect(route("error"));
-            }
+        }
         return abort(404);
     }
 
-    /**
-     * 招待状を登録する
-     */
-    public function error()
-    {
-        return view('error');
-    }
 }

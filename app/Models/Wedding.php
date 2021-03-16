@@ -195,6 +195,8 @@ class Wedding extends Model
             // 招待状テーブルにここで登録
             $registerWeddingData = $request->all();
 
+            unset($registerWeddingData['_token']);
+            
             // ユーザID登録処理
             $username = session('simple_auth')[0];
             $userId = User::where('name', $username)->value('id');
@@ -203,7 +205,8 @@ class Wedding extends Model
             $registerWeddingData['created_at'] = date('Y/m/d');
             $registerWeddingData['updated_at'] = null;
             
-            $wedding = self::create($registerWeddingData); 
+            // 案内状の画面でリロードや、ブラウザバッグされても対処
+            $wedding = self::updateOrCreate(['user_id' => $userId], $registerWeddingData); 
 
             if ($wedding->attend) {
                 User::where('id', $userId)->update(['page_flg' => 1]);
