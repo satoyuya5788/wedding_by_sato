@@ -26,7 +26,7 @@
         </form>
 
         <div class="m-5 p-1" style="text-align: center;">
-            <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
+            <a href="{{ route('site') }}" class="btn btn-pink text-nowrap">招待状へ戻る</a>
         </div>
     @endif
   
@@ -167,9 +167,23 @@
     </section>
     @endif
 
+    <section class="mt-4 p-4 mb-3">
+        <div class="container mt-5 mb-2 bg_guide_show p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+            <div class="row align-items-center text-center">
+                <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
+                    <p style="font-size:1.5rem;">ご登録情報の確認</p>
+                    <!-- <img src="{{ asset('img/竹アイコン1.svg') }}" alt="" class="m-5" width="25"> -->
+                    <div class="p-1 mt-3" style="text-align: center;">
+                        <a href="/site/wedding/imagehappouen" class="btn btn-blue text-nowrap">ご登録情報へ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     @if(session("simple_auth"))
         <div class="m-5 p-1" style="text-align: center;">
-            <a href="{{ route('site') }}" class="btn btn-primary text-nowrap">招待状へ戻る</a>
+            <a href="{{ route('site') }}" class="btn btn-pink text-nowrap">招待状へ戻る</a>
         </div>
     @endif
 
