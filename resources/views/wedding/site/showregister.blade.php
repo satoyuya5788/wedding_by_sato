@@ -2,14 +2,17 @@
 <html lang="ja">
 @include('site_header')
 
-<body class="body_guide_showregister">
+<!-- 案内状専用のCSS読み込み！桜降らせるアニメーション！ -->
+<link href="{{ asset('css/bloom_guide_register.css') }}" rel="stylesheet">
+
+<body class="body_guide_showregister cherry-blossom-container_register">
 
     <section class="mt-4 p-4 mb-3">
         <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:2.0rem;" class="mb-2 p-2">ご登録情報</p>
-                    <img src="{{ asset('img/巻物のフリーアイコン.svg') }}" alt="" width="30" class="mb-2">
+                    <img src="{{ asset('img/巻物のフリーアイコン (1).svg') }}" alt="" width="30" class="mb-2">
                     <table id="registerdData" class="mb-5" style="margin:auto; font-size:1.1rem;">
                         <tr class="m-2">
                             <th>出欠</th>
@@ -102,6 +105,9 @@
 
   <!-- Footer -->
   @include('footer')
+
+<!--桜降らせるJSを読み込み -->
+<script type="text/javascript" src="{{ asset('js/bloom_guide_register.js') }}"></script>
 
 <!--スクロールアニメーションを読み込み -->
 <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>

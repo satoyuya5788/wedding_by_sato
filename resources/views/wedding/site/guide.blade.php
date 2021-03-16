@@ -43,6 +43,7 @@
                             <strogn style="font-size: 2.3rem;">挙式</strogn>
                         </div>
                     </p>
+                    <img src="{{ asset('img/紫禁城アイコン1.svg') }}" alt="" width="20" class="mt-4">
                     <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                     <p style="font-size:1.8rem">13:15</p>
                     <p style="font-size:1.2rem">受付時間 13:00</p>
@@ -64,6 +65,7 @@
                         <strong style="font-size: 2.3rem;">披露宴</strong>
                     </div>
                 </p>
+                <img src="{{ asset('img/紫禁城アイコン1.svg') }}" alt="" width="20" class="mt-4">
                 <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                 <p style="font-size:1.8rem">13:15</p>
                 <p style="font-size:1.2rem">受付時間 13:00</p>
@@ -159,7 +161,7 @@
                     閲覧してください。
                     </p>
                     <div class="m-5 p-1" style="text-align: center;">
-                        <a href="/site/wedding/imagehappouen" class="btn btn-info text-nowrap">前撮りの写真へ</a>
+                        <a href="/site/wedding/imagehappouen" class="btn btn-green text-nowrap">前撮りの写真へ</a>
                     </div>
                 </div>
             </div>

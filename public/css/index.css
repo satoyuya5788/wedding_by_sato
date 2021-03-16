@@ -52,7 +52,7 @@
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/4273482_s.jpg");
+    background-image:url("../img/4298538_m.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -427,13 +427,13 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/3816019_s.jpg");
+    background-image:url("../img/4498773_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.3);
-    background-blend-mode:lighten;
-    box-shadow: 20px 20px 20px #f7f6c3;
+    /* background-color:rgba(255,255,255,0.1);
+    background-blend-mode:lighten; */
+    box-shadow: 20px 20px 20px #fcfbe1;
 }
 .family-msg {
     color:rgba(158, 7, 7, 0.87); 
@@ -448,13 +448,13 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/4379430_s.jpg");
+    background-image:url("../img/4493169_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.2);
-    background-blend-mode:lighten;
-    box-shadow: 20px 20px 20px #f7f6c3;
+    /* background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten; */
+    box-shadow: 20px 20px 20px #f7bcea;
 }
 .show-msg {
     color:rgba(73, 6, 6, 0.87); 
@@ -469,7 +469,7 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/3811955_s.jpg");
+    background-image:url("../img/4289400_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -484,11 +484,17 @@ canvas{
 
 .btn-blue{
     background-color: #2785f0;
+    box-shadow: 8px 8px 8px #7dc5f5;
     color: white;
 }
 .btn-pink{
     background-color: #f72df7;
     box-shadow: 8px 8px 8px #fae0f4;
+    color: white;
+}
+.btn-green{
+    background-color: #ff3737;
+    box-shadow: 8px 8px 8px #f8bdab;
     color: white;
 }
 
