@@ -56,7 +56,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.4);
+    background-color:rgba(255,255,255,0.1);
     background-blend-mode:lighten;
 }
 .body_nonparticipation {
@@ -473,7 +473,7 @@ canvas{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.6);
     background-blend-mode:lighten;
     box-shadow: 20px 20px 20px #f7f6c3;
 }
@@ -888,4 +888,11 @@ canvas{
 .bg-silver{
     background: linear-gradient(#c0bebb 0%, #e6e5e2 45%, #f8f8f4 70%, #c5c4c1 85%, #b8b7b4 90% 100%); 
     box-shadow: 8px 8px 8px #ddd8d8;
+}
+
+#registerdData th{
+    text-align: right;
+}
+#registerdData td{
+    text-align: center;
 }

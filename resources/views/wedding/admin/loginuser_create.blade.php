@@ -59,11 +59,11 @@
             <tr>
                 <td>{{ $user->id }}</td>
                 <td style="font-weight:bold;">{{ $user->name }}</td>
-                @if($user->page_flg === 0)
+                @if($user->page_flg == 0)
                 <td class="page" style="font-size:1.1rem; color:red;">未回答</td>
-                @elseif($user->page_flg === 1)
+                @elseif($user->page_flg == 1)
                 <td class="page" style="font-size:1.2rem; color:blue;">出席</td>
-                @elseif($user->page_flg === 2)
+                @elseif($user->page_flg == 2)
                 <td class="page">欠席</td>
                 @endif
                 <td>{{ $user->created_at }}</td>

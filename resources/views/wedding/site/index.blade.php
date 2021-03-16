@@ -14,7 +14,7 @@
         </div>
   </section>
   
-    @if(session("simple_auth")[1] === 1 || $page === 1)
+    @if(session("simple_auth")[1] == 1 || $page == 1)
     <form method="post" action="{{ url('logout') }}">
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
@@ -22,7 +22,7 @@
     <div class="m-1 p-1" style="text-align: center;">
         <a href="/site/wedding/guidehappouen" class="btn btn-primary text-nowrap">案内状へ戻る</a>
     </div>
-    @elseif(session("simple_auth")[1] === 2 || $page === 2)
+    @elseif(session("simple_auth")[1] == 2 || $page == 2)
     <form method="post" action="{{ url('logout') }}">
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
@@ -184,7 +184,7 @@
 
     <!-- 本来はココは使いたくないが、スティッキー問題が解決できないため -->
     <!-- もし解決できたら、トップのスティッキーを活かして、ここを丸々削除 -->
-    @if(session("simple_auth")[1] === 1 || $page === 1)
+    @if(session("simple_auth")[1] == 1 || $page == 1)
     <form method="post" action="{{ url('logout') }}">
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
@@ -192,7 +192,7 @@
     <div class="mb-5 p-1" style="text-align: center;">
         <a href="/site/wedding/guidehappouen" class="btn btn-primary text-nowrap">案内状へ戻る</a>
     </div>
-    @elseif(session("simple_auth")[1] === 2 || $page === 2)
+    @elseif(session("simple_auth")[1] == 2 || $page == 2)
     <form method="post" action="{{ url('logout') }}">
         @csrf 
         <input class="bg-white" type="submit" value="ログアウト" />
@@ -203,7 +203,7 @@
     @endif
     
   
-    @if(session("simple_auth")[1] === 0 && $page === 0)
+    @if(session("simple_auth")[1] == 0 && $page == 0)
     <!-- 登録フォーム↓長いのでinclude -->
     @include('wedding.site.register_form')
     

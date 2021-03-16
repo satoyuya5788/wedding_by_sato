@@ -75,7 +75,7 @@
                 @endif
                 <td style="word-break: break-all;">{{ $wedding->phone_num }}</td>
                 <td style="word-break: break-all;">{{ $wedding->mail }}</td>
-                @if($wedding->partner === 0)
+                @if($wedding->partner == 0)
                 <td></td>
                 @else
                 <td class="partner">{{ $wedding->partner }}</td>

@@ -138,7 +138,7 @@
     </div>
   </section>
 
-    @if(session("simple_auth")[0] === "さとうとしお" || session("simple_auth")[0] === "さとうりょうた" || session("simple_auth")[0] === "さとうけいすけ" || session("simple_auth")[0] === "ゆかわじゅんじ" || session("simple_auth")[0] === "うえぶせさとし")
+    @if(session("simple_auth")[0] == "さとうとしお" || session("simple_auth")[0] == "さとうりょうた" || session("simple_auth")[0] == "さとうけいすけ" || session("simple_auth")[0] == "ゆかわじゅんじ" || session("simple_auth")[0] == "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
         <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
