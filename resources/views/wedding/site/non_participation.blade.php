@@ -60,6 +60,15 @@
                     </p>
                     <br>
                     <p style="font-size:1.3rem;" class="text-nowrap">
+                        このページは
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        湯川智子様のご家族しか
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        閲覧できません。
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap mt-1">
                         ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
@@ -70,7 +79,7 @@
         </div>
     </section>
     <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary mr-1">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink mr-1">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[0] == "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
@@ -92,6 +101,15 @@
                     </p>
                     <br>
                     <p style="font-size:1.3rem;" class="text-nowrap">
+                        このページは
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        湯川智子様のご家族しか
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap">
+                        閲覧できません。
+                    </p>
+                    <p style="font-size:1.3rem;" class="text-nowrap mt-1">
                         ダウンロードしたい場合は
                     </p>
                     <p style="font-size:1.3rem;" class="text-nowrap">
@@ -102,7 +120,7 @@
         </div>
     </section>
     <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary mr-1">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink mr-1">案内状へ戻る</a>
     </div>
     
     @else
@@ -135,7 +153,7 @@
 
     @if(session("simple_auth"))
         <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-            <a href="{{ route('site') }}" class="btn btn-primary">招待状へ戻る</a>
+            <a href="{{ route('site') }}" class="btn btn-pink">招待状へ戻る</a>
         </div>
         <p class="mb-2 h6 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">ダウンロードしたい場合は</p>
         <p class="h6  mt-3 fontstyle" style="color: white; text-align:center; font-size:1.2rem;">写真を長押しして下さい</p>
