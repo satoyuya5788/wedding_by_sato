@@ -10,7 +10,7 @@
     position: absolute;
     background-color: #ffc0cb; /* 花びらの色 */
     border-radius: 150% 0 150% 0;
-    animation: animate-petal 8s linear;
+    animation: animate-petal 6s linear;
   }
   
   .petal::after {

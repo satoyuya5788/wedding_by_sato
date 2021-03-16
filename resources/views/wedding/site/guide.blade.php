@@ -146,7 +146,7 @@
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p style="font-size:1.5rem;">ご家族の皆様へ</p>
-                    <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="m-3" width="20">
+                    <img src="{{ asset('img/三つ巴の家紋アイコン.svg') }}" alt="" class="m-3" width="20">
                     <p style="font-size:1.3rem;">
                     前撮りの写真を
                     </p>
