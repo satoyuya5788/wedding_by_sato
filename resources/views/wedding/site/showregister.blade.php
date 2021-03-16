@@ -10,7 +10,7 @@
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:2.0rem;" class="mb-2 p-2">ご登録情報</p>
                     <img src="{{ asset('img/巻物のフリーアイコン.svg') }}" alt="" width="30" class="mb-2">
-                    <table id="registerdData" class="mb-5" style="margin:auto; font-size:1.6rem;">
+                    <table id="registerdData" class="mb-5" style="margin:auto; font-size:1.1rem;">
                         <tr class="m-2">
                             <th>出欠</th>
                             <td>:</td>
@@ -55,7 +55,7 @@
                             <td>{{ $registerdData->phone_num }}</td>
                         </tr>
                         <tr class="m-2">
-                            <th>メールアドレス</th>
+                            <th>メール</th>
                             <td>:</td>
                             <td>{{ $registerdData->mail }}</td>
                         </tr>
