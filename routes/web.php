@@ -35,8 +35,11 @@ Route::group(['middleware' => ['simple_auth']], function () {
         Route::get('/', [SiteWeddingController::class, 'showCreate'])->name('site');
         // 招待状を登録する
         Route::post('/guide', [SiteWeddingController::class, 'executeStore'])->name('store');
-        // エラーページ
+        // 招待状
         Route::get('/guide', [SiteWeddingController::class, 'executeStore']);
+        
+        // 招待状
+        Route::get('/guide/show/register', [SiteWeddingController::class, 'showRegister'])->name('showregister');
         
         Route::get('/guidehappouen', function () {
             return view('wedding.site.guide');

@@ -38,5 +38,17 @@ class SiteWeddingController extends Controller
         }
         return abort(404);
     }
+    
+    /**
+     * 登録情報を表示
+     */
+    public function showRegister()
+    {
+        $username = session('simple_auth')[0];
+        $userId = User::where('name', $username)->value('id');
+        $registerdData = Wedding::where('user_id', $userId)->first();
+        return view('wedding.site.showregister', ['registerdData' => $registerdData]);
+        return abort(404);
+    }
 
 }

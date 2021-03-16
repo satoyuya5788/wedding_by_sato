@@ -36,6 +36,29 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.body_guide_showregister {
+    width:  0 auto;
+    margin: 0;
+    font-family: 'Shippori Mincho B1', serif;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+.body_guide_showregister::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image:url("../img/4211800_l.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+}
 .body_nonparticipation {
     width:  0 auto;
     margin: 0;
@@ -434,6 +457,27 @@ canvas{
     box-shadow: 20px 20px 20px #f7f6c3;
 }
 .show-msg {
+    color:rgba(73, 6, 6, 0.87); 
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.bg_guide_showregister::before {
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%; 
+    height:100%;
+    background-image:url("../img/4280005_l.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    box-shadow: 20px 20px 20px #f7f6c3;
+}
+.bg_guide_showregister-msg {
     color:rgba(73, 6, 6, 0.87); 
     font-family: 'Shippori Mincho B1', serif;
 }
