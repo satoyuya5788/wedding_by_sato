@@ -475,7 +475,7 @@ canvas{
     background-size: cover;
     background-color:rgba(255,255,255,0.6);
     background-blend-mode:lighten;
-    box-shadow: 20px 20px 20px #f7f6c3;
+    box-shadow: 20px 20px 20px #f1f1d7;
 }
 .bg_guide_showregister-msg {
     color:rgba(73, 6, 6, 0.87); 
@@ -488,6 +488,7 @@ canvas{
 }
 .btn-pink{
     background-color: #f72df7;
+    box-shadow: 8px 8px 8px #fae0f4;
     color: white;
 }
 
@@ -891,7 +892,7 @@ canvas{
 }
 
 #registerdData th{
-    text-align: left;
+    text-align: right;
     white-space:nowrap;
 }
 #registerdData td{

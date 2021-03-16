@@ -44,7 +44,7 @@
         </div>
     </section>
     <div class="m-1 mt-5 mb-5 sticky-top p-1" style="text-align: right;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-primary mr-1">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink mr-1">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[0] == "ゆかわじゅんじ")
     <section class="mt-4 p-4 mb-3">
