@@ -162,7 +162,7 @@
                     閲覧してください。
                     </p>
                     <div class="m-5 p-1" style="text-align: center;">
-                        <a href="/site/wedding/imagehappouen" class="btn btn-green text-nowrap">前撮りの写真へ</a>
+                        <a href="/site/wedding/imagehappouen" class="btn btn-blue text-nowrap">前撮りの写真へ</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                     <p style="font-size:1.5rem;">ご登録情報の確認</p>
                     <!-- <img src="{{ asset('img/竹アイコン1.svg') }}" alt="" class="m-5" width="25"> -->
                     <div class="p-1 mt-3" style="text-align: center;">
-                        <a href="{{ route('showregister') }}" class="btn btn-blue text-nowrap">ご登録情報へ</a>
+                        <a href="{{ route('showregister') }}" class="btn btn-green text-nowrap">ご登録情報へ</a>
                     </div>
                 </div>
             </div>
