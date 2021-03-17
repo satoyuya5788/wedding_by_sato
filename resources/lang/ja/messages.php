@@ -3,7 +3,7 @@ return [
     'list' => [
         'name'    => '名前',
         'phone_num' => '電話番号',
-        'adress' => 'メールアドレス',
+        'adress' => '住所',
         'date'  => '回答日時',
     ],
     'button' => [

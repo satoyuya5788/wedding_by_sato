@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="form-group m-5 text-center pb-1">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-pink">
                             ログイン
                         </button>
                     </div>

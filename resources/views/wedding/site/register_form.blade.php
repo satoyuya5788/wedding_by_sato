@@ -5,13 +5,17 @@
             <div class="row">
                 <div class="col-xs-12 text-center col-lg-12 mt-5">
                     <p class="h4 register-msg dark_gold">
-                    お手数ですが出席情報をご入力して下さい
+                    お手数ですが出席情報を
+                    <br>
+                    ご入力して下さい
                     <br>
                     <br>
                      <span class="strong-msg">2021.2.28</span>
                      <br>
                      <br>
-                     までにご返信をお願い申し上げます
+                     までにご返信を
+                     <br>
+                     お願い申し上げます
                     </p>
                 </div>
             </div>
@@ -51,7 +55,7 @@
 
             <div class="form-group mt-5 clearfix">
                 <span class="badge badge-danger">必須</span>
-                <label for="name" class="ml-3">
+                <label for="name" class="ml-3" style="font-size:1.4rem;">
                     名前(漢字)
                 </label>
                 <div class="clearfix row">
@@ -72,7 +76,7 @@
             
             <div class="form-group mt-5 clearfix">
                 <span class="badge badge-danger">必須</span>
-                <label for="name_kana" class=" ml-3">
+                <label for="name_kana" class=" ml-3" style="font-size:1.4rem;">
                     名前(かな)
                 </label>
                 <div class="clearfix row">
@@ -92,7 +96,7 @@
             </div>
             <div class="form-group mt-5">
                 <span class="badge badge-danger">必須</span>
-                <label for="post_num" class=" ml-3">
+                <label for="post_num" class=" ml-3" style="font-size:1.4rem;">
                     郵便番号 
                 </label>
                 <div class="row">
@@ -107,7 +111,7 @@
             </div>
             <div class="form-group mt-5">
                 <span class="badge badge-danger">必須</span>
-                <label for="adress" class=" ml-3">
+                <label for="adress" class=" ml-3" style="font-size:1.4rem;">
                     住所
                 </label>
                 <div class="row">
@@ -120,7 +124,7 @@
                 @endif
             </div>
             <div class="form-group mt-5">
-                <label for="building" class="">
+                <label for="building" class="" style="font-size:1.4rem;">
                     建物名
                 </label>
                 <div class="row">
@@ -134,7 +138,7 @@
             </div>
             <div class="form-group mt-5">
                 <span class="badge badge-danger">必須</span>
-                <label for="phone_num" class=" ml-3">
+                <label for="phone_num" class=" ml-3" style="font-size:1.4rem;">
                     電話番号 
                 </label>
                 <div class="row">
@@ -149,7 +153,7 @@
             </div>
 
             <div class="form-group mt-5 clearfix">
-                <label for="name" class="">
+                <label for="name" class="" style="font-size:1.4rem;">
                     お連れ様のお名前(漢字)
                 </label>
                 <div class="clearfix row">
@@ -157,7 +161,7 @@
                 <input id="partner_name_two" name="partner_name_two" class="form-control shadow-lg col-xs-3 ml-1 round one-third-input" value="{{ old('partner_name_two') }}" type="text"placeholder="佐藤花子">
                 <input id="partner_name_three" name="partner_name_three" class="form-control shadow-lg col-xs-3 ml-1 round one-third-input" value="{{ old('partner_name_three') }}" type="text"placeholder="佐藤一郎">
                 </div> 
-                <span class="" style="font-size:1.2rem;">※お連れ様がいらっしゃる場合はお名前をご記入ください</span>
+                <span class="" style="font-size:1.2rem;">※お連れ様がいらっしゃる場合はお名前を感じでご記入ください</span>
                 @if ($errors->has('partner_name_one'))
                     <div class="text-danger" style="font-size:1.1rem;">
                         {{ $errors->first('partner_name_one') }}
@@ -176,7 +180,7 @@
             </div>
 
             <div class="form-group mt-5">
-                <label for="allergies" class="">
+                <label for="allergies" class="" style="font-size:1.4rem;">
                     アレルギー
                 </label>
                 <div class="row">
@@ -191,7 +195,7 @@
             </div>
 
             <div class="form-group mt-5">
-                <label for="content" class="">
+                <label for="content" class="" style="font-size:1.4rem;">
                     メッセージ
                 </label>
                 <textarea id="content" name="content" class="form-control shadow-lg p-3  bg-white rounded" rows="6">{{ old('content') }}</textarea>
@@ -203,7 +207,7 @@
             </div>
             
             <div class="form-group m-5 text-center pb-1">
-                <button type="submit" class="btn btn-info">
+                <button type="submit" class="btn btn-blue">
                     送信する
                 </button>
             </div>
