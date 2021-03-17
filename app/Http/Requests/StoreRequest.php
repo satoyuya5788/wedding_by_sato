@@ -75,7 +75,6 @@ class StoreRequest extends FormRequest
             'adress' => 'required|max:255',
             'building' => 'nullable|max:255',
             'phone_num' => 'required|max:255',
-            'mail' => 'required|max:255',
             'partner_name_one' => 'nullable|max:255',
             'partner_name_two' => 'nullable|max:255',
             'partner_name_three' => 'nullable|max:255',

@@ -55,7 +55,6 @@
                 <th style="white-space: nowrap;">名前(かな)</th>
                 <th style="white-space: nowrap;">参加/不参加</th>
                 <th style="white-space: nowrap;">{{ __('messages.list.phone_num') }}</th>
-                <th style="white-space: nowrap;">メール</th>
                 <th style="white-space: nowrap;">お連れ様</th>
                 <th style="white-space: nowrap;">アレルギー</th>
                 <th style="white-space: nowrap;">回答日</th>
@@ -74,7 +73,6 @@
                 <td style="color: red; font-size:1.5rem">×</td>
                 @endif
                 <td style="word-break: break-all;">{{ $wedding->phone_num }}</td>
-                <td style="word-break: break-all;">{{ $wedding->mail }}</td>
                 @if($wedding->partner == 0)
                 <td></td>
                 @else

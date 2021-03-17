@@ -57,11 +57,6 @@
                             <td>:</td>
                             <td>{{ $registerdData->phone_num }}</td>
                         </tr>
-                        <tr class="m-2">
-                            <th>メール</th>
-                            <td>:</td>
-                            <td>{{ $registerdData->mail }}</td>
-                        </tr>
 
                         @if($partnerCount == 1)
                         <tr class="m-2">

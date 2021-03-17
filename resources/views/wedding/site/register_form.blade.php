@@ -147,20 +147,6 @@
                     </div>
                 @endif
             </div>
-            <div class="form-group mt-5">
-                <span class="badge badge-danger">必須</span>
-                <label for="mail" class=" ml-3">
-                    メールアドレス
-                </label>
-                <div class="row">
-                <input id="mail" name="mail" class="form-control shadow-lg col-xs-12  bg-white rounded" value="{{ old('mail') }}" type="text" placeholder="happouenn@happouenn.com">
-                </div>
-                @if ($errors->has('mail'))
-                    <div class="text-danger" style="font-size:1.1rem;">
-                        {{ $errors->first('mail') }}
-                    </div>
-                @endif
-            </div>
 
             <div class="form-group mt-5 clearfix">
                 <label for="name" class="">

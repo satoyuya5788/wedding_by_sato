@@ -178,18 +178,6 @@
                     </div>
                 @endif
             </div>
-            <div class="form-group mt-5">
-                <span class="badge badge-danger">必須</span>
-                <label for="mail" class="text-info ml-3">
-                    メールアドレス
-                </label>
-                <input disabled id="mail" name="mail" class="form-control shadow-lg p-3 mb-5 rounded" value="{{ $wedding->mail }}" type="text" placeholder="happouenn@happouenn.com">
-                @if ($errors->has('mail'))
-                    <div class="text-danger">
-                        {{ $errors->first('mail') }}
-                    </div>
-                @endif
-            </div>
 
             <div class="form-group mt-5 clearfix">
                 <label for="name" class="text-info">

@@ -29,7 +29,6 @@ class Wedding extends Model
         'adress',
         'building',
         'phone_num',
-        'mail',
         'partner_name_three',
         'partner_name_two',
         'partner_name_one',

@@ -160,7 +160,6 @@ return [
         'adress'    => '住所',
         'building'  => '建物名',
         'phone_num' => '電話番号',
-        'mail'      => 'メールアドレス',
         'partner_name_one'      => 'お連れ様の名前',
         'partner_name_two'      => 'お連れ様の名前',
         'partner_name_three'    => 'お連れ様の名前',
