@@ -63,19 +63,36 @@
                             <td>{{ $registerdData->mail }}</td>
                         </tr>
 
-                        @if($registerdData->partner_name_one || $registerdData->partner_name_one || $registerdData->partner_name_one)
+                        @if($partnerCount == 1)
                         <tr class="m-2">
-                            <th>1人目のお連れ様</th>
+                            <th>お連れ様</th>
+                            <td>:</td>
+                            <td>{{ $registerdData->partner_name_one }}</td>
+                        </tr>
+                        @elseif($partnerCount == 2)
+                        <tr class="m-2">
+                            <th>お連れ様</th>
                             <td>:</td>
                             <td>{{ $registerdData->partner_name_one }}</td>
                         </tr>
                         <tr class="m-2">
-                            <th>2人目のお連れ様</th>
+                            <th></th>
+                            <td>:</td>
+                            <td>{{ $registerdData->partner_name_two }}</td>
+                        </tr>
+                        @elseif($partnerCount == 3)
+                        <tr class="m-2">
+                            <th>お連れ様</th>
+                            <td>:</td>
+                            <td>{{ $registerdData->partner_name_one }}</td>
+                        </tr>
+                        <tr class="m-2">
+                            <th></th>
                             <td>:</td>
                             <td>{{ $registerdData->partner_name_two }}</td>
                         </tr>
                         <tr class="m-2">
-                            <th>3人目のお連れ様</th>
+                            <th></th>
                             <td>:</td>
                             <td>{{ $registerdData->partner_name_three }}</td>
                         </tr>

@@ -46,9 +46,15 @@ class SiteWeddingController extends Controller
     {
         $username = session('simple_auth')[0];
         $userId = User::where('name', $username)->value('id');
+        // 登録データ
         $registerdData = Wedding::where('user_id', $userId)->first();
-        return view('wedding.site.showregister', ['registerdData' => $registerdData]);
-        return abort(404);
+        // パートナーデータ
+        $partnerOne = $registerdData->partner_name_one ? 1 :0;
+        $partnerTwo = $registerdData->partner_name_two ? 1 :0;
+        $partnerThree = $registerdData->partner_name_three ? 1 :0;
+        $partnerCount = $partnerOne + $partnerTwo + $partnerThree;
+
+        return view('wedding.site.showregister', ['registerdData' => $registerdData, 'partnerCount' => $partnerCount]);
     }
 
 }
