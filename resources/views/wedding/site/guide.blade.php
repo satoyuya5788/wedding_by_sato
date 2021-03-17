@@ -84,15 +84,15 @@
                 <br>
                 <span style="font-size: 1.9rem;">to 2020.5.29</span>
                 <br>
-                <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="mt-5">
+                <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="mt-3" width="30">
                 <br>
-                <div class="mt-5 p-2" style="text-align: center; white-space: nowrap; width: 100%">
+                <div class="p-2" style="text-align: center; white-space: nowrap; width: 100%">
                     <div style="font-size:1.5rem"><span style=" font-size: 2.5rem;" class="countDownText" id="countDown_date"></span>days
                     <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_hours"></span>hours</div>
                 </div>
-                <div class="mt-5 -2" style="text-align: center; white-space: nowrap;">
+                <div class="mb-4" style="text-align: center; white-space: nowrap;">
                     <div style=" font-size:1rem"><span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_minutes"></span>minutes
-                    <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_seconds"></span>seconds</div>
+                    <span style="font-size: 2.0rem;" class="countDownText"id="countDown_date_seconds"></span>seconds</div>
                 </div>
                 @else
                 <span style="font-size: 3rem; white-space: nowrap;">count down</span>
@@ -125,10 +125,11 @@
                 <p style="text-align:center; font-size: 1.5rem;">GoogleMapで見る</p></a>
                 <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:300px"></iframe></div>
                 <br>
-                <br>
-                <br>
-                <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は下記URLをご覧ください。</p>
-                <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車、バス、シャトルバス、タクシーでご来場の方</p>
+                <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は</p>
+                <p class="mb-2 h6 fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">下記URLをご覧ください。</p>
+                <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車、バス</p>
+                <p class="fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">シャトルバス、タクシーで</p>
+                <p class=" fontstyle" style="text-align:center; font-size:1.2rem;">ご来場の方</p>
                 <br>
                 <div class="text-center">
                     <a href="https://www.happo-en.com/access/" target="_blank" class="btn bg-silver rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.5rem; font-style:italic;">

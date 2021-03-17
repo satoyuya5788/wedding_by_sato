@@ -413,7 +413,7 @@ canvas{
     box-shadow: 20px 20px 20px #f79f9f;
 }
 .bg_guide_3 {
-    background-image:url("../img/3811955_s.jpg");
+    background-image:url("../img/4094893_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -427,7 +427,7 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/4498773_s.jpg");
+    background-image:url("../img/3816019_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,13 +448,14 @@ canvas{
     z-index:-1;
     width:100%; 
     height:100%;
-    background-image:url("../img/4010823_s.jpg");
+    background-image:url("../img/3848706_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color:rgba(255,255,255,0.2);
-    background-blend-mode:lighten; */
-    box-shadow: 20px 20px 20px #f7bcea;
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode:lighten;
+    box-shadow: 20px 20px 20px #f8f8f8;
+    /* box-shadow: 20px 20px 20px #f7bcea; */
 }
 .show-msg {
     color:rgba(73, 6, 6, 0.87); 
@@ -557,7 +558,7 @@ canvas{
 }
 
 .bg-countdown {
-  box-shadow: 20px 20px 20px #f4f775;
+  box-shadow: 20px 20px 20px #ffdcf7;
 }
 .bg-countdown::before {
     content:"";
@@ -567,11 +568,11 @@ canvas{
     z-index:-1;
     width:100%;
     height:100%;
-    background-image: url("../img/3848706_s.jpg");
+    background-image: url("../img/4498773_s.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.1);
     background-blend-mode:lighten;
 }
 .bg-countdown-text {
@@ -590,26 +591,6 @@ canvas{
   background-size: cover;
   background-attachment: fixed;
   box-shadow: 20px 20px 20px #035221;
-  /* border-radius: 10px; */
-}
-.bg-map2 {
-  /* background-image: url("{{ asset('img/E102901_3L1.jpg') }}"); */
-  background-image: url("../img/pexels-photo-1402850.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: 20px 20px 20px #cccccc;
-  /* border-radius: 10px; */
-}
-.bg-map2 {
-  /* background-image: url("{{ asset('img/E102901_3L1.jpg') }}"); */
-  background-image: url("../img/pexels-photo-1402850.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: 20px 20px 20px #cccccc;
   /* border-radius: 10px; */
 }
 .bg-map-text {
