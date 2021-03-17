@@ -77,7 +77,7 @@
 <section class="mt-5 p-4 mb-4">
     <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center" >
-            <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text dark_gold" style="font-style: italic;">
+            <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
                 @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00'))
                 <span style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
                 <br>

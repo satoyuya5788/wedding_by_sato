@@ -898,7 +898,7 @@ canvas{
 }
 
 #registerdData th{
-    text-align: right;
+    text-align: left;
     white-space:nowrap;
 }
 #registerdData td{
