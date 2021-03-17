@@ -123,7 +123,7 @@
   <section class="mt-4 p-4">
         <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
-                <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-1 pb-1">
+                <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-4 pb-4">
                     <h2><span class="event-msg gold">Events</span></h2>
                     <p>
                         <div class="event-msg-1 gold">WEDDING CEREMONY
@@ -144,7 +144,7 @@
     <section class="mt-4 p-4">
         <div class="container mt-5 mb-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
         <div class="row align-items-center text-center">
-            <div class="col-xs-12 order-lg-1 col-lg-12 pt-1 pb-1">
+            <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
                 <h2><span class="event-msg pink_gold">Events</span></h2>
                 <p>
                     <div class="event-msg-1 pink_gold">WEDDING CEREMONY

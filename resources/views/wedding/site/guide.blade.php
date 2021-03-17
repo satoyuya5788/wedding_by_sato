@@ -43,7 +43,7 @@
                             <strogn style="font-size: 2.3rem;">挙式</strogn>
                         </div>
                     </p>
-                    <img src="{{ asset('img/紫禁城アイコン1.svg') }}" alt="" width="20" class="mt-4">
+                    <img src="{{ asset('img/松の葉の無料アイコン (1).svg') }}" alt="" width="30" class="mt-4">
                     <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                     <p style="font-size:1.8rem">13:15</p>
                     <p style="font-size:1.2rem">受付時間 13:00</p>
@@ -65,7 +65,7 @@
                         <strong style="font-size: 2.3rem;">披露宴</strong>
                     </div>
                 </p>
-                <img src="{{ asset('img/紫禁城アイコン1.svg') }}" alt="" width="20" class="mt-4">
+                <img src="{{ asset('img/笹の葉のアイコン (1).svg') }}" alt="" width="30" class="mt-4">
                 <p style="font-size:1.8rem" class="mt-3">2022.5.29 sun</p>
                 <p style="font-size:1.8rem">13:15</p>
                 <p style="font-size:1.2rem">受付時間 13:00</p>
@@ -146,7 +146,7 @@
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p style="font-size:1.5rem;">ご家族の皆様へ</p>
-                    <img src="{{ asset('img/三つ巴の家紋アイコン.svg') }}" alt="" class="m-3" width="20">
+                    <img src="{{ asset('img/笹の葉のフリーアイコン.svg') }}" alt="" class="m-3" width="25">
                     <p style="font-size:1.3rem;">
                     前撮りの写真を
                     </p>
