@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="form-group m-5 text-center pb-1">
-                        <button type="submit" class="btn btn-pink">
+                        <button type="submit" class="btn btn-primary" style="box-shadow: 8px 8px 8px #ffcdf3;">
                             ログイン
                         </button>
                     </div>
