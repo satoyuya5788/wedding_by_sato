@@ -113,7 +113,7 @@
                     郵便番号 
                 </label>
                 <div class="row">
-                <input id="post_num" name="post_num" class="form-control shadow-lg col-xs-12 bg-white rounded" value="{{ old('post_num') }}" type="text" placeholder="(1112222)">
+                <input id="post_num" name="post_num" class="form-control shadow-lg col-xs-12 bg-white rounded" value="{{ old('post_num') }}" type="tel" placeholder="(1112222)">
                 <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
                 </div>
                 @if ($errors->has('post_num'))
@@ -155,7 +155,7 @@
                     電話番号 
                 </label>
                 <div class="row">
-                <input id="phone_num" name="phone_num" placeholder="11122223333" class="form-control shadow-lg col-xs-12  bg-white rounded" value="{{ old('phone_num') }}" type="text">
+                <input id="phone_num" name="phone_num" placeholder="11122223333" class="form-control shadow-lg col-xs-12  bg-white rounded" value="{{ old('phone_num') }}" type="tel">
                 <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
                 </div>
                 @if ($errors->has('phone_num'))

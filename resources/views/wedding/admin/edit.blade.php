@@ -136,7 +136,7 @@
                 <label for="post_num" class="text-info ml-3">
                     〒:郵便番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力してください。</span>
                 </label>
-                <input disabled id="post_num" name="post_num" class="form-control shadow-lg rounded" value="{{ $wedding->post_num }}" type="text" placeholder="(1112222)">
+                <input disabled id="post_num" name="post_num" class="form-control shadow-lg rounded" value="{{ $wedding->post_num }}" type="tel" placeholder="(1112222)">
                 @if ($errors->has('post_num'))
                     <div class="text-danger">
                         {{ $errors->first('post_num') }}
@@ -171,7 +171,7 @@
                 <label for="phone_num" class="text-info ml-3">
                     電話番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力してください。</span>
                 </label>
-                <input disabled id="phone_num" name="phone_num" placeholder="11122223333" class="form-control shadow-lg p-3 mb-5 rounded" value="{{ $wedding->phone_num }}" type="text">
+                <input disabled id="phone_num" name="phone_num" placeholder="11122223333" class="form-control shadow-lg p-3 mb-5 rounded" value="{{ $wedding->phone_num }}" type="tel">
                 @if ($errors->has('phone_num'))
                     <div class="text-danger">
                         {{ $errors->first('phone_num') }}
