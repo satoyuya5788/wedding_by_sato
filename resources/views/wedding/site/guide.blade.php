@@ -137,12 +137,12 @@
                     <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は</p>
                     <p class="mb-2 h6 fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">下記URLをご覧ください。
                     </p>
-                    <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車、バス</p>
-                    <p class="fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">シャトルバス、タクシーで</p>
+                    <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車</p>
+                    <p class="fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">バス、タクシーで</p>
                     <p class=" fontstyle" style="text-align:center; font-size:1.2rem;">ご来場の方</p>
                     <br>
                     <div class="text-center">
-                        <a href="https://www.happo-en.com/access/" target="_blank"
+                        <a href="https://happo-en.com/banquet/access/" target="_blank"
                             class="btn bg-silver rounded-pill h3 pl-4 pr-4"
                             style="white-space: nowrap; font-size:1.5rem; font-style:italic;">
                             アクセスの詳細
