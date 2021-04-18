@@ -26,8 +26,6 @@ return view('top');
 });
 //ログイン処理
 Route::post('/wedding', [SimpleLoginController::class, 'login']);
-//ログアウト
-Route::post('/logout', [SimpleLogoutController::class, 'logout']);
 
 // サイト側
 Route::group(['middleware' => ['simple_auth']], function () {
@@ -92,5 +90,3 @@ Route::group(['middleware' => ['admin_auth']], function () {
         Route::post('wedding/loginuser/create', [WeddingController::class, 'loginUserStore'])->name('admin.loginuser.store');
     });
 });
-
-
