@@ -488,6 +488,11 @@ canvas{
     box-shadow: 8px 8px 8px #7dc5f5;
     color: white;
 }
+.btn-orange{
+    background-color: rgb(207, 124, 255);
+    box-shadow: 8px 8px 8px #faa0f5;
+    color: white;
+}
 .btn-pink{
     background-color: #f72df7;
     box-shadow: 8px 8px 8px #ffcdf3;
