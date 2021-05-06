@@ -144,7 +144,7 @@
                     <p class=" fontstyle" style="text-align:center; font-size:1.2rem;">ご来場の方</p>
                     <br>
                     <div class="text-center">
-                        <a href="https://happo-en.com/banquet/access/" target="_blank"
+                        <a href="https://happo-en.com/banquet/access/" target="_blank" rel="noopener noreferrer"
                             class="btn btn-blue rounded-pill h3 pl-4 pr-4"
                             style="white-space: nowrap; font-size:1.4rem; font-style:italic;">
                             アクセスの詳細
