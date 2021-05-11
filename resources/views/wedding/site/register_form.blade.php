@@ -27,8 +27,9 @@
                 @csrf
                 <div class="form-group mt-2 clearfix">
                     <span class="badge badge-danger m-2">必須</span>
+                    <span class="text-nowrap" style="font-size: 0.8rem;">※必ずどちらかを選択してください</span>
                     <div class="row ">
-                        <div class="col-xs-6 col-lg-6 text-center attendance mb-5"
+                        <div class="mt-4 col-xs-6 col-lg-6 text-center attendance mb-5"
                             style="float:left; text-align: center; ">
                             <input class="responsive_label p-3 form-control" type="radio" name="attend" value="1"
                                 id="attendance" checked="">
@@ -46,8 +47,10 @@
                 <hr>
                 <div class="form-group mt-2 clearfix">
                     <span class="badge badge-danger m-2">必須</span>
+                    <span class="text-nowrap" style="font-size: 0.8rem;">※必ずどちらかを選択してください</span>
                     <div class="row ">
-                        <div class="col-xs-6 col-lg-6 text-center man mb-5" style="float:left; text-align: center;">
+                        <div class="mt-4 col-xs-6 col-lg-6 text-center man mb-5"
+                            style="float:left; text-align: center;">
                             <input class="responsive_label_human p-3 form-control" type="radio" name="human" value="1"
                                 id="man" checked="">
                             <label class="label col-xs-6 col-lg-6" for="man">新郎のご友人様<span class="en_attend_decline"

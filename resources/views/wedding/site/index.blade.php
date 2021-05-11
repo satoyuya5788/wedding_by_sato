@@ -17,11 +17,11 @@
     </section>
 
     @if(session("simple_auth")[1] == 1 || $page == 1)
-    <div class="m-1 p-1" style="text-align: center;">
+    <div class="m-5 p-1" style="text-align: center;">
         <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] == 2 || $page == 2)
-    <div class="m-1 p-1" style="text-align: center;">
+    <div class="m-5 p-1" style="text-align: center;">
         <a href="/site/wedding/imagehappouen" class="btn btn-pink text-nowrap">前撮りの写真へ</a>
     </div>
     @endif
