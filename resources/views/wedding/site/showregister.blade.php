@@ -8,7 +8,8 @@
 <body class="body_guide_showregister cherry-blossom-container_register">
 
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="70"
+            data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:2.0rem;" class="mb-2 p-2">ご登録情報</p>
@@ -27,9 +28,9 @@
                             <th>ご友人側</th>
                             <td>:</td>
                             @if($registerdData->human == 1)
-                            <td>佐藤 佑也(新郎)</td>
+                            <td>新郎(佐藤佑也)</td>
                             @else
-                            <td>湯川 智子(新婦)</td>
+                            <td>新婦(湯川智子)</td>
                             @endif
                         </tr>
                         <tr class="m-2">
@@ -115,14 +116,15 @@
         <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap">案内状へ戻る</a>
     </div>
 
-  <!-- Footer -->
-  @include('footer')
+    <!-- Footer -->
+    @include('footer')
 
-<!--桜降らせるJSを読み込み -->
-<script type="text/javascript" src="{{ asset('js/bloom_guide_register.js') }}"></script>
+    <!--桜降らせるJSを読み込み -->
+    <script type="text/javascript" src="{{ asset('js/bloom_guide_register.js') }}"></script>
 
-<!--スクロールアニメーションを読み込み -->
-<script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
+    <!--スクロールアニメーションを読み込み -->
+    <script type="text/javascript" src="{{ asset('js/scroll.js') }}"></script>
 
 </body>
+
 </html>
