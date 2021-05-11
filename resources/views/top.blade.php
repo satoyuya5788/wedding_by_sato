@@ -11,11 +11,9 @@
 
                     @if ($errors->any())
                     <div style="color:red; font-size:1.3rem;">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
+                        @foreach ($errors->all() as $error)
+                        {{ $error }}
+                        @endforeach
                     </div>
                     @endif
 
@@ -29,7 +27,7 @@
                                 お名前(かな)
                             </label>
                             <div class="row text-center">
-                                <p class="mt-2 webfont" style="font-size:1.1rem;">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
+                                <p class="m-3 webfont" style="font-size:1.1rem;">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
                             </div>
 
                             <input id="loginusername" name="loginusername"
