@@ -25,7 +25,7 @@
 
             <form method="POST" action="{{ route('store') }}">
                 @csrf
-                <div class="form-group mt-5 clearfix">
+                <div class="form-group mt-2 clearfix">
                     <span class="badge badge-danger m-2">必須</span>
                     <div class="row ">
                         <div class="col-xs-6 col-lg-6 text-center attendance mb-5"
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="form-group mt-5 clearfix">
+                <div class="form-group mt-2 clearfix">
                     <span class="badge badge-danger m-2">必須</span>
                     <div class="row ">
                         <div class="col-xs-6 col-lg-6 text-center man mb-5" style="float:left; text-align: center;">
@@ -65,7 +65,7 @@
 
                 <div class="form-group mt-5 clearfix">
                     <span class="badge badge-danger">必須</span>
-                    <label for="name" class="ml-3" style="font-size:1.4rem;">
+                    <label for="name" class="ml-3" style="font-size:1.3rem;">
                         名前(漢字)
                     </label>
                     <div class="clearfix row">
@@ -89,7 +89,7 @@
 
                 <div class="form-group mt-5 clearfix">
                     <span class="badge badge-danger">必須</span>
-                    <label for="name_kana" class=" ml-3" style="font-size:1.4rem;">
+                    <label for="name_kana" class=" ml-3" style="font-size:1.3rem;">
                         名前(かな)
                     </label>
                     <div class="clearfix row">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="form-group mt-5">
                     <span class="badge badge-danger">必須</span>
-                    <label for="post_num" class=" ml-3" style="font-size:1.4rem;">
+                    <label for="post_num" class=" ml-3" style="font-size:1.3rem;">
                         郵便番号
                     </label>
                     <div class="row">
@@ -129,7 +129,7 @@
                 </div>
                 <div class="form-group mt-5">
                     <span class="badge badge-danger">必須</span>
-                    <label for="adress" class=" ml-3" style="font-size:1.4rem;">
+                    <label for="adress" class=" ml-3" style="font-size:1.3rem;">
                         住所
                     </label>
                     <div class="row">
@@ -143,7 +143,7 @@
                     @endif
                 </div>
                 <div class="form-group mt-5">
-                    <label for="building" class="" style="font-size:1.4rem;">
+                    <label for="building" class="" style="font-size:1.3rem;">
                         建物名
                     </label>
                     <div class="row">
@@ -158,7 +158,7 @@
                 </div>
                 <div class="form-group mt-5">
                     <span class="badge badge-danger">必須</span>
-                    <label for="phone_num" class=" ml-3" style="font-size:1.4rem;">
+                    <label for="phone_num" class=" ml-3" style="font-size:1.3rem;">
                         電話番号
                     </label>
                     <div class="row">
@@ -175,7 +175,7 @@
                 </div>
 
                 <div class="form-group mt-5 clearfix">
-                    <label for="name" class="" style="font-size:1.4rem;">
+                    <label for="name" class="" style="font-size:1.3rem;">
                         お連れ様のお名前(漢字)
                     </label>
                     <div class="clearfix row">
@@ -208,7 +208,7 @@
                 </div>
 
                 <div class="form-group mt-5">
-                    <label for="allergies" class="" style="font-size:1.4rem;">
+                    <label for="allergies" class="" style="font-size:1.3rem;">
                         アレルギー
                     </label>
                     <div class="row">
@@ -225,7 +225,7 @@
                 </div>
 
                 <div class="form-group mt-5">
-                    <label for="content" class="" style="font-size:1.4rem;">
+                    <label for="content" class="" style="font-size:1.3rem;">
                         メッセージ
                     </label>
                     <textarea id="content" name="content" class="form-control shadow-lg p-3  bg-white rounded"
