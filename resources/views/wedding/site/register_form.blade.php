@@ -26,7 +26,7 @@
             <form method="POST" action="{{ route('store') }}">
                 @csrf
                 <div class="form-group mt-2 clearfix">
-                    <span class="badge badge-danger">必須</span>
+                    <span class="badge badge-danger mr-1">必須</span>
                     <span class="text-nowrap" style="font-size: 0.9rem;">※必ずどちらかを選択してください</span>
                     <div class="row ">
                         <div class="mt-4 col-xs-6 col-lg-6 text-center attendance mb-5"
@@ -46,7 +46,7 @@
                 </div>
                 <hr>
                 <div class="form-group mt-2 clearfix">
-                    <span class="badge badge-danger">必須</span>
+                    <span class="badge badge-danger mr-1">必須</span>
                     <span class="text-nowrap" style="font-size: 0.9rem;">※必ずどちらかを選択してください</span>
                     <div class="row ">
                         <div class="mt-4 col-xs-6 col-lg-6 text-center man mb-5"
