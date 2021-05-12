@@ -126,7 +126,7 @@
                 <div class="row">
                     <input id="post_num" name="post_num" class="form-control shadow-lg col-xs-12 bg-white rounded"
                         value="{{ old('post_num') }}" type="tel" placeholder="(1112222)">
-                    <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
+                    <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力して下さい。</span>
                 </div>
                 @if ($errors->has('post_num'))
                 <div class="text-danger">
@@ -172,7 +172,7 @@
                     <input id="phone_num" name="phone_num" placeholder="11122223333"
                         class="form-control shadow-lg col-xs-12  bg-white rounded" value="{{ old('phone_num') }}"
                         type="tel">
-                    <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
+                    <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力して下さい。</span>
                 </div>
                 @if ($errors->has('phone_num'))
                 <div class="text-danger">
@@ -196,7 +196,7 @@
                         class="form-control shadow-lg col-xs-3 ml-1 round one-third-input"
                         value="{{ old('partner_name_three') }}" type="text" placeholder="佐藤一郎">
                 </div>
-                <span class="" style="font-size:1.2rem;">※お連れ様がいらっしゃる場合はお名前をご記入ください</span>
+                <span class="" style="font-size:1.2rem;">※お連れ様がいらっしゃる場合はお名前をご記入下さい</span>
                 @if ($errors->has('partner_name_one'))
                 <div class="text-danger" style="font-size:1.1rem;">
                     {{ $errors->first('partner_name_one') }}
@@ -221,7 +221,7 @@
                 <div class="row">
                     <input id="allergies" name="allergies" class="form-control shadow-lg col-xs-12 bg-white rounded "
                         value="{{ old('allergies') }}" type="text" placeholder="(例)　本人:リンゴ,　夫:イチゴ">
-                    <span class="" style="font-size:1.2rem;">※お連れ様の分も記入してください</span>
+                    <span class="" style="font-size:1.2rem;">※お連れ様の分も記入して下さい</span>
                 </div>
                 @if ($errors->has('allergies'))
                 <div class="text-danger">

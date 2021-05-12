@@ -116,7 +116,7 @@
 
     <section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800"
         data-aos-offset="400">
-        <div class="container mt-5 bg_guide_3 p-5">
+        <div class="container mt-5 bg_guide_3 p-4">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text dark_gold"
                     style="text-align: left; margin:0 auto;">
@@ -135,14 +135,18 @@
                     地図
                     <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja"
                             class="w-100 m-1" style="height:300px"></iframe></div>
+                    <p class="mb-2 h6 fontstyle mt-4" style="text-align:center; font-size:1.2rem;">
+                    アクセスの詳細は
                     <br>
-                    <p class="mb-2 h6 fontstyle" style="text-align:center; font-size:1.2rem;">アクセスの詳細は</p>
-                    <p class="mb-2 h6 fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">下記URLをご覧ください。
+                    <span class="text-nowrap">下記URLをご覧下さい</span>
                     </p>
-                    <p class="h6  mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">車、電車</p>
-                    <p class="fontstyle text-nowrap" style="text-align:center; font-size:1.2rem;">バス、タクシーで</p>
-                    <p class=" fontstyle" style="text-align:center; font-size:1.2rem;">ご来場の方</p>
+                    <p class="h6 mb-4 mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">
+                    車、電車
                     <br>
+                    <span class="text-nowrap">バス、タクシー等で</span>
+                    <br>
+                    <span class="text-nowrap">ご来場の方</span>
+                    </p>
                     <div class="text-center">
                         <a href="https://happo-en.com/banquet/access/" target="_blank" rel="noopener noreferrer"
                             class="btn btn-blue rounded-pill h3 pl-4 pr-4"
@@ -175,7 +179,7 @@
                         下のボタンより
                     </p>
                     <p style="font-size:1.3rem;">
-                        閲覧してください。
+                        閲覧して下さい。
                     </p>
                     <div class="m-5 p-1" style="text-align: center;">
                         <a href="/site/wedding/imagehappouen" class="btn btn-blue text-nowrap">前撮りの写真へ</a>
