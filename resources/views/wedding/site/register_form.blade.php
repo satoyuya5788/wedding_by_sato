@@ -26,8 +26,7 @@
             <form method="POST" action="{{ route('store') }}">
                 @csrf
                 <div class="form-group mt-2 clearfix">
-                    <span class="badge badge-danger mr-1">必須</span>
-                    <span class="text-nowrap" style="font-size: 0.9rem;">※必ずどちらかを選択してください</span>
+                    <span class="badge badge-danger m-2">必須</span>
                     <div class="row ">
                         <div class="mt-4 col-xs-6 col-lg-6 text-center attendance mb-5"
                             style="float:left; text-align: center; ">
@@ -43,11 +42,11 @@
                                     class="en_attend_decline">decline</span></label>
                         </div>
                     </div>
+                    <div class="text-center mt-3" style="font-size: 0.9rem;">※必ずどちらかを選択して下さい</div>
                 </div>
                 <hr>
                 <div class="form-group mt-2 clearfix">
-                    <span class="badge badge-danger mr-1">必須</span>
-                    <span class="text-nowrap" style="font-size: 0.9rem;">※必ずどちらかを選択してください</span>
+                    <span class="badge badge-danger m-2">必須</span>
                     <div class="row ">
                         <div class="mt-4 col-xs-6 col-lg-6 text-center man mb-5"
                             style="float:left; text-align: center;">
@@ -63,6 +62,7 @@
                                     style="font-size: 1.5rem;">湯川智子</span></label>
                         </div>
                     </div>
+                    <div class="text-center mt-3" style="font-size: 0.9rem;">※必ずどちらかを選択して下さい</div>
                 </div>
                 <hr>
 
@@ -122,7 +122,7 @@
                     <div class="row">
                         <input id="post_num" name="post_num" class="form-control shadow-lg col-xs-12 bg-white rounded"
                             value="{{ old('post_num') }}" type="tel" placeholder="(1112222)">
-                        <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
+                        <span class="" style="font-size:1.0rem;">※ハイフン（-） なしで入力して下さい。</span>
                     </div>
                     @if ($errors->has('post_num'))
                     <div class="text-danger" style="font-size:1.1rem;">
@@ -168,7 +168,7 @@
                         <input id="phone_num" name="phone_num" placeholder="11122223333"
                             class="form-control shadow-lg col-xs-12  bg-white rounded" value="{{ old('phone_num') }}"
                             type="tel">
-                        <span class="" style="font-size:1.2rem;">※ハイフン（-） なしで入力してください。</span>
+                        <span class="" style="font-size:1.0rem;">※ハイフン（-） なしで入力して下さい。</span>
                     </div>
                     @if ($errors->has('phone_num'))
                     <div class="text-danger" style="font-size:1.1rem;">
@@ -192,7 +192,7 @@
                             class="form-control shadow-lg col-xs-3 ml-1 round one-third-input"
                             value="{{ old('partner_name_three') }}" type="text" placeholder="佐藤一郎">
                     </div>
-                    <span class="" style="font-size:1.2rem;">※お連れ様がいらっしゃる場合はお名前を漢字でご記入ください</span>
+                    <div class="" style="font-size:1.0rem;">※お連れ様がいらっしゃる場合はお名前を漢字でご記入下さい</div>
                     @if ($errors->has('partner_name_one'))
                     <div class="text-danger" style="font-size:1.1rem;">
                         {{ $errors->first('partner_name_one') }}
@@ -218,7 +218,7 @@
                         <input id="allergies" name="allergies"
                             class="form-control shadow-lg col-xs-12 bg-white rounded " value="{{ old('allergies') }}"
                             type="text" placeholder="(例)　本人:リンゴ,　夫:イチゴ">
-                        <span class="" style="font-size:1.2rem;">※お連れ様の分も記入してください</span>
+                        <div class="" style="font-size:1.0rem;">※お連れ様の分も記入して下さい</div>
                     </div>
                     @if ($errors->has('allergies'))
                     <div class="text-danger" style="font-size:1.1rem;">
@@ -249,7 +249,7 @@
             <hr>
             <p class="common_font" style="font-family: 'shippori mincho b1', serif;">※一度送信してしまうとご登録内容を修正できなくなります</p>
             <p class="common_font" style="font-family: 'shippori mincho b1', serif;">
-                ※ご不明点、またはご登録内容の訂正がしたい場合はラインや電話にてご連絡ください</p>
+                ※ご不明点、またはご登録内容の訂正がしたい場合はラインや電話にてご連絡下さい</p>
         </div>
     </div>
 </section>

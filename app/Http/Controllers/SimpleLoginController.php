@@ -71,7 +71,7 @@ class SimpleLoginController extends Controller
 
 		//ログイン失敗
 		return redirect("/home")->withErrors([
-			"login" => "お名前(かな)を正しく入力してください。"
+			"login" => "お名前(かな)を正しく入力して下さい。"
 		])->withInput();
 		
 	}

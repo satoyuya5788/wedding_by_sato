@@ -143,7 +143,7 @@
             <div class="form-group mt-5">
                 <span class="badge badge-danger">必須</span>
                 <label for="post_num" class="text-info ml-3">
-                    〒:郵便番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力してください。</span>
+                    〒:郵便番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力して下さい。</span>
                 </label>
                 <input disabled id="post_num" name="post_num" class="form-control shadow-lg rounded"
                     value="{{ $wedding->post_num }}" type="tel" placeholder="(1112222)">
@@ -181,7 +181,7 @@
             <div class="form-group mt-5">
                 <span class="badge badge-danger">必須</span>
                 <label for="phone_num" class="text-info ml-3">
-                    電話番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力してください。</span>
+                    電話番号 <span class="ml-5" style="font-size:0.8em;">※ハイフン（-） なしで入力して下さい。</span>
                 </label>
                 <input disabled id="phone_num" name="phone_num" placeholder="11122223333"
                     class="form-control shadow-lg p-3 mb-5 rounded" value="{{ $wedding->phone_num }}" type="tel">
@@ -194,7 +194,7 @@
 
             <div class="form-group mt-5 clearfix">
                 <label for="name" class="text-info">
-                    お連れ様のお名前 <span class="ml-5" style="font-size:0.8em;">※お連れ様がいらっしゃる場合はお名前をご記入ください</span>
+                    お連れ様のお名前 <span class="ml-5" style="font-size:0.8em;">※お連れ様がいらっしゃる場合はお名前をご記入下さい</span>
                 </label>
                 <div class="clearfix">
                     <input disabled id="partner_name_one" name="partner_name_one"
@@ -216,7 +216,7 @@
 
             <div class="form-group mt-5">
                 <label for="allergies" class="text-info">
-                    アレルギー<span class="ml-5" style="font-size:0.8em;">※お連れ様の分も記入してください</span>
+                    アレルギー<span class="ml-5" style="font-size:0.8em;">※お連れ様の分も記入して下さい</span>
                 </label>
                 <input disabled id="allergies" name="allergies" class="form-control shadow-lg p-3 rounded mb-5"
                     value="{{ $wedding->allergies }}" type="text" placeholder="(例)　本人:リンゴ,　夫:イチゴ">
