@@ -1,6 +1,6 @@
 .cherry-blossom-container_register {
     position: relative;
-    overflow: scroll; /* ここのscrollが効かない */
+    /* overflow: scroll; ここのscrollが効かない */
     height: 100%; /* コンテナの高さ */
     width: 100%; /* コンテナの横幅 */
   }
