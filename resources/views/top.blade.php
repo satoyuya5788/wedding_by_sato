@@ -4,7 +4,7 @@
 
 <body class="body_index">
     <section class="p-4 pb-5">
-        <div class="container mt-5 bg-dairiseki_top" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container mt-5 bg-dairiseki_top" data-aos="fade-down" data-aos-delay="300" data-aos-duration="3000" data-aos-offset="120">
             <div class="row align-items-center text-center pt-5">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">
 

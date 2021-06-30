@@ -9,7 +9,7 @@
     @if(session("simple_auth")[0] == "さとうとしお" || session("simple_auth")[0] == "さとうりょうた" || session("simple_auth")[0] ==
     "さとうけいすけ")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p class="mb-3">Dear</p>
@@ -50,7 +50,7 @@
     </div>
     @elseif(session("simple_auth")[0] == "ゆかわじゅんじ")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p class="mb-3">Dear</p>
@@ -85,7 +85,7 @@
     </div>
     @elseif(session("simple_auth")[0] == "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg-dairiseki_top p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p class="mb-3">Dear</p>
@@ -127,7 +127,7 @@
 
     @else
     <section class="mt-3 p-4 pt-2">
-        <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
+        <div class="container box_msg p-5" style="box-shadow: 20px 20px 20px #ddd8d8;" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
             <div class="col-xs-12 order-lg-1 col-lg-12 text-center webfont" style="font-size:0.8rem; display:inline-block;">
                 <p class="thanks-msg">
                     ご入力ありがとうございました。
@@ -168,7 +168,7 @@
 
 
     <section class="p-2 pt-5">
-        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text">
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_87933838578839.jpg') }}" alt="">
@@ -177,7 +177,7 @@
         </div>
     </section>
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text">
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_1078987987022302.jpg') }}" alt="">
@@ -186,7 +186,7 @@
         </div>
     </section>
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text">
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_46120250566561.jpg') }}" alt="">
@@ -195,7 +195,7 @@
         </div>
     </section>
     <section class="mt-3 p-2 pt-5">
-        <div class="container p-5" data-aos="fade-up" data-aos-delay="70" data-aos-duration="500" data-aos-offset="200">
+        <div class="container p-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text">
                     <img id="image-main" class="img-fluid" src="{{ asset('img/line_1189422905858979.jpg') }}" alt="">

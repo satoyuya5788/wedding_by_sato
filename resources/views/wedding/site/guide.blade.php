@@ -12,8 +12,8 @@
             <div class="text-center text-white p-5 mt-2" style="font-size: 1.2rem; ">
                 <div id="guide_msg">
                     <span class="text-wrapper">
-                        <p class="mb-5"><span class="letters fontstyle">Thank You</span></p>
-                        <p class="mt-5"><span class="letters fontstyle">会える日を楽しみにしています</span></p>
+                        <p id="display_none" class="mb-5 display_none"><span class="letters fontstyle">Thank You</span></p>
+                        <p class="mt-5 display_none"><span class="letters fontstyle">会える日を楽しみにしています</span></p>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
     @endif
 
     <section class="mt-4 p-4">
-        <div class="container bg_guide_1 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container bg_guide_1 p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-4 pb-4">
                     <h2><span class="event-msg gold">Events</span></h2>
@@ -48,7 +48,7 @@
     </section>
 
     <section class="mt-4 p-4 mb-5">
-        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
                     <h2><span class="event-msg pink_gold">Events</span></h2>
@@ -70,7 +70,7 @@
     </section>
 
     <section class="mt-5 p-4 mb-4">
-        <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
                     @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00')) <span style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
@@ -106,7 +106,7 @@
         </div>
     </section>
 
-    <section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
+    <section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="400">
         <div class="container mt-5 bg_guide_3 p-4">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text dark_gold" style="text-align: left; margin:0 auto;">
@@ -148,7 +148,7 @@
     @if(session("simple_auth")[0] == "さとうとしお" || session("simple_auth")[0] == "さとうりょうた" || session("simple_auth")[0] ==
     "さとうけいすけ" || session("simple_auth")[0] == "ゆかわじゅんじ" || session("simple_auth")[0] == "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p style="font-size:1.5rem;">ご家族の皆様へ</p>
@@ -176,7 +176,7 @@
     @endif
 
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_show p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_show p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:1.5rem;">ご登録情報の確認</p>

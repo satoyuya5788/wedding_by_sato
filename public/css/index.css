@@ -34,7 +34,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url("../img/4263534_m.jpg");
+    background-image: url("../img/4263534_m-min.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url("../img/4298538_m.jpg");
+    background-image: url("../img/4298538_m-min.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1021,4 +1021,8 @@ canvas {
 
 #registerdData td {
     text-align: left;
+}
+
+.display_none {
+    display: none;
 }

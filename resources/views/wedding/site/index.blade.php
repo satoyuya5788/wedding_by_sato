@@ -25,7 +25,7 @@
     </div>
     @endif
 
-    <section class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="10" data-aos-duration="3000" data-aos-offset="200">
+    <section class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
         <div class="container box_msg" id="msg">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1">
@@ -124,7 +124,7 @@
 
 
     <section class="mt-4 p-4">
-        <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container bg-dairiseki p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-4 pb-4">
                     <h2><span class="event-msg gold">Events</span></h2>
@@ -145,7 +145,7 @@
     </section>
 
     <section class="mt-4 p-4">
-        <div class="container mt-5 mb-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-5 bg-dairiseki2 p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="120">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
                     <h2><span class="event-msg pink_gold">Events</span></h2>
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
+    <section data-aos="fade-up" data-aos-delay="200" data-aos-duration="100" data-aos-offset="400">
         <div class="container mt-5 p-5">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
