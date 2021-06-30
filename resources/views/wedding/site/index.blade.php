@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="200" data-aos-duration="100" data-aos-offset="400">
+    <section data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="400">
         <div class="container mt-5 p-5">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text" style="text-align: left; margin:0 auto;">
