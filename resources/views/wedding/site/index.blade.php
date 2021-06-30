@@ -17,15 +17,15 @@
 
     @if(session("simple_auth")[1] == 1 || $page == 1)
     <div class="m-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] == 2 || $page == 2)
     <div class="m-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/imagehappouen" class="btn btn-pink text-nowrap">前撮りの写真へ</a>
+        <a href="/site/wedding/imagehappouen" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">前撮りの写真へ</a>
     </div>
     @endif
 
-    <section class="mt-5 p-3 pt-2 mb-5" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="120">
+    <section class="mt-5 p-3 pt-2 mb-5" data-aos="fade-in" data-aos-delay="300" data-aos-duration="3000" data-aos-offset="120">
         <div class="container box_msg" id="msg">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 p-4 mb-1">
@@ -190,11 +190,11 @@
     <!-- もし解決できたら、トップのスティッキーを活かして、ここを丸々削除 -->
     @if(session("simple_auth")[1] == 1 || $page == 1)
     <div class="mb-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap">案内状へ戻る</a>
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">案内状へ戻る</a>
     </div>
     @elseif(session("simple_auth")[1] == 2 || $page == 2)
     <div class="mb-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/imagehappouen" class="btn btn-pink text-nowrap">前撮りの写真へ</a>
+        <a href="/site/wedding/imagehappouen" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">前撮りの写真へ</a>
     </div>
     @endif
 

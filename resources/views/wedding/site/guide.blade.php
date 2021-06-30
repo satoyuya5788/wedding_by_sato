@@ -21,7 +21,7 @@
 
     @if(session("simple_auth"))
     <div class="m-5 p-1" style="text-align: center;">
-        <a href="{{ route('site') }}" class="btn btn-pink text-nowrap">招待状へ戻る</a>
+        <a href="{{ route('site') }}" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">招待状へ戻る</a>
     </div>
     @endif
 
@@ -191,7 +191,7 @@
 
     @if(session("simple_auth"))
     <div class="m-5 p-1" style="text-align: center;">
-        <a href="{{ route('site') }}" class="btn btn-pink text-nowrap">招待状へ戻る</a>
+        <a href="{{ route('site') }}" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="400" data-aos-duration="2000" data-aos-offset="120">招待状へ戻る</a>
     </div>
     @endif
 

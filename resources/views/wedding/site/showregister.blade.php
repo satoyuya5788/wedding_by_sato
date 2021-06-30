@@ -7,13 +7,13 @@
 
 <body class="body_guide_showregister cherry-blossom-container_register">
 
-    <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000" data-aos-offset="120">
+    <section class="p-4 mt-3">
+        <div class="container  mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000" data-aos-offset="120">
             <div class="row align-items-center text-center">
-                <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
-                    <p style="font-size:2.0rem;" class="mb-2 p-2">ご登録情報</p>
+                <div class="col-xs-12 order-lg-1 col-lg-12 show-msg">
+                    <p style="font-size:2.0rem;" class="p-2">ご登録情報</p>
                     <img src="{{ asset('img/巻物のフリーアイコン (1).svg') }}" alt="" width="30" class="mb-2">
-                    <table id="registerdData" class="mb-5" style="margin:auto; font-size:1.1rem;">
+                    <table id="registerdData" class="mb-3" style="margin:auto; font-size:1.1rem;">
                         <tr class="m-2">
                             <th>出欠</th>
                             <td>:</td>
@@ -110,10 +110,10 @@
             </div>
         </div>
     </section>
-
-    <div class="m-4 mb-5 p-1" style="text-align: center;">
-        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap">案内状へ戻る</a>
+    <div class="m-4 p-1" style="text-align: center;">
+        <a href="/site/wedding/guidehappouen" class="btn btn-pink text-nowrap" data-aos="fade-down" data-aos-delay="800" data-aos-duration="2000" data-aos-mirror="true">案内状へ戻る</a>
     </div>
+
 
     <!-- Footer -->
     @include('footer')
