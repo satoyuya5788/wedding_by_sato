@@ -11,11 +11,12 @@ use App\Models\User;
 class WeddingController extends Controller
 {
     protected $wedding = '';
-    
-    public function __construct (){
+
+    public function __construct()
+    {
         $this->wedding = new Wedding();
     }
-    
+
     /**
      * 招待状一覧を表示
      * 
@@ -26,7 +27,7 @@ class WeddingController extends Controller
     public function showList(Request $request)
     {
         list($weddings, $friendCount, $humanFlg, $attendCount, $partnerCount) = $this->wedding->getAllWeddingData($request);
-        
+
         return view('wedding.admin.list', [
             'weddings' => $weddings,
             'friendCount' => $friendCount,
@@ -34,7 +35,7 @@ class WeddingController extends Controller
             'attendCount' => $attendCount,
             'partnerCount' => $partnerCount,
         ]);
-}
+    }
 
     /**
      * 追加登録フォームを表示
@@ -61,7 +62,7 @@ class WeddingController extends Controller
         $registerdWeddingData = $this->wedding->adminStoreWedding($request);
         if ($registerdWeddingData) {
             list($weddings, $friendCount, $humanFlg, $attendCount, $partnerCount) = $this->wedding->getAllWeddingData($request);
-            
+
             \Session::flash('flash_message', '登録に成功しました。');
             return Redirect::route('list', compact(
                 'weddings',
@@ -88,7 +89,9 @@ class WeddingController extends Controller
         $attendance = User::where('page_flg', 1)->count();
         $notAttendance = User::where('page_flg', 2)->count();
 
-        return view('wedding.admin.loginuser_create', [
+        return view(
+            'wedding.admin.loginuser_create',
+            [
                 'userData' => $userData,
                 'notAnswered' => $notAnswered,
                 'attendance' => $attendance,

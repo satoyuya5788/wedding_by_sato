@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -19,9 +20,9 @@ class User extends Authenticatable
         'page_flg'
     ];
 
-    Public function wedding()
+    public function wedding()
     {
-      // Profileモデルのデータを引っ張てくる
-      return $this->hasOne('Wedding');
+        // Profileモデルのデータを引っ張てくる
+        return $this->hasOne('Wedding');
     }
 }

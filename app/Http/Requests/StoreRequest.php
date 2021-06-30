@@ -30,7 +30,7 @@ class StoreRequest extends FormRequest
                     'required',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/[^ぁ-んー]/u', $value) !== 0) {
-                          return $fail('お名前は必ずひらがなで、スペースを空けずに入力して下さい。');
+                            return $fail('お名前は必ずひらがなで、スペースを空けずに入力して下さい。');
                         }
                     },
                 ]
@@ -44,7 +44,7 @@ class StoreRequest extends FormRequest
             ];
         }
 
-        
+
         // 管理側でのユーザ登録バリデーション：登録処理
         if ($this->has('username')) {
             return [
@@ -53,7 +53,7 @@ class StoreRequest extends FormRequest
                     'unique:users,name',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/[^ぁ-んー]/u', $value) !== 0) {
-                          return $fail('名前(かな)はひらがなで入力して下さい。');
+                            return $fail('名前(かな)はひらがなで入力して下さい。');
                         }
                     },
                 ]

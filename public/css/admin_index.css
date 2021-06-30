@@ -1,45 +1,52 @@
-
 @font-face {
     font-family: 'webfont';
     src: url("../css/ShipporiMinchoB1-Regular.ttf") format('ttf');
 }
-.webfont{
+
+.webfont {
     font-family: 'Shippori Mincho B1', serif;
 }
+
 body {
     width: 0 auto;
     font-family: 'Shippori Mincho B1', serif;
 }
+
 .clearfix {
-	content: "";
-	display: block;
-	clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
+
 .harf-input {
     width: 48%;
-    float:left;
+    float: left;
 }
+
 .one-third-input {
     width: 30%;
-    float:left;
+    float: left;
 }
+
 .harf-post-input {
     width: 42%;
-    float:left;
+    float: left;
 }
+
 input::placeholder {
-   font-size: 1em;
-   color: red;
+    font-size: 1em;
+    color: red;
 }
 
-.form-control::placeholder{
-  color: #cccccc;
+.form-control::placeholder {
+    color: #cccccc;
 }
 
-th,td {
-    text-align:center;
+th,
+td {
+    text-align: center;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }

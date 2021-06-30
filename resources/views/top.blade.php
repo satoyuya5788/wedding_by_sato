@@ -4,8 +4,7 @@
 
 <body class="body_index">
     <section class="p-4 pb-5">
-        <div class="container mt-5 bg-dairiseki_top" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000"
-            data-aos-offset="200">
+        <div class="container mt-5 bg-dairiseki_top" data-aos="fade-down" data-aos-delay="200" data-aos-duration="3000" data-aos-offset="200">
             <div class="row align-items-center text-center pt-5">
                 <div class="col-xs-12 order-lg-1 col-lg-12 ">
 
@@ -21,8 +20,7 @@
                         @csrf
 
                         <div class="form-group mt-5">
-                            <h2 class="mb-3"><span class="event-msg pink_gold"
-                                    style="font-style: italic; font-size: 2.0rem;">~ 招待状 ~</span></h2>
+                            <h2 class="mb-3"><span class="event-msg pink_gold" style="font-style: italic; font-size: 2.0rem;">~ 招待状 ~</span></h2>
                             <label for="name" class="" style="font-size:1.8rem;">
                                 お名前(かな)
                             </label>
@@ -30,9 +28,7 @@
                                 <p class="m-3 webfont" style="font-size:1.1rem;">※フルネームをひらがなでスペースを空けずに入力して下さい。</p>
                             </div>
 
-                            <input id="loginusername" name="loginusername"
-                                class="form-control shadow-lg bg-white rounded" value="{{ old('loginusername') }}"
-                                style="text-align: center;" type="text" placeholder="例)さとうゆうや">
+                            <input id="loginusername" name="loginusername" class="form-control shadow-lg bg-white rounded" value="{{ old('loginusername') }}" style="text-align: center;" type="text" placeholder="例)さとうゆうや">
                         </div>
 
                         <div class="form-group m-5 text-center pb-1">

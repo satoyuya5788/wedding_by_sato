@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon; 
+use Carbon\Carbon;
 
 class Wedding extends Model
 {
@@ -37,14 +37,15 @@ class Wedding extends Model
         'created_at',
         'updated_at',
     ];
-    
 
-    Public function user()
+
+    public function user()
     {
-      return $this->belongsTo('User');
+        return $this->belongsTo('User');
     }
-    
-    public function getAttendAttribute ($value) {
+
+    public function getAttendAttribute($value)
+    {
         if ($value == 1) {
             return true;
         } else {
@@ -52,30 +53,35 @@ class Wedding extends Model
         }
         return abort(404);
     }
-    
-    public function getCreatedAtAttribute ($value) {
+
+    public function getCreatedAtAttribute($value)
+    {
         $time = substr($value, 0, 10);
-        $answerd_at = str_replace("-","/",$time);
+        $answerd_at = str_replace("-", "/", $time);
         return $answerd_at;
     }
 
-    public function AttendCount($humanFlg) {
+    public function AttendCount($humanFlg)
+    {
         return self::where('human', $humanFlg)->where('attend', 1)->count();
     }
 
-    public function getFullNameAttribute ($value) {
-        $name = $this->name.$this->name_low;
-        $name_kana = $this->name_kana.$this->name_kana_low;
-        $fullName = $name.'('.$name_kana.')';
+    public function getFullNameAttribute($value)
+    {
+        $name = $this->name . $this->name_low;
+        $name_kana = $this->name_kana . $this->name_kana_low;
+        $fullName = $name . '(' . $name_kana . ')';
         return $fullName;
     }
 
-    public function getFullNameKanaAttribute ($value) {
-        $fullNamekana = $this->name_kana.$this->name_kana_low;
+    public function getFullNameKanaAttribute($value)
+    {
+        $fullNamekana = $this->name_kana . $this->name_kana_low;
         return $fullNamekana;
     }
 
-    public function getPartnerAttribute ($value) {
+    public function getPartnerAttribute($value)
+    {
         $partners = [];
 
         $partners = [
@@ -95,13 +101,14 @@ class Wedding extends Model
     }
 
 
-    public function getAllWeddingData($request){
+    public function getAllWeddingData($request)
+    {
         $weddings = $this->getAllWedding($request);
 
         $partner_one = [];
         $partner_two = [];
         $partner_three = [];
-        foreach($weddings as $key => $wedding){
+        foreach ($weddings as $key => $wedding) {
             if (!empty($wedding->partner_name_one)) {
                 array_push($partner_one, $wedding->partner_name_one);
             }
@@ -112,9 +119,9 @@ class Wedding extends Model
                 array_push($partner_three, $wedding->partner_name_three);
             }
         }
-        
+
         $partnerCount = count($partner_one) + count($partner_two) + count($partner_three);
-        
+
         $friendCount = count($weddings);
         if ($friendCount > 0) {
             $humanFlg = $weddings->first()->human;
@@ -126,16 +133,17 @@ class Wedding extends Model
 
         return [$weddings, $friendCount, $humanFlg, $attendCount, $partnerCount];
     }
-    
-    
-    public function getFriendsByRouteName($request){
+
+
+    public function getFriendsByRouteName($request)
+    {
         $routeName = \Route::currentRouteName();
         switch ($routeName) {
-            // ゆうや
+                // ゆうや
             case 'list':
                 $allWedding = $this->getMyfriendData();
                 break;
-            // さとこ
+                // さとこ
             case 'list_for_wife':
                 $allWedding = $this->getWivesfriendData();
                 break;
@@ -150,23 +158,26 @@ class Wedding extends Model
         }
         return $allWedding;
     }
-    
+
     /**
      * weddingsテーブルから全件取得
      * 
      * @param 
      * @return 
      */
-    public function getAllWedding ($request) {
+    public function getAllWedding($request)
+    {
         $allWeddingData = $this->getFriendsByRouteName($request);
         return $allWeddingData;
     }
 
-    public function getMyfriendData () {
+    public function getMyfriendData()
+    {
         return self::orderBy('id', 'desc')->where('human', 1)->get();
     }
 
-    public function getWivesfriendData () {
+    public function getWivesfriendData()
+    {
         return self::orderBy('id', 'desc')->where('human', 2)->get();
     }
 
@@ -176,9 +187,10 @@ class Wedding extends Model
      * @param 
      * @return 
      */
-    public function getOnlyOneWedding ($id) {
+    public function getOnlyOneWedding($id)
+    {
         $onlyOneWedding = self::find($id);
-        
+
         return $onlyOneWedding;
     }
 
@@ -188,24 +200,25 @@ class Wedding extends Model
      * @param 
      * @return 
      */
-    public function storeWedding ($request) {
+    public function storeWedding($request)
+    {
         DB::beginTransaction();
         try {
             // 招待状テーブルにここで登録
             $registerWeddingData = $request->all();
 
             unset($registerWeddingData['_token']);
-            
+
             // ユーザID登録処理
             $username = session('simple_auth')[0];
             $userId = User::where('name', $username)->value('id');
             $registerWeddingData['user_id'] = $userId;
-            
+
             $registerWeddingData['created_at'] = date('Y/m/d');
             $registerWeddingData['updated_at'] = null;
-            
+
             // 案内状の画面でリロードや、ブラウザバッグされても対処
-            $wedding = self::updateOrCreate(['user_id' => $userId], $registerWeddingData); 
+            $wedding = self::updateOrCreate(['user_id' => $userId], $registerWeddingData);
 
             if ($wedding->attend) {
                 User::where('id', $userId)->update(['page_flg' => 1]);
@@ -218,7 +231,7 @@ class Wedding extends Model
             DB::rollBack();
             \Log::debug($e->getMessage());
             return abort(500);
-        } 
+        }
         return $wedding;
     }
 
@@ -228,7 +241,8 @@ class Wedding extends Model
      * @param 
      * @return 
      */
-    public function adminStoreWedding ($request) {
+    public function adminStoreWedding($request)
+    {
         DB::beginTransaction();
         try {
             // 招待状テーブルにここで登録
@@ -236,19 +250,19 @@ class Wedding extends Model
             unset($registerWeddingData['_token']);
 
             if (!$request->has('listchart')) {
-                $registerWeddingData['listchart'] = null; 
+                $registerWeddingData['listchart'] = null;
             }
-            
+
             $registerWeddingData['created_at'] = date('Y/m/d');
             $registerWeddingData['updated_at'] = null;
-            $wedding = self::create($registerWeddingData); 
+            $wedding = self::create($registerWeddingData);
 
             DB::commit();
         } catch (\Exception $e) {
             DB::rollBack();
             \Log::debug($e->getMessage());
             return abort(500);
-        } 
+        }
         return $wedding;
     }
 
@@ -258,7 +272,8 @@ class Wedding extends Model
      * @param 
      * @return 
      */
-    public function updateWedding ($request) {
+    public function updateWedding($request)
+    {
         $updateWeddingData = [];
 
         DB::beginTransaction();
@@ -266,11 +281,11 @@ class Wedding extends Model
             // 招待状テーブルにここで登録
             $updateWeddingData = $request->all();
             unset($updateWeddingData['_token']);
-            
+
             $updateWeddingData['updated_at'] = date('Y/m/d');
-            
+
             if (!$request->has('listchart')) {
-                $updateWeddingData['listchart'] = null; 
+                $updateWeddingData['listchart'] = null;
             }
             self::where('id', $request->input('id'))->update($updateWeddingData);
             DB::commit();
@@ -278,9 +293,9 @@ class Wedding extends Model
             DB::rollBack();
             \Log::debug($e->getMessage());
             return abort(500);
-        } 
+        }
 
-        return ;
+        return;
     }
 
     /**
@@ -289,7 +304,8 @@ class Wedding extends Model
      * @param 
      * @return 
      */
-    public function loginUserStore ($request) {
+    public function loginUserStore($request)
+    {
         DB::beginTransaction();
         try {
             $loginUserData = [];
@@ -301,9 +317,8 @@ class Wedding extends Model
             DB::rollBack();
             \Log::debug($e->getMessage());
             return abort(500);
-        } 
+        }
 
         return $createFlg;
     }
 }
-

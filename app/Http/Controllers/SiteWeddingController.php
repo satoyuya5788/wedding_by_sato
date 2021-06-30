@@ -9,11 +9,12 @@ use App\Models\User;
 class SiteWeddingController extends Controller
 {
     protected $wedding = '';
-    
-    public function __construct (){
+
+    public function __construct()
+    {
         $this->wedding = new Wedding();
     }
-    
+
     /**
      * 招待状登録フォーム画面を表示
      * 
@@ -22,7 +23,7 @@ class SiteWeddingController extends Controller
     {
         return view('wedding.site.index');
     }
-    
+
     /**
      * 招待状を登録する
      */
@@ -38,7 +39,7 @@ class SiteWeddingController extends Controller
         }
         return abort(404);
     }
-    
+
     /**
      * 登録情報を表示
      */
@@ -49,12 +50,11 @@ class SiteWeddingController extends Controller
         // 登録データ
         $registerdData = Wedding::where('user_id', $userId)->first();
         // パートナーデータ
-        $partnerOne = $registerdData->partner_name_one ? 1 :0;
-        $partnerTwo = $registerdData->partner_name_two ? 1 :0;
-        $partnerThree = $registerdData->partner_name_three ? 1 :0;
+        $partnerOne = $registerdData->partner_name_one ? 1 : 0;
+        $partnerTwo = $registerdData->partner_name_two ? 1 : 0;
+        $partnerThree = $registerdData->partner_name_three ? 1 : 0;
         $partnerCount = $partnerOne + $partnerTwo + $partnerThree;
 
         return view('wedding.site.showregister', ['registerdData' => $registerdData, 'partnerCount' => $partnerCount]);
     }
-
 }

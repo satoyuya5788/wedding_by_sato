@@ -27,18 +27,14 @@
                         </label>
                         <div class="row">
 
-                            <input id="admin_user" style="text-align:center;" name="admin_user"
-                                class="form-control shadow-lg col-xs-12 bg-white rounded center-block"
-                                value="{{ old('admin_user') }}" type="text">
+                            <input id="admin_user" style="text-align:center;" name="admin_user" class="form-control shadow-lg col-xs-12 bg-white rounded center-block" value="{{ old('admin_user') }}" type="text">
                         </div>
                         <label for="name" class="" style="font-size:1.6rem;">
                             パスワード
                         </label>
                         <div class="row">
 
-                            <input id="admin_password" style="text-align:center;" name="admin_password"
-                                class="form-control shadow-lg col-xs-12 bg-white rounded center-block"
-                                value="{{ old('admin_password') }}" type="text">
+                            <input id="admin_password" style="text-align:center;" name="admin_password" class="form-control shadow-lg col-xs-12 bg-white rounded center-block" value="{{ old('admin_password') }}" type="text">
                         </div>
                     </div>
 

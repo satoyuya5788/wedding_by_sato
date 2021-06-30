@@ -8,8 +8,7 @@
 <body class="body_guide_showregister cherry-blossom-container_register">
 
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="70"
-            data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_showregister p-2" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:2.0rem;" class="mb-2 p-2">ご登録情報</p>

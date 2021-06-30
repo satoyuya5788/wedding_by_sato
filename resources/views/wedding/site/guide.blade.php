@@ -26,8 +26,7 @@
     @endif
 
     <section class="mt-4 p-4">
-        <div class="container bg_guide_1 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800"
-            data-aos-offset="200">
+        <div class="container bg_guide_1 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-dairiseki-text pt-4 pb-4">
                     <h2><span class="event-msg gold">Events</span></h2>
@@ -49,8 +48,7 @@
     </section>
 
     <section class="mt-4 p-4 mb-5">
-        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800"
-            data-aos-offset="200">
+        <div class="container mt-5 mb-5 bg_guide_2 p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4">
                     <h2><span class="event-msg pink_gold">Events</span></h2>
@@ -72,37 +70,31 @@
     </section>
 
     <section class="mt-5 p-4 mb-4">
-        <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800"
-            data-aos-offset="200">
+        <div class="container bg-countdown p-3" data-aos="fade-down" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 bg-countdown-text" style="font-style: italic;">
-                    @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00')) <span
-                        style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
+                    @if(date('Y/m/d H:i:s' ) <= date('2022/05/29 00:00:00')) <span style=" font-size: 2.5rem; white-space: nowrap;">count down</span>
                         <br>
                         <br>
-                        <span style="font-size: 1.9rem;">to 2020.5.29</span>
+                        <span style="font-size: 1.9rem;">to 2022.5.29</span>
                         <br>
                         <img src="{{ asset('img/event_ttl_bg01.svg') }}" alt="" class="mt-3" width="30">
                         <br>
                         <div class="p-2" style="text-align: center; white-space: nowrap; width: 100%">
-                            <div style="font-size:1.5rem"><span style=" font-size: 2.5rem;" class="countDownText"
-                                    id="countDown_date"></span>days
-                                <span style="font-size: 2.0rem;" class="countDownText"
-                                    id="countDown_date_hours"></span>hours
+                            <div style="font-size:1.5rem"><span style=" font-size: 2.5rem;" class="countDownText" id="countDown_date"></span>days
+                                <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_hours"></span>hours
                             </div>
                         </div>
                         <div class="mb-4" style="text-align: center; white-space: nowrap;">
-                            <div style=" font-size:1rem"><span style="font-size: 2.0rem;" class="countDownText"
-                                    id="countDown_date_minutes"></span>minutes
-                                <span style="font-size: 2.0rem;" class="countDownText"
-                                    id="countDown_date_seconds"></span>seconds
+                            <div style=" font-size:1rem"><span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_minutes"></span>minutes
+                                <span style="font-size: 2.0rem;" class="countDownText" id="countDown_date_seconds"></span>seconds
                             </div>
                         </div>
                         @else
                         <span style="font-size: 3rem; white-space: nowrap;">count down</span>
                         <br>
                         <br>
-                        <span style="font-size: 2rem;">to 2020.5.29</span>
+                        <span style="font-size: 2rem;">to 2022.5.29</span>
                         <br>
                         <br>
                         <br>
@@ -114,12 +106,10 @@
         </div>
     </section>
 
-    <section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800"
-        data-aos-offset="400">
+    <section class="mt-2 p-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-offset="400">
         <div class="container mt-5 bg_guide_3 p-4">
             <div class="row align-items-center text-center">
-                <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text dark_gold"
-                    style="text-align: left; margin:0 auto;">
+                <div class="col-xs-12 order-lg-1 col-lg-12 bg-map2-text dark_gold" style="text-align: left; margin:0 auto;">
                     <p class="fontstyle mb-5" style="font-size: 1.8rem; text-align:center;">～式場案内～</p>
                     <p class="fontstyle" style="font-size: 1.6rem;">八芳園</p>
                     <br>
@@ -127,30 +117,26 @@
                     <br>
                     <p class="fontstyle" style="white-space: nowrap; ">03-3443-3111</p>
                     <br>
-                    <a href="https://happo-en.com/banquet/about/" target="_blank" rel="noopener noreferrer"
-                        class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
+                    <a href="https://happo-en.com/banquet/about/" target="_blank" rel="noopener noreferrer" class="p-2 h4 text_link_under" style="white-space: nowrap; text-align:center;">
                         <p class=" mb-5" style="text-align:center; font-size: 1.5rem;">公式ホームページへ</p>
                     </a>
                     <br>
                     地図
-                    <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja"
-                            class="w-100 m-1" style="height:300px"></iframe></div>
+                    <div><iframe src="https://www.google.com/maps/d/embed?mid=1fqhy8ZLBTlRoZvouSREKg-eC2QQ&hl=ja" class="w-100 m-1" style="height:300px"></iframe></div>
                     <p class="mb-2 h6 fontstyle mt-4" style="text-align:center; font-size:1.2rem;">
-                    アクセスの詳細は
-                    <br>
-                    <span class="text-nowrap">下記URLをご覧下さい</span>
+                        アクセスの詳細は
+                        <br>
+                        <span class="text-nowrap">下記URLをご覧下さい</span>
                     </p>
                     <p class="h6 mb-4 mt-3 fontstyle" style="text-align:center; font-size:1.2rem;">
-                    車、電車
-                    <br>
-                    <span class="text-nowrap">バス、タクシー等で</span>
-                    <br>
-                    <span class="text-nowrap">ご来場の方</span>
+                        車、電車
+                        <br>
+                        <span class="text-nowrap">バス、タクシー等で</span>
+                        <br>
+                        <span class="text-nowrap">ご来場の方</span>
                     </p>
                     <div class="text-center">
-                        <a href="https://happo-en.com/banquet/access/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-blue rounded-pill h3 pl-4 pr-4"
-                            style="white-space: nowrap; font-size:1.4rem; font-style:italic;">
+                        <a href="https://happo-en.com/banquet/access/" target="_blank" rel="noopener noreferrer" class="btn btn-blue rounded-pill h3 pl-4 pr-4" style="white-space: nowrap; font-size:1.4rem; font-style:italic;">
                             アクセスの詳細
                         </a>
                     </div>
@@ -162,8 +148,7 @@
     @if(session("simple_auth")[0] == "さとうとしお" || session("simple_auth")[0] == "さとうりょうた" || session("simple_auth")[0] ==
     "さとうけいすけ" || session("simple_auth")[0] == "ゆかわじゅんじ" || session("simple_auth")[0] == "うえぶせさとし")
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70"
-            data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_family p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-5 pb-4 family-msg">
                     <p style="font-size:1.5rem;">ご家族の皆様へ</p>
@@ -191,8 +176,7 @@
     @endif
 
     <section class="mt-4 p-4 mb-3">
-        <div class="container mt-5 mb-2 bg_guide_show p-2" data-aos="fade-up" data-aos-delay="70"
-            data-aos-duration="800" data-aos-offset="200">
+        <div class="container mt-5 mb-2 bg_guide_show p-2" data-aos="fade-up" data-aos-delay="70" data-aos-duration="800" data-aos-offset="200">
             <div class="row align-items-center text-center">
                 <div class="col-xs-12 order-lg-1 col-lg-12 pt-4 pb-4 show-msg">
                     <p style="font-size:1.5rem;">ご登録情報の確認</p>

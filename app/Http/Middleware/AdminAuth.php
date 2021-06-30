@@ -17,7 +17,7 @@ class AdminAuth
     public function handle(Request $request, Closure $next)
     {
         //セッションの値を確認する
-        if(session("admin_auth")){
+        if (session("admin_auth")) {
             return $next($request);
         }
         return redirect("/admin/home");
